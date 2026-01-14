@@ -1,6 +1,27 @@
 days_back: 2
 max_results_per_topic: 20
 
+match_in: title+abstract
+
+must_have_any:
+  - robot
+  - robotics
+  - autonomous
+  - navigation
+  - planning
+  - control
+  - slam
+  - localization
+  - mapping
+  - odometry
+  - uav
+  - drone
+  - lidar
+  - imu
+  - visual-inertial
+  - perception
+
+
 categories:
   - cs.RO
   - cs.CV
@@ -37,10 +58,12 @@ topics:
     - aerial robotics
     - quadrotor
     - visual-inertial
-    - vio
+    - visual inertial
+    - imu
     - autonomous flight
     - landing
     - obstacle avoidance
+
 
   SLAM, Localization & Mapping:
     - slam
