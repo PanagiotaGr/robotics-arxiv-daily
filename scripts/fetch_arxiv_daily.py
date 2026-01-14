@@ -1,0 +1,353 @@
+#!/usr/bin/env python3
+
+"""
+Robotics ArXiv Daily
+- Queries the arXiv Atom API by category.
+- Filters results into topic buckets using keyword matching.
+- Writes:
+  1) digests/YYYY-MM-DD.md  (daily archive)
+  2) README.md (updates a "Today" section at the top)
+- Keeps a small local database to avoid duplicates across runs.
+
+Run:
+  python scripts/fetch_arxiv_daily.py
+"""
+
+from __future__ import annotations
+
+import dataclasses
+import datetime as dt
+import json
+import os
+import re
+from typing import Dict, List, Tuple
+
+import feedparser
+import requests
+import yaml
+from dateutil import parser as dateparser
+
+
+ARXIV_API = "https://export.arxiv.org/api/query"
+REPO_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
+CONFIG_PATH = os.path.join(REPO_ROOT, "config.yml")
+DB_PATH = os.path.join(REPO_ROOT, "state_db.json")
+DIGEST_DIR = os.path.join(REPO_ROOT, "digests")
+README_PATH = os.path.join(REPO_ROOT, "README.md")
+
+
+@dataclasses.dataclass
+class Paper:
+    arxiv_id: str
+    title: str
+    authors: List[str]
+    published: dt.datetime
+    updated: dt.datetime
+    summary: str
+    link_abs: str
+    link_pdf: str
+    primary_category: str
+
+
+def load_config() -> dict:
+    with open(CONFIG_PATH, "r", encoding="utf-8") as f:
+        return yaml.safe_load(f)
+
+
+def load_db() -> dict:
+    if not os.path.exists(DB_PATH):
+        return {"seen_ids": []}
+    with open(DB_PATH, "r", encoding="utf-8") as f:
+        return json.load(f)
+
+
+def save_db(db: dict) -> None:
+    with open(DB_PATH, "w", encoding="utf-8") as f:
+        json.dump(db, f, indent=2, ensure_ascii=False)
+
+
+def normalize(text: str) -> str:
+    text = text.lower()
+    text = re.sub(r"\s+", " ", text)
+    return text.strip()
+
+
+def arxiv_query(category: str, max_results: int = 200) -> List[Paper]:
+    # Sort by submittedDate descending; start=0; use Atom
+    params = {
+        "search_query": f"cat:{category}",
+        "start": 0,
+        "max_results": max_results,
+        "sortBy": "submittedDate",
+        "sortOrder": "descending",
+    }
+    resp = requests.get(ARXIV_API, params=params, timeout=60)
+    resp.raise_for_status()
+    feed = feedparser.parse(resp.text)
+
+    papers: List[Paper] = []
+    for e in feed.entries:
+        # arXiv ID is in e.id like "http://arxiv.org/abs/XXXX.XXXXXv1"
+        link_abs = e.id.replace("http://", "https://")
+        arxiv_id = link_abs.rsplit("/", 1)[-1]
+
+        title = " ".join(e.title.split())
+        authors = [a.name for a in getattr(e, "authors", [])] if hasattr(e, "authors") else []
+        published = dateparser.parse(e.published)
+        updated = dateparser.parse(e.updated)
+
+        # Find PDF link
+        pdf = ""
+        for l in e.links:
+            if getattr(l, "type", "") == "application/pdf":
+                pdf = l.href.replace("http://", "https://")
+                break
+        if not pdf:
+            pdf = link_abs.replace("/abs/", "/pdf/") + ".pdf"
+
+        primary = ""
+        # primary_category may exist; else fallback to first tag
+        if hasattr(e, "arxiv_primary_category"):
+            primary = e.arxiv_primary_category.get("term", "")
+        elif hasattr(e, "tags") and e.tags:
+            primary = e.tags[0].get("term", "")
+        summary = " ".join(getattr(e, "summary", "").split())
+
+        papers.append(
+            Paper(
+                arxiv_id=arxiv_id,
+                title=title,
+                authors=authors,
+                published=published,
+                updated=updated,
+                summary=summary,
+                link_abs=link_abs,
+                link_pdf=pdf,
+                primary_category=primary,
+            )
+        )
+    return papers
+
+
+def is_recent(p: Paper, days_back: int) -> bool:
+    cutoff = dt.datetime.now(dt.timezone.utc) - dt.timedelta(days=days_back)
+    pub = p.published
+    if pub.tzinfo is None:
+        pub = pub.replace(tzinfo=dt.timezone.utc)
+    return pub >= cutoff
+
+
+def match_keywords(p: Paper, keywords: List[str]) -> List[str]:
+    hay = normalize(p.title + " " + p.summary)
+    matched = []
+    for kw in keywords:
+        nkw = normalize(kw)
+        # simple substring match with word boundary-ish handling
+        if nkw in hay:
+            matched.append(kw)
+    return matched
+
+
+def format_paper_md(p: Paper, matched: List[str]) -> str:
+    authors = ", ".join(p.authors[:8]) + (" et al." if len(p.authors) > 8 else "")
+    pub = p.published.date().isoformat()
+    tags = ", ".join(matched[:8]) if matched else ""
+    cat = p.primary_category or "unknown"
+    return (
+        f"- **{p.title}**\\n"
+        f"  - Authors: {authors}\\n"
+        f"  - Published: {pub} | Category: `{cat}`\\n"
+        f"  - Links: [arXiv]({p.link_abs}) | [PDF]({p.link_pdf})\\n"
+        f"  - Matched: {tags}\\n"
+    )
+
+
+def ensure_digest_dir() -> None:
+    os.makedirs(DIGEST_DIR, exist_ok=True)
+
+
+def write_daily_digest(today: str, sections: Dict[str, List[str]]) -> str:
+    ensure_digest_dir()
+    path = os.path.join(DIGEST_DIR, f"{today}.md")
+
+    lines = []
+    lines.append(f"# Daily Digest — {today}\\n")
+    lines.append("Auto-generated from the arXiv API using keyword/topic filters.\\n")
+    lines.append("> Tip: edit `config.yml` to adjust topics, keywords, and limits.\\n")
+
+    for topic, items in sections.items():
+        lines.append(f"## {topic}\\n")
+        if not items:
+            lines.append("_No matches today._\\n")
+        else:
+            lines.extend(items)
+            lines.append("")
+
+    with open(path, "w", encoding="utf-8") as f:
+        f.write("\\n".join(lines).strip() + "\\n")
+    return path
+
+
+def update_readme(today: str, digest_rel_path: str, sections: Dict[str, List[str]]) -> None:
+    """
+    Inserts/updates a 'Today' block at the top of README.md.
+    We keep the rest of README.md intact.
+    """
+    today_block_lines = []
+    today_block_lines.append("## ✅ Today\\n")
+    today_block_lines.append(f"**Last update:** {today}  \\n")
+    today_block_lines.append(f"**Daily archive:** `{digest_rel_path}`  \\n")
+    today_block_lines.append("")
+    today_block_lines.append("_This section is auto-generated. For configuration, edit `config.yml`._\\n")
+    today_block_lines.append("")
+
+    # Show a compact preview (first 3 items per topic)
+    for topic, items in sections.items():
+        today_block_lines.append(f"### {topic}\\n")
+        if not items:
+            today_block_lines.append("_No matches today._\\n")
+        else:
+            preview = items[: min(3, len(items))]
+            today_block_lines.extend(preview)
+            if len(items) > 3:
+                today_block_lines.append(f"  - _(See full list in `{digest_rel_path}`)_\\n")
+        today_block_lines.append("")
+
+    today_block = "\\n".join(today_block_lines).strip() + "\\n"
+
+    if not os.path.exists(README_PATH):
+        # If README doesn't exist yet, create minimal one
+        base = "# Robotics ArXiv Daily\\n\\n"
+        with open(README_PATH, "w", encoding="utf-8") as f:
+            f.write(base + today_block)
+        return
+
+    with open(README_PATH, "r", encoding="utf-8") as f:
+        original = f.read()
+
+    start_marker = "## ✅ Today"
+    # If there's already a Today block, replace it up to the next H2
+    if start_marker in original:
+        # Replace from start_marker until next "\n## " after it
+        idx = original.index(start_marker)
+        rest = original[idx:]
+        m = re.search(r"\\n##\\s", rest[5:])  # look for next H2 after some chars
+        if m:
+            cut = idx + 5 + m.start()
+            new_content = original[:idx].rstrip() + "\\n\\n" + today_block + "\\n" + original[cut:].lstrip()
+        else:
+            new_content = original[:idx].rstrip() + "\\n\\n" + today_block
+    else:
+        # Insert after the first H1 block (or at top)
+        parts = original.split("\\n", 2)
+        if parts and parts[0].startswith("# "):
+            # keep first paragraph, insert Today after first blank line
+            new_content = original.strip() + "\\n\\n"  # fallback
+            # Try a cleaner insert: after first two lines
+            lines = original.splitlines()
+            insert_at = 1
+            # find first blank line
+            for i, ln in enumerate(lines):
+                if ln.strip() == "":
+                    insert_at = i + 1
+                    break
+            new_lines = lines[:insert_at] + [""] + today_block.splitlines() + [""] + lines[insert_at:]
+            new_content = "\\n".join(new_lines).strip() + "\\n"
+        else:
+            new_content = today_block + "\\n" + original
+
+    with open(README_PATH, "w", encoding="utf-8") as f:
+        f.write(new_content)
+
+
+def main() -> None:
+    cfg = load_config()
+    days_back = int(cfg.get("days_back", 2))
+    per_topic_cap = int(cfg.get("max_results_per_topic", 20))
+    categories = list(cfg.get("categories", []))
+    topics: Dict[str, List[str]] = cfg.get("topics", {})
+
+    db = load_db()
+    seen = set(db.get("seen_ids", []))
+
+    # Collect recent papers across categories
+    recent: List[Paper] = []
+    for cat in categories:
+        try:
+            papers = arxiv_query(cat, max_results=250)
+            for p in papers:
+                if not is_recent(p, days_back=days_back):
+                    # because sorted by submittedDate desc, can break early
+                    continue
+                recent.append(p)
+        except Exception as e:
+            print(f"[WARN] Failed category {cat}: {e}")
+
+    # Deduplicate across categories by arxiv_id (versioned IDs may differ; keep full id)
+    uniq: Dict[str, Paper] = {}
+    for p in recent:
+        # normalize base id without version for dedup
+        base_id = re.sub(r"v\\d+$", "", p.arxiv_id)
+        if base_id not in uniq or p.updated > uniq[base_id].updated:
+            uniq[base_id] = p
+    papers = list(uniq.values())
+
+    sections: Dict[str, List[str]] = {t: [] for t in topics.keys()}
+
+    # Match into topics with keyword filter; also avoid duplicates across topics by "best match" score
+    # We'll assign each paper to the topic with the most matched keywords.
+    assignments: Dict[str, Tuple[str, List[str]]] = {}  # base_id -> (topic, matched)
+    for p in papers:
+        base_id = re.sub(r"v\\d+$", "", p.arxiv_id)
+        if base_id in seen:
+            continue
+
+        best_topic = None
+        best_matched: List[str] = []
+        for topic, kws in topics.items():
+            matched = match_keywords(p, kws)
+            if len(matched) > len(best_matched):
+                best_matched = matched
+                best_topic = topic
+
+        if best_topic and best_matched:
+            assignments[base_id] = (best_topic, best_matched)
+
+    # Build markdown per topic with cap
+    per_topic_counts = {t: 0 for t in topics.keys()}
+    # Sort assignments by published desc
+    sorted_items = sorted(assignments.items(), key=lambda kv: papers_sort_key(kv[0], uniq), reverse=True)
+
+    for base_id, (topic, matched) in sorted_items:
+        if per_topic_counts[topic] >= per_topic_cap:
+            continue
+        p = uniq[base_id]
+        sections[topic].append(format_paper_md(p, matched))
+        per_topic_counts[topic] += 1
+        seen.add(base_id)
+
+    # Save db
+    db["seen_ids"] = sorted(list(seen))[-50000:]  # keep last N ids
+    save_db(db)
+
+    today = dt.datetime.now(dt.timezone.utc).date().isoformat()
+    digest_path = write_daily_digest(today, sections)
+    digest_rel = os.path.relpath(digest_path, REPO_ROOT)
+
+    update_readme(today, digest_rel, sections)
+
+    print(f"Updated: {digest_rel}")
+    total = sum(len(v) for v in sections.values())
+    print(f"New papers added: {total}")
+
+
+def papers_sort_key(base_id: str, uniq: Dict[str, Paper]) -> dt.datetime:
+    p = uniq[base_id]
+    pub = p.published
+    if pub.tzinfo is None:
+        pub = pub.replace(tzinfo=dt.timezone.utc)
+    return pub
+
+
+if __name__ == "__main__":
+    main()

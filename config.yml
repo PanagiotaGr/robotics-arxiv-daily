@@ -1,0 +1,133 @@
+# Robotics ArXiv Daily configuration
+
+# How many days back to consider as "new"
+days_back: 2
+
+# Maximum papers per topic per run (keeps the digest readable)
+max_results_per_topic: 20
+
+# arXiv categories to query (broad robotics coverage)
+categories:
+  - cs.RO        # Robotics
+  - cs.CV        # Computer Vision
+  - cs.AI        # AI
+  - cs.LG        # Machine Learning
+  - eess.IV      # Intelligent Vehicles
+  - eess.SP      # Signal Processing
+  - stat.ML      # ML (stats)
+
+# Topic buckets: each bucket is a name + list of keywords
+topics:
+  Autonomous Driving & AV:
+    - autonomous driving
+    - self-driving
+    - intelligent vehicles
+    - perception
+    - motion forecasting
+    - trajectory planning
+    - behavior prediction
+    - end-to-end driving
+    - lane detection
+    - 3d detection
+    - multi-object tracking
+    - occupancy
+    - BEV
+    - bird's-eye view
+    - HD map
+    - mapless
+    - nuScenes
+    - Waymo
+    - KITTI
+    - Argoverse
+    - OpenDrive
+
+  Drones & Aerial Robotics:
+    - drone
+    - UAV
+    - aerial robotics
+    - quadrotor
+    - visual-inertial
+    - VIO
+    - aerial mapping
+    - autonomous flight
+    - landing
+    - obstacle avoidance
+
+  SLAM, Localization & Mapping:
+    - SLAM
+    - localization
+    - mapping
+    - loop closure
+    - LiDAR SLAM
+    - visual SLAM
+    - LiDAR-inertial
+    - place recognition
+    - pose graph
+    - odometry
+
+  Navigation, Planning & Control:
+    - navigation
+    - motion planning
+    - path planning
+    - replanning
+    - model predictive control
+    - MPC
+    - optimal control
+    - sampling-based planning
+    - RRT
+    - A*
+    - D*
+    - risk-aware
+    - safe planning
+
+  Manipulation & Grasping:
+    - manipulation
+    - grasp
+    - grasping
+    - dexterous
+    - tactile
+    - in-hand manipulation
+    - pick and place
+
+  Robot Learning (RL, IL, Foundation Models):
+    - reinforcement learning
+    - imitation learning
+    - policy learning
+    - diffusion policy
+    - behavior cloning
+    - foundation model
+    - vision-language-action
+    - VLA
+    - LLM
+    - instruction following
+
+  Multi-Robot & Swarms:
+    - multi-robot
+    - swarm
+    - coordination
+    - task allocation
+    - distributed
+    - consensus
+
+  Safety, Robustness, Uncertainty:
+    - safety
+    - safe
+    - uncertainty
+    - calibration
+    - out-of-distribution
+    - robustness
+    - adversarial
+    - intrusion detection
+    - fault detection
+    - anomaly detection
+
+  3D Gaussian Splatting & Neural Rendering (Robotics):
+    - gaussian splatting
+    - 3d gaussian splatting
+    - 3DGS
+    - neural rendering
+    - radiance field
+    - NeRF
+    - novel view synthesis
+    - photogrammetry
+    - 3D reconstruction
