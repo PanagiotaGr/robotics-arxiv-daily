@@ -1,0 +1,112 @@
+# SLAM, Localization & Mapping
+
+**Last update:** 2026-01-14
+
+> Auto-generated. Edit `config.yml` to change keywords/topics.
+
+## Latest
+
+- **Translating Light-Sheet Microscopy Images to Virtual H&E Using CycleGAN**
+  - Authors: Yanhua Zhao
+  - Published: 2026-01-13 | Category: `cs.CV`
+  - Links: [arXiv](https://arxiv.org/abs/2601.08776v1) | [PDF](https://arxiv.org/pdf/2601.08776v1)
+  - Matched: mapping
+- **Salience-SGG: Enhancing Unbiased Scene Graph Generation with Iterative Salience Estimation**
+  - Authors: Runfeng Qu, Ole Hall, Pia K Bideau, Julie Ouerfelli-Ethier, Martin Rolfs, Klaus Obermayer, Olaf Hellwich
+  - Published: 2026-01-13 | Category: `cs.CV`
+  - Links: [arXiv](https://arxiv.org/abs/2601.08728v1) | [PDF](https://arxiv.org/pdf/2601.08728v1)
+  - Matched: localization
+- **Real-Time Localization Framework for Autonomous Basketball Robots**
+  - Authors: Naren Medarametla, Sreejon Mondal
+  - Published: 2026-01-13 | Category: `cs.RO`
+  - Links: [arXiv](https://arxiv.org/abs/2601.08713v1) | [PDF](https://arxiv.org/pdf/2601.08713v1)
+  - Matched: localization
+- **ViDoRe V3: A Comprehensive Evaluation of Retrieval Augmented Generation in Complex Real-World Scenarios**
+  - Authors: António Loison, Quentin Macé, Antoine Edy, Victor Xing, Tom Balough, Gabriel Moreira, Bo Liu, Manuel Faysse et al.
+  - Published: 2026-01-13 | Category: `cs.AI`
+  - Links: [arXiv](https://arxiv.org/abs/2601.08620v1) | [PDF](https://arxiv.org/pdf/2601.08620v1)
+  - Matched: localization
+- **Keyframe-based Dense Mapping with the Graph of View-Dependent Local Maps**
+  - Authors: Krzysztof Zielinski, Dominik Belter
+  - Published: 2026-01-13 | Category: `cs.RO`
+  - Links: [arXiv](https://arxiv.org/abs/2601.08520v1) | [PDF](https://arxiv.org/pdf/2601.08520v1)
+  - Matched: mapping, loop closure, pose graph
+- **AME-2: Agile and Generalized Legged Locomotion via Attention-Based Neural Map Encoding**
+  - Authors: Chong Zhang, Victor Klemm, Fan Yang, Marco Hutter
+  - Published: 2026-01-13 | Category: `cs.RO`
+  - Links: [arXiv](https://arxiv.org/abs/2601.08485v1) | [PDF](https://arxiv.org/pdf/2601.08485v1)
+  - Matched: mapping, odometry
+- **An Explainable Two Stage Deep Learning Framework for Pericoronitis Assessment in Panoramic Radiographs Using YOLOv8 and ResNet-50**
+  - Authors: Ajo Babu George, Pranav S, Kunal Agarwal
+  - Published: 2026-01-13 | Category: `cs.CV`
+  - Links: [arXiv](https://arxiv.org/abs/2601.08401v1) | [PDF](https://arxiv.org/pdf/2601.08401v1)
+  - Matched: localization
+- **Movable Antenna for Integrating Near-field Channel Estimation and Localization**
+  - Authors: Chongjia Sun, Ziwei Wan, Lipeng Zhu, Zhenyu Xiao, Zhen Gao, Rui Zhang
+  - Published: 2026-01-13 | Category: `cs.IT`
+  - Links: [arXiv](https://arxiv.org/abs/2601.08357v1) | [PDF](https://arxiv.org/pdf/2601.08357v1)
+  - Matched: localization
+- **Tissue Classification and Whole-Slide Images Analysis via Modeling of the Tumor Microenvironment and Biological Pathways**
+  - Authors: Junzhuo Liu, Xuemei Du, Daniel Reisenbuchler, Ye Chen, Markus Eckstein, Christian Matek, Friedrich Feuerhake, Dorit Merhof
+  - Published: 2026-01-13 | Category: `cs.CV`
+  - Links: [arXiv](https://arxiv.org/abs/2601.08336v1) | [PDF](https://arxiv.org/pdf/2601.08336v1)
+  - Matched: localization
+- **Disentangling History and Propagation Dependencies in Cross-Subject Knee Contact Stress Prediction Using a Shared MeshGraphNet Backbone**
+  - Authors: Zhengye Pan, Jianwei Zuo, Jiajia Luo
+  - Published: 2026-01-13 | Category: `q-bio.QM`
+  - Links: [arXiv](https://arxiv.org/abs/2601.08318v1) | [PDF](https://arxiv.org/pdf/2601.08318v1)
+  - Matched: localization
+- **DNF: Dual-Layer Nested Fingerprinting for Large Language Model Intellectual Property Protection**
+  - Authors: Zhenhua Xu, Yiran Zhao, Mengting Zhong, Dezhang Kong, Changting Lin, Tong Qiao, Meng Han
+  - Published: 2026-01-13 | Category: `cs.CR`
+  - Links: [arXiv](https://arxiv.org/abs/2601.08223v1) | [PDF](https://arxiv.org/pdf/2601.08223v1)
+  - Matched: mapping
+- **FUME: Fused Unified Multi-Gas Emission Network for Livestock Rumen Acidosis Detection**
+  - Authors: Taminul Islam, Toqi Tahamid Sarker, Mohamed Embaby, Khaled R Ahmed, Amer AbuGhazaleh
+  - Published: 2026-01-13 | Category: `cs.CV`
+  - Links: [arXiv](https://arxiv.org/abs/2601.08205v1) | [PDF](https://arxiv.org/pdf/2601.08205v1)
+  - Matched: slam
+- **GI-Bench: A Panoramic Benchmark Revealing the Knowledge-Experience Dissociation of Multimodal Large Language Models in Gastrointestinal Endoscopy Against Clinical Standards**
+  - Authors: Yan Zhu, Te Luo, Pei-Yao Fu, Zhen Zhang, Zi-Long Wang, Yi-Fan Qu, Zi-Han Geng, Jia-Qi Xu et al.
+  - Published: 2026-01-13 | Category: `cs.CV`
+  - Links: [arXiv](https://arxiv.org/abs/2601.08183v1) | [PDF](https://arxiv.org/pdf/2601.08183v1)
+  - Matched: localization
+- **Second-order Gaussian directional derivative representations for image high-resolution corner detection**
+  - Authors: Dongbo Xie, Junjie Qiu, Changming Sun, Weichuan Zhang
+  - Published: 2026-01-13 | Category: `cs.CV`
+  - Links: [arXiv](https://arxiv.org/abs/2601.08182v1) | [PDF](https://arxiv.org/pdf/2601.08182v1)
+  - Matched: localization
+- **CogniMap3D: Cognitive 3D Mapping and Rapid Retrieval**
+  - Authors: Feiran Wang, Junyi Wu, Dawen Cai, Yuan Hong, Yan Yan
+  - Published: 2026-01-13 | Category: `cs.CV`
+  - Links: [arXiv](https://arxiv.org/abs/2601.08175v1) | [PDF](https://arxiv.org/pdf/2601.08175v1)
+  - Matched: mapping
+- **Robust Subpixel Localization of Diagonal Markers in Large-Scale Navigation via Multi-Layer Screening and Adaptive Matching**
+  - Authors: Jing Tao, Banglei Guan, Yang Shang, Shunkun Liang, Qifeng Yu
+  - Published: 2026-01-13 | Category: `cs.RO`
+  - Links: [arXiv](https://arxiv.org/abs/2601.08161v1) | [PDF](https://arxiv.org/pdf/2601.08161v1)
+  - Matched: localization
+- **Efficient Incremental SLAM via Information-Guided and Selective Optimization**
+  - Authors: Reza Arablouei
+  - Published: 2026-01-13 | Category: `cs.RO`
+  - Links: [arXiv](https://arxiv.org/abs/2601.08110v1) | [PDF](https://arxiv.org/pdf/2601.08110v1)
+  - Matched: slam
+- **CSQL: Mapping Documents into Causal Databases**
+  - Authors: Sridhar Mahadevan
+  - Published: 2026-01-13 | Category: `cs.DB`
+  - Links: [arXiv](https://arxiv.org/abs/2601.08109v1) | [PDF](https://arxiv.org/pdf/2601.08109v1)
+  - Matched: mapping
+- **DRL-based Power Allocation in LiDAL-Assisted RLNC-NOMA OWC Systems**
+  - Authors: Ahmed A. Hassan, Ahmad Adnan Qidan, Taisir Elgorashi, Jaafar Elmirghani
+  - Published: 2026-01-12 | Category: `eess.SY`
+  - Links: [arXiv](https://arxiv.org/abs/2601.08060v1) | [PDF](https://arxiv.org/pdf/2601.08060v1)
+  - Matched: localization
+- **Rescind: Countering Image Misconduct in Biomedical Publications with Vision-Language and State-Space Modeling**
+  - Authors: Soumyaroop Nandi, Prem Natarajan
+  - Published: 2026-01-12 | Category: `cs.CV`
+  - Links: [arXiv](https://arxiv.org/abs/2601.08040v1) | [PDF](https://arxiv.org/pdf/2601.08040v1)
+  - Matched: localization
+
+---
+
+Back to main page: [README](../README.md)

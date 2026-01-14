@@ -1,0 +1,112 @@
+# Safety, Robustness, Uncertainty
+
+**Last update:** 2026-01-14
+
+> Auto-generated. Edit `config.yml` to change keywords/topics.
+
+## Latest
+
+- **APEX-SWE**
+  - Authors: Abhi Kottamasu, Akul Datta, Aakash Barthwal, Chirag Mahapatra, Ajay Arun, Adarsh Hiremath, Brendan Foody, Bertie Vidgen
+  - Published: 2026-01-13 | Category: `cs.SE`
+  - Links: [arXiv](https://arxiv.org/abs/2601.08806v1) | [PDF](https://arxiv.org/pdf/2601.08806v1)
+  - Matched: uncertainty
+- **Enabling Population-Based Architectures for Neural Combinatorial Optimization**
+  - Authors: Andoni Irazusta Garmendia, Josu Ceberio, Alexander Mendiburu
+  - Published: 2026-01-13 | Category: `cs.NE`
+  - Links: [arXiv](https://arxiv.org/abs/2601.08696v1) | [PDF](https://arxiv.org/pdf/2601.08696v1)
+  - Matched: robustness
+- **All Required, In Order: Phase-Level Evaluation for AI-Human Dialogue in Healthcare and Beyond**
+  - Authors: Shubham Kulkarni, Alexander Lyzhov, Shiva Chaitanya, Preetam Joshi
+  - Published: 2026-01-13 | Category: `cs.AI`
+  - Links: [arXiv](https://arxiv.org/abs/2601.08690v1) | [PDF](https://arxiv.org/pdf/2601.08690v1)
+  - Matched: safe
+- **TRACE: Reconstruction-Based Anomaly Detection in Ensemble and Time-Dependent Simulations**
+  - Authors: Hamid Gadirov, Martijn Westra, Steffen Frey
+  - Published: 2026-01-13 | Category: `cs.LG`
+  - Links: [arXiv](https://arxiv.org/abs/2601.08659v1) | [PDF](https://arxiv.org/pdf/2601.08659v1)
+  - Matched: anomaly detection
+- **RULERS: Locked Rubrics and Evidence-Anchored Scoring for Robust LLM Evaluation**
+  - Authors: Yihan Hong, Huaiyuan Yao, Bolin Shen, Wanpeng Xu, Hua Wei, Yushun Dong
+  - Published: 2026-01-13 | Category: `cs.CL`
+  - Links: [arXiv](https://arxiv.org/abs/2601.08654v1) | [PDF](https://arxiv.org/pdf/2601.08654v1)
+  - Matched: calibration, adversarial
+- **Safe Language Generation in the Limit**
+  - Authors: Antonios Anastasopoulos, Giuseppe Ateniese, Evgenios M. Kornaropoulos
+  - Published: 2026-01-13 | Category: `cs.CL`
+  - Links: [arXiv](https://arxiv.org/abs/2601.08648v1) | [PDF](https://arxiv.org/pdf/2601.08648v1)
+  - Matched: safe
+- **Provably Safe Reinforcement Learning using Entropy Regularizer**
+  - Authors: Abhijit Mazumdar, Rafal Wisniewski, Manuela L. Bujorianu
+  - Published: 2026-01-13 | Category: `cs.LG`
+  - Links: [arXiv](https://arxiv.org/abs/2601.08646v1) | [PDF](https://arxiv.org/pdf/2601.08646v1)
+  - Matched: safety, safe, uncertainty
+- **SafeRedir: Prompt Embedding Redirection for Robust Unlearning in Image Generation Models**
+  - Authors: Renyang Liu, Kangjie Chen, Han Qiu, Jie Zhang, Kwok-Yan Lam, Tianwei Zhang, See-Kiong Ng
+  - Published: 2026-01-13 | Category: `cs.CV`
+  - Links: [arXiv](https://arxiv.org/abs/2601.08623v1) | [PDF](https://arxiv.org/pdf/2601.08623v1)
+  - Matched: safety, safe, robustness, adversarial
+- **SoC: Semantic Orthogonal Calibration for Test-Time Prompt Tuning**
+  - Authors: Leo Fillioux, Omprakash Chakraborty, Ismail Ben Ayed, Paul-Henry Cournède, Stergios Christodoulidis, Maria Vakalopoulou, Jose Dolz
+  - Published: 2026-01-13 | Category: `cs.CV`
+  - Links: [arXiv](https://arxiv.org/abs/2601.08617v1) | [PDF](https://arxiv.org/pdf/2601.08617v1)
+  - Matched: uncertainty, calibration
+- **SfMamba: Efficient Source-Free Domain Adaptation via Selective Scan Modeling**
+  - Authors: Xi Chen, Hongxun Yao, Sicheng Zhao, Jiankun Zhu, Jing Jiang, Kui Jiang
+  - Published: 2026-01-13 | Category: `cs.CV`
+  - Links: [arXiv](https://arxiv.org/abs/2601.08608v1) | [PDF](https://arxiv.org/pdf/2601.08608v1)
+  - Matched: robustness
+- **Sample Complexity of Composite Quantum Hypothesis Testing**
+  - Authors: Jacob Paul Simpson, Efstratios Palias, Sharu Theresa Jose
+  - Published: 2026-01-13 | Category: `quant-ph`
+  - Links: [arXiv](https://arxiv.org/abs/2601.08588v1) | [PDF](https://arxiv.org/pdf/2601.08588v1)
+  - Matched: uncertainty
+- **VideoHEDGE: Entropy-Based Hallucination Detection for Video-VLMs via Semantic Clustering and Spatiotemporal Perturbations**
+  - Authors: Sushant Gautam, Cise Midoglu, Vajira Thambawita, Michael A. Riegler, Pål Halvorsen
+  - Published: 2026-01-13 | Category: `cs.CV`
+  - Links: [arXiv](https://arxiv.org/abs/2601.08557v1) | [PDF](https://arxiv.org/pdf/2601.08557v1)
+  - Matched: uncertainty, calibration
+- **Contrastive and Multi-Task Learning on Noisy Brain Signals with Nonlinear Dynamical Signatures**
+  - Authors: Sucheta Ghosh, Zahra Monfared, Felix Dietrich
+  - Published: 2026-01-13 | Category: `cs.LG`
+  - Links: [arXiv](https://arxiv.org/abs/2601.08549v1) | [PDF](https://arxiv.org/pdf/2601.08549v1)
+  - Matched: robustness
+- **QP-Based Control of an Underactuated Aerial Manipulator under Constraints**
+  - Authors: Nesserine Laribi, Mohammed Rida Mokhtari, Abdelaziz Benallegue, Abdelhafid El-Hadri, Mehdi Benallegue
+  - Published: 2026-01-13 | Category: `cs.RO`
+  - Links: [arXiv](https://arxiv.org/abs/2601.08523v1) | [PDF](https://arxiv.org/pdf/2601.08523v1)
+  - Matched: safety, safe, robustness
+- **EfficientFSL: Enhancing Few-Shot Classification via Query-Only Tuning in Vision Transformers**
+  - Authors: Wenwen Liao, Hang Ruan
+  - Published: 2026-01-13 | Category: `cs.CV`
+  - Links: [arXiv](https://arxiv.org/abs/2601.08499v1) | [PDF](https://arxiv.org/pdf/2601.08499v1)
+  - Matched: robustness
+- **BenchOverflow: Measuring Overflow in Large Language Models via Plain-Text Prompts**
+  - Authors: Erin Feiglin, Nir Hutnik, Raz Lapid
+  - Published: 2026-01-13 | Category: `cs.CL`
+  - Links: [arXiv](https://arxiv.org/abs/2601.08490v1) | [PDF](https://arxiv.org/pdf/2601.08490v1)
+  - Matched: robustness, adversarial
+- **An IoT-Enabled Smart Aquarium System for Real-Time Water Quality Monitoring and Automated Feeding**
+  - Authors: MD Fatin Ishraque Ayon, Sabrin Nahar, Ataur Rahman, Md. Taslim Arif, Abdul Hasib, A. S. M. Ahsanul Sarkar Akib
+  - Published: 2026-01-13 | Category: `cs.CV`
+  - Links: [arXiv](https://arxiv.org/abs/2601.08484v1) | [PDF](https://arxiv.org/pdf/2601.08484v1)
+  - Matched: anomaly detection
+- **Cross-modal Proxy Evolving for OOD Detection with Vision-Language Models**
+  - Authors: Hao Tang, Yu Liu, Shuanglin Yan, Fei Shen, Shengfeng He, Jing Qin
+  - Published: 2026-01-13 | Category: `cs.CV`
+  - Links: [arXiv](https://arxiv.org/abs/2601.08476v1) | [PDF](https://arxiv.org/pdf/2601.08476v1)
+  - Matched: out-of-distribution
+- **Towards Safer Mobile Agents: Scalable Generation and Evaluation of Diverse Scenarios for VLMs**
+  - Authors: Takara Taniguchi, Kuniaki Saito, Atsushi Hashimoto
+  - Published: 2026-01-13 | Category: `cs.CV`
+  - Links: [arXiv](https://arxiv.org/abs/2601.08470v1) | [PDF](https://arxiv.org/pdf/2601.08470v1)
+  - Matched: safe
+- **Zero-Shot Distracted Driver Detection via Vision Language Models with Double Decoupling**
+  - Authors: Takamichi Miyata, Sumiko Miyata, Andrew Morris
+  - Published: 2026-01-13 | Category: `cs.CV`
+  - Links: [arXiv](https://arxiv.org/abs/2601.08467v1) | [PDF](https://arxiv.org/pdf/2601.08467v1)
+  - Matched: safety, safe
+
+---
+
+Back to main page: [README](../README.md)

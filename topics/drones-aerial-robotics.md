@@ -1,0 +1,112 @@
+# Drones & Aerial Robotics
+
+**Last update:** 2026-01-14
+
+> Auto-generated. Edit `config.yml` to change keywords/topics.
+
+## Latest
+
+- **Reasoning Matters for 3D Visual Grounding**
+  - Authors: Hsiang-Wei Huang, Kuang-Ming Chen, Wenhao Chai, Cheng-Yen Yang, Jen-Hao Cheng, Jenq-Neng Hwang
+  - Published: 2026-01-13 | Category: `cs.CV`
+  - Links: [arXiv](https://arxiv.org/abs/2601.08811v1) | [PDF](https://arxiv.org/pdf/2601.08811v1)
+  - Matched: vio
+- **Uncovering Political Bias in Large Language Models using Parliamentary Voting Records**
+  - Authors: Jieying Chen, Karen de Jong, Andreas Poole, Jan Burakowski, Elena Elderson Nosti, Joep Windt, Chendi Wang
+  - Published: 2026-01-13 | Category: `cs.AI`
+  - Links: [arXiv](https://arxiv.org/abs/2601.08785v1) | [PDF](https://arxiv.org/pdf/2601.08785v1)
+  - Matched: vio
+- **RMBRec: Robust Multi-Behavior Recommendation towards Target Behaviors**
+  - Authors: Miaomiao Cai, Zhijie Zhang, Junfeng Fang, Zhiyong Cheng, Xiang Wang, Meng Wang
+  - Published: 2026-01-13 | Category: `cs.IR`
+  - Links: [arXiv](https://arxiv.org/abs/2601.08705v1) | [PDF](https://arxiv.org/pdf/2601.08705v1)
+  - Matched: vio
+- **Evaluating the Ability of Explanations to Disambiguate Models in a Rashomon Set**
+  - Authors: Kaivalya Rawal, Eoin Delaney, Zihao Fu, Sandra Wachter, Chris Russell
+  - Published: 2026-01-13 | Category: `cs.AI`
+  - Links: [arXiv](https://arxiv.org/abs/2601.08703v1) | [PDF](https://arxiv.org/pdf/2601.08703v1)
+  - Matched: vio
+- **Além do Desempenho: Um Estudo da Confiabilidade de Detectores de Deepfakes**
+  - Authors: Lucas Lopes, Rayson Laroca, André Grégio
+  - Published: 2026-01-13 | Category: `cs.CV`
+  - Links: [arXiv](https://arxiv.org/abs/2601.08674v1) | [PDF](https://arxiv.org/pdf/2601.08674v1)
+  - Matched: vio
+- **Why AI Alignment Failure Is Structural: Learned Human Interaction Structures and AGI as an Endogenous Evolutionary Shock**
+  - Authors: Didier Sornette, Sandro Claudio Lera, Ke Wu
+  - Published: 2026-01-13 | Category: `cs.AI`
+  - Links: [arXiv](https://arxiv.org/abs/2601.08673v1) | [PDF](https://arxiv.org/pdf/2601.08673v1)
+  - Matched: vio
+- **EviNAM: Intelligibility and Uncertainty via Evidential Neural Additive Models**
+  - Authors: Sören Schleibaum, Anton Frederik Thielmann, Julian Teusch, Benjamin Säfken, Jörg P. Müller
+  - Published: 2026-01-13 | Category: `cs.LG`
+  - Links: [arXiv](https://arxiv.org/abs/2601.08556v1) | [PDF](https://arxiv.org/pdf/2601.08556v1)
+  - Matched: vio
+- **Reducing Compute Waste in LLMs through Kernel-Level DVFS**
+  - Authors: Jeffrey Spaan, Kuan-Hsun Chen, Ana-Lucia Varbanescu
+  - Published: 2026-01-13 | Category: `cs.PF`
+  - Links: [arXiv](https://arxiv.org/abs/2601.08539v1) | [PDF](https://arxiv.org/pdf/2601.08539v1)
+  - Matched: vio
+- **Airborne Particle Communication Through Time-varying Diffusion-Advection Channels**
+  - Authors: Fatih Merdan, Ozgur B. Akan
+  - Published: 2026-01-13 | Category: `eess.SP`
+  - Links: [arXiv](https://arxiv.org/abs/2601.08534v1) | [PDF](https://arxiv.org/pdf/2601.08534v1)
+  - Matched: vio
+- **CD^2: Constrained Dataset Distillation for Few-Shot Class-Incremental Learning**
+  - Authors: Kexin Bao, Daichi Zhang, Hansong Zhang, Yong Li, Yutao Yue, Shiming Ge
+  - Published: 2026-01-13 | Category: `cs.CV`
+  - Links: [arXiv](https://arxiv.org/abs/2601.08519v1) | [PDF](https://arxiv.org/pdf/2601.08519v1)
+  - Matched: vio
+- **PKI: Prior Knowledge-Infused Neural Network for Few-Shot Class-Incremental Learning**
+  - Authors: Kexin Baoa, Fanzhao Lin, Zichen Wang, Yong Li, Dan Zeng, Shiming Ge
+  - Published: 2026-01-13 | Category: `cs.CV`
+  - Links: [arXiv](https://arxiv.org/abs/2601.08493v1) | [PDF](https://arxiv.org/pdf/2601.08493v1)
+  - Matched: vio
+- **Drone Surveillance via Coordinated Beam Sweeping in MIMO-ISAC Networks**
+  - Authors: Palatip Jopanya, Diana P. M. Osorio, Erik G. Larsson
+  - Published: 2026-01-13 | Category: `eess.SP`
+  - Links: [arXiv](https://arxiv.org/abs/2601.08483v1) | [PDF](https://arxiv.org/pdf/2601.08483v1)
+  - Matched: drone
+- **M3-BENCH: Process-Aware Evaluation of LLM Agents Social Behaviors in Mixed-Motive Games**
+  - Authors: Sixiong Xie, Zhuofan Shi, Haiyang Shen, Gang Huang, Yun Ma, Xiang Jing
+  - Published: 2026-01-13 | Category: `cs.AI`
+  - Links: [arXiv](https://arxiv.org/abs/2601.08462v1) | [PDF](https://arxiv.org/pdf/2601.08462v1)
+  - Matched: vio
+- **An Under-Explored Application for Explainable Multimodal Misogyny Detection in code-mixed Hindi-English**
+  - Authors: Sargam Yadav, Abhishek Kaushik, Kevin Mc Daid
+  - Published: 2026-01-13 | Category: `cs.AI`
+  - Links: [arXiv](https://arxiv.org/abs/2601.08457v1) | [PDF](https://arxiv.org/pdf/2601.08457v1)
+  - Matched: vio
+- **Real2Sim based on Active Perception with automatically VLM-generated Behavior Trees**
+  - Authors: Alessandro Adami, Sebastian Zudaire, Ruggero Carli, Pietro Falco
+  - Published: 2026-01-13 | Category: `cs.RO`
+  - Links: [arXiv](https://arxiv.org/abs/2601.08454v1) | [PDF](https://arxiv.org/pdf/2601.08454v1)
+  - Matched: vio
+- **Divide and Conquer: Static-Dynamic Collaboration for Few-Shot Class-Incremental Learning**
+  - Authors: Kexin Bao, Daichi Zhang, Yong Li, Dan Zeng, Shiming Ge
+  - Published: 2026-01-13 | Category: `cs.CV`
+  - Links: [arXiv](https://arxiv.org/abs/2601.08448v1) | [PDF](https://arxiv.org/pdf/2601.08448v1)
+  - Matched: vio
+- **Noise-Adaptive Regularization for Robust Multi-Label Remote Sensing Image Classification**
+  - Authors: Tom Burgert, Julia Henkel, Begüm Demir
+  - Published: 2026-01-13 | Category: `cs.CV`
+  - Links: [arXiv](https://arxiv.org/abs/2601.08446v1) | [PDF](https://arxiv.org/pdf/2601.08446v1)
+  - Matched: vio
+- **Teaching Robots Like Dogs: Learning Agile Navigation from Luring, Gesture, and Speech**
+  - Authors: Taerim Yoon, Dongho Kang, Jin Cheng, Fatemeh Zargarbashi, Yijiang Huang, Minsung Ahn, Stelian Coros, Sungjoon Choi
+  - Published: 2026-01-13 | Category: `cs.RO`
+  - Links: [arXiv](https://arxiv.org/abs/2601.08422v1) | [PDF](https://arxiv.org/pdf/2601.08422v1)
+  - Matched: vio
+- **Hybrid Distillation with CoT Guidance for Edge-Drone Control Code Generation**
+  - Authors: Yizhan Feng, Hichem Snoussi, Yuhang Wang, Jing Teng, Abel Cherouat, Tian Wang
+  - Published: 2026-01-13 | Category: `cs.AI`
+  - Links: [arXiv](https://arxiv.org/abs/2601.08412v1) | [PDF](https://arxiv.org/pdf/2601.08412v1)
+  - Matched: drone, uav
+- **Edge-Optimized Multimodal Learning for UAV Video Understanding via BLIP-2**
+  - Authors: Yizhan Feng, Hichem Snoussi, Jing Teng, Jian Liu, Yuyang Wang, Abel Cherouat, Tian Wang
+  - Published: 2026-01-13 | Category: `cs.CV`
+  - Links: [arXiv](https://arxiv.org/abs/2601.08408v1) | [PDF](https://arxiv.org/pdf/2601.08408v1)
+  - Matched: drone, uav
+
+---
+
+Back to main page: [README](../README.md)
