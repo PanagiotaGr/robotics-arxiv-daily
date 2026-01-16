@@ -39,12 +39,14 @@ _Auto-generated. Edit `config.yml` to change topics/keywords._
 Updated: **2026-01-16**  
 Window: last **2** days
 
+
+<!-- BEGIN TODAY -->
 | Topic | Papers | Link |
 |------|--------|------|
-| Autonomous Driving & AV | 18 | view |
-| SLAM, Localization & Mapping | 12 | view |
-| Drones & Aerial Robotics | 9 | view |
-| 3D Gaussian Splatting & Neural Rendering (Robotics) | 4 | view |
+| Autonomous Driving & AV |  | view |
+| SLAM, Localization & Mapping |  | view |
+| Drones & Aerial Robotics |  | view |
+| 3D Gaussian Splatting & Neural Rendering (Robotics) |  |  |
 
 ### Browse by topic (links)
 
