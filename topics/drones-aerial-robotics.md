@@ -1,112 +1,54 @@
 # Drones & Aerial Robotics
 
-**Last update:** 2026-01-16
+_Robotics arXiv Daily_
 
-> Auto-generated. Edit `config.yml` to change keywords/topics.
+_Updated: 2026-01-16 14:06 UTC_
 
-## Latest
+Total papers shown: **4**
 
-- **DInf-Grid: A Neural Differential Equation Solver with Differentiable Feature Grids**
-  - Authors: Navami Kairanda, Shanthika Naik, Marc Habermann, Avinash Sharma, Christian Theobalt, Vladislav Golyanik
-  - Published: 2026-01-15 | Category: `cs.LG`
-  - Links: [arXiv](https://arxiv.org/abs/2601.10715v1) | [PDF](https://arxiv.org/pdf/2601.10715v1)
-  - Matched: imu
-- **Communication-Efficient and Privacy-Adaptable Mechanism -- a Federated Learning Scheme with Convergence Analysis**
-  - Authors: Chun Hei Michael Shiu, Chih Wei Ling
-  - Published: 2026-01-15 | Category: `cs.LG`
-  - Links: [arXiv](https://arxiv.org/abs/2601.10701v1) | [PDF](https://arxiv.org/pdf/2601.10701v1)
-  - Matched: imu
-- **Data-driven stochastic reduced-order modeling of parametrized dynamical systems**
-  - Authors: Andrew F. Ilersich, Kevin Course, Prasanth B. Nair
-  - Published: 2026-01-15 | Category: `cs.LG`
-  - Links: [arXiv](https://arxiv.org/abs/2601.10690v1) | [PDF](https://arxiv.org/pdf/2601.10690v1)
-  - Matched: imu
-- **Breaking the Storage-Bandwidth Tradeoff in Distributed Storage with Quantum Entanglement**
-  - Authors: Lei Hu, Mohamed Nomeir, Alptug Aytekin, Sennur Ulukus
-  - Published: 2026-01-15 | Category: `cs.IT`
-  - Links: [arXiv](https://arxiv.org/abs/2601.10676v1) | [PDF](https://arxiv.org/pdf/2601.10676v1)
-  - Matched: imu
-- **Adjusted Similarity Measures and a Violation of Expectations**
-  - Authors: William L. Lippitt, Edward J. Bedrick, Nichole E. Carlson
-  - Published: 2026-01-15 | Category: `stat.ME`
-  - Links: [arXiv](https://arxiv.org/abs/2601.10641v1) | [PDF](https://arxiv.org/pdf/2601.10641v1)
-  - Matched: imu
-- **Achievable Degrees of Freedom Analysis and Optimization in Massive MIMO via Characteristic Mode Analysis**
-  - Authors: Shaohua Yue, Siyu Miao, Shuhao Zeng, Fenghan Lin, Boya Di
-  - Published: 2026-01-15 | Category: `eess.SP`
-  - Links: [arXiv](https://arxiv.org/abs/2601.10576v1) | [PDF](https://arxiv.org/pdf/2601.10576v1)
-  - Matched: imu
-- **causalfe: Causal Forests with Fixed Effects in Python**
-  - Authors: Harry Aytug
-  - Published: 2026-01-15 | Category: `econ.EM`
-  - Links: [arXiv](https://arxiv.org/abs/2601.10555v1) | [PDF](https://arxiv.org/pdf/2601.10555v1)
-  - Matched: imu
-- **Model See, Model Do? Exposure-Aware Evaluation of Bug-vs-Fix Preference in Code LLMs**
-  - Authors: Ali Al-Kaswan, Claudio Spiess, Prem Devanbu, Arie van Deursen, Maliheh Izadi
-  - Published: 2026-01-15 | Category: `cs.SE`
-  - Links: [arXiv](https://arxiv.org/abs/2601.10496v1) | [PDF](https://arxiv.org/pdf/2601.10496v1)
-  - Matched: imu
-- **CROCS: A Two-Stage Clustering Framework for Behaviour-Centric Consumer Segmentation with Smart Meter Data**
-  - Authors: Luke W. Yerbury, Ricardo J. G. B. Campello, G. C. Livingston, Mark Goldsworthy, Lachlan O'Neil
-  - Published: 2026-01-15 | Category: `stat.ML`
-  - Links: [arXiv](https://arxiv.org/abs/2601.10494v1) | [PDF](https://arxiv.org/pdf/2601.10494v1)
-  - Matched: imu
-- **Urban Socio-Semantic Segmentation with Vision-Language Reasoning**
-  - Authors: Yu Wang, Yi Wang, Rui Dai, Yujie Wang, Kaikui Liu, Xiangxiang Chu, Yansheng Li
-  - Published: 2026-01-15 | Category: `cs.CV`
-  - Links: [arXiv](https://arxiv.org/abs/2601.10477v1) | [PDF](https://arxiv.org/pdf/2601.10477v1)
-  - Matched: imu
-- **CHORAL: Traversal-Aware Planning for Safe and Efficient Heterogeneous Multi-Robot Routing**
-  - Authors: David Morilla-Cabello, Eduardo Montijano
-  - Published: 2026-01-15 | Category: `cs.RO`
-  - Links: [arXiv](https://arxiv.org/abs/2601.10340v1) | [PDF](https://arxiv.org/pdf/2601.10340v1)
-  - Matched: imu
-- **An analytic theory of convolutional neural network inverse problems solvers**
-  - Authors: Minh Hai Nguyen, Quoc Bao Do, Edouard Pauwels, Pierre Weiss
-  - Published: 2026-01-15 | Category: `cs.CV`
-  - Links: [arXiv](https://arxiv.org/abs/2601.10334v1) | [PDF](https://arxiv.org/pdf/2601.10334v1)
-  - Matched: imu
-- **Queueing-Aware Optimization of Reasoning Tokens for Accuracy-Latency Trade-offs in LLM Servers**
-  - Authors: Emre Ozbas, Melih Bastopcu
-  - Published: 2026-01-15 | Category: `cs.LG`
-  - Links: [arXiv](https://arxiv.org/abs/2601.10274v1) | [PDF](https://arxiv.org/pdf/2601.10274v1)
-  - Matched: imu
-- **MoST: Mixing Speech and Text with Modality-Aware Mixture of Experts**
-  - Authors: Yuxuan Lou, Kai Yang, Yang You
-  - Published: 2026-01-15 | Category: `cs.CL`
-  - Links: [arXiv](https://arxiv.org/abs/2601.10272v1) | [PDF](https://arxiv.org/pdf/2601.10272v1)
-  - Matched: imu
-- **Sim2Real Deep Transfer for Per-Device CFO Calibration**
-  - Authors: Jingze Zheng, Zhiguo Shi, Shibo He, Chaojie Gu
-  - Published: 2026-01-15 | Category: `eess.SP`
-  - Links: [arXiv](https://arxiv.org/abs/2601.10264v1) | [PDF](https://arxiv.org/pdf/2601.10264v1)
-  - Matched: imu
-- **NoReGeo: Non-Reasoning Geometry Benchmark**
-  - Authors: Irina Abdullaeva, Anton Vasiliuk, Elizaveta Goncharova, Temurbek Rahmatullaev, Zagorulko Ivan, Maxim Kurkin, Andrey Kuznetsov
-  - Published: 2026-01-15 | Category: `cs.AI`
-  - Links: [arXiv](https://arxiv.org/abs/2601.10254v1) | [PDF](https://arxiv.org/pdf/2601.10254v1)
-  - Matched: imu
-- **X-SAM: Boosting Sharpness-Aware Minimization with Dominant-Eigenvector Gradient Correction**
-  - Authors: Hongru Duan, Yongle Chen, Lei Guan
-  - Published: 2026-01-15 | Category: `cs.LG`
-  - Links: [arXiv](https://arxiv.org/abs/2601.10251v1) | [PDF](https://arxiv.org/pdf/2601.10251v1)
-  - Matched: imu
-- **Attend to what I say: Highlighting relevant content on slides**
-  - Authors: Megha Mariam K M, C. V. Jawahar
-  - Published: 2026-01-15 | Category: `cs.CV`
-  - Links: [arXiv](https://arxiv.org/abs/2601.10244v1) | [PDF](https://arxiv.org/pdf/2601.10244v1)
-  - Matched: imu
-- **Fundamental Limitations of Favorable Privacy-Utility Guarantees for DP-SGD**
-  - Authors: Murat Bilgehan Ertan, Marten van Dijk
-  - Published: 2026-01-15 | Category: `cs.LG`
-  - Links: [arXiv](https://arxiv.org/abs/2601.10237v1) | [PDF](https://arxiv.org/pdf/2601.10237v1)
-  - Matched: imu
-- **Proactive Local-Minima-Free Robot Navigation: Blending Motion Prediction with Safe Control**
-  - Authors: Yifan Xue, Ze Zhang, Knut Åkesson, Nadia Figueroa
-  - Published: 2026-01-15 | Category: `cs.RO`
-  - Links: [arXiv](https://arxiv.org/abs/2601.10233v1) | [PDF](https://arxiv.org/pdf/2601.10233v1)
-  - Matched: imu, obstacle avoidance
 
 ---
 
-Back to main page: [README](../README.md)
+- **Terrain-Adaptive Mobile 3D Printing with Hierarchical Control**  
+  Shuangshan Nors Li, J. Nathan Kutz  
+  _2026-01-15_ · https://arxiv.org/abs/2601.10208v1 · `cs.RO`  
+  <details><summary>Abstract</summary>
+
+  Mobile 3D printing on unstructured terrain remains challenging due to the conflict between platform mobility and deposition precision. Existing gantry-based systems achieve high accuracy but lack mobility, while mobile platforms struggle to maintain print quality on uneven ground. We present a framework that tightly integrates AI-driven disturbance prediction with multi-modal sensor fusion and hierarchical hardware control, forming a closed-loop perception-learning-actuation system. The AI module learns terrain-to-perturbation mappings from IMU, vision, and depth sensors, enabling proactive compensation rather than reactive correction. This intelligence is embedded into a three-layer control architecture: path planning, predictive chassis-manipulator coordination, and precision hardware execution. Through outdoor experiments on terrain with slopes and surface irregularities, we demonstrate sub-centimeter printing accuracy while maintaining full platform mobility. This AI-hardware integration establishes a practical foundation for autonomous construction in unstructured environments.
+
+  </details>
+
+
+
+- **Service Provisioning and Path Planning with Obstacle Avoidance for Low-Altitude Wireless Networks**  
+  Senning Wan, Bin Li, Hongbin Chen, Lei Liu  
+  _2026-01-15_ · https://arxiv.org/abs/2601.10179v1 · `eess.SP`  
+  <details><summary>Abstract</summary>
+
+  This paper investigates the three-dimensional (3D) deployment of uncrewed aerial vehicles (UAVs) as aerial base stations in heterogeneous communication networks under constraints imposed by diverse ground obstacles. Given the diverse data demands of user equipments (UEs), a user satisfaction model is developed to provide personalized services. In particular, when a UE is located within a ground obstacle, the UAV must approach the obstacle boundary to ensure reliable service quality. Considering constraints such as UAV failures due to battery depletion, heterogeneous UEs, and obstacles, we aim to maximize overall user satisfaction by jointly optimizing the 3D trajectories of UAVs, transmit beamforming vectors, and binary association indicators between UAVs and UEs. To address the complexity and dynamics of the problem, a block coordinate descent method is adopted to decompose it into two subproblems. The beamforming subproblem is efficiently addressed via a bisection-based water-filling algorithm. For the trajectory and association subproblem, we design a deep reinforcement learning algorithm based on proximal policy optimization to learn an adaptive control policy. Simulation results demonstrate that the proposed scheme outperforms baseline schemes in terms of convergence speed and overall system performance. Moreover, it achieves efficient association and accurate obstacle avoidance.
+
+  </details>
+
+
+
+- **Proactive Local-Minima-Free Robot Navigation: Blending Motion Prediction with Safe Control**  
+  Yifan Xue, Ze Zhang, Knut Åkesson, Nadia Figueroa  
+  _2026-01-15_ · https://arxiv.org/abs/2601.10233v1 · `cs.RO`  
+  <details><summary>Abstract</summary>
+
+  This work addresses the challenge of safe and efficient mobile robot navigation in complex dynamic environments with concave moving obstacles. Reactive safe controllers like Control Barrier Functions (CBFs) design obstacle avoidance strategies based only on the current states of the obstacles, risking future collisions. To alleviate this problem, we use Gaussian processes to learn barrier functions online from multimodal motion predictions of obstacles generated by neural networks trained with energy-based learning. The learned barrier functions are then fed into quadratic programs using modulated CBFs (MCBFs), a local-minimum-free version of CBFs, to achieve safe and efficient navigation. The proposed framework makes two key contributions. First, it develops a prediction-to-barrier function online learning pipeline. Second, it introduces an autonomous parameter tuning algorithm that adapts MCBFs to deforming, prediction-based barrier functions. The framework is evaluated in both simulations and real-world experiments, consistently outperforming baselines and demonstrating superior safety and efficiency in crowded dynamic environments.
+
+  </details>
+
+
+
+- **DeepUrban: Interaction-Aware Trajectory Prediction and Planning for Automated Driving by Aerial Imagery**  
+  Constantin Selzer, Fabian B. Flohr  
+  _2026-01-15_ · https://arxiv.org/abs/2601.10554v1 · `cs.CV`  
+  <details><summary>Abstract</summary>
+
+  The efficacy of autonomous driving systems hinges critically on robust prediction and planning capabilities. However, current benchmarks are impeded by a notable scarcity of scenarios featuring dense traffic, which is essential for understanding and modeling complex interactions among road users. To address this gap, we collaborated with our industrial partner, DeepScenario, to develop DeepUrban-a new drone dataset designed to enhance trajectory prediction and planning benchmarks focusing on dense urban settings. DeepUrban provides a rich collection of 3D traffic objects, extracted from high-resolution images captured over urban intersections at approximately 100 meters altitude. The dataset is further enriched with comprehensive map and scene information to support advanced modeling and simulation tasks. We evaluate state-of-the-art (SOTA) prediction and planning methods, and conducted experiments on generalization capabilities. Our findings demonstrate that adding DeepUrban to nuScenes can boost the accuracy of vehicle predictions and planning, achieving improvements up to 44.1 % / 44.3% on the ADE / FDE metrics. Website: https://iv.ee.hm.edu/deepurban
+
+  </details>
+
+

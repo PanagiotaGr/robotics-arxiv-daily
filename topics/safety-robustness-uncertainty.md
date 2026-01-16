@@ -1,112 +1,208 @@
 # Safety, Robustness, Uncertainty
 
-**Last update:** 2026-01-16
+_Robotics arXiv Daily_
 
-> Auto-generated. Edit `config.yml` to change keywords/topics.
+_Updated: 2026-01-16 14:06 UTC_
 
-## Latest
+Total papers shown: **18**
 
-- **See Less, Drive Better: Generalizable End-to-End Autonomous Driving via Foundation Models Stochastic Patch Selection**
-  - Authors: Amir Mallak, Erfan Aasi, Shiva Sreeram, Tsun-Hsuan Wang, Daniela Rus, Alaa Maalouf
-  - Published: 2026-01-15 | Category: `cs.CV`
-  - Links: [arXiv](https://arxiv.org/abs/2601.10707v1) | [PDF](https://arxiv.org/pdf/2601.10707v1)
-  - Matched: out-of-distribution, robustness
-- **ProbFM: Probabilistic Time Series Foundation Model with Uncertainty Decomposition**
-  - Authors: Arundeep Chinta, Lucas Vinh Tran, Jay Katukuri
-  - Published: 2026-01-15 | Category: `cs.LG`
-  - Links: [arXiv](https://arxiv.org/abs/2601.10591v1) | [PDF](https://arxiv.org/pdf/2601.10591v1)
-  - Matched: uncertainty, calibration
-- **Adversarial Evasion Attacks on Computer Vision using SHAP Values**
-  - Authors: Frank Mollard, Marcus Becker, Florian Roehrbein
-  - Published: 2026-01-15 | Category: `cs.CV`
-  - Links: [arXiv](https://arxiv.org/abs/2601.10587v1) | [PDF](https://arxiv.org/pdf/2601.10587v1)
-  - Matched: adversarial
-- **Defending Large Language Models Against Jailbreak Attacks via In-Decoding Safety-Awareness Probing**
-  - Authors: Yinzhi Zhao, Ming Wang, Shi Feng, Xiaocui Yang, Daling Wang, Yifei Zhang
-  - Published: 2026-01-15 | Category: `cs.AI`
-  - Links: [arXiv](https://arxiv.org/abs/2601.10543v1) | [PDF](https://arxiv.org/pdf/2601.10543v1)
-  - Matched: safety, safe
-- **A Safety Report on GPT-5.2, Gemini 3 Pro, Qwen3-VL, Doubao 1.8, Grok 4.1 Fast, Nano Banana Pro, and Seedream 4.5**
-  - Authors: Xingjun Ma, Yixu Wang, Hengyuan Xu, Yutao Wu, Yifan Ding, Yunhan Zhao, Zilong Wang, Jiabin Hua et al.
-  - Published: 2026-01-15 | Category: `cs.AI`
-  - Links: [arXiv](https://arxiv.org/abs/2601.10527v1) | [PDF](https://arxiv.org/pdf/2601.10527v1)
-  - Matched: safety, safe, adversarial
-- **Transformer-Based Cognitive Radio: Adaptive Modulation Strategies Using Transformer Models**
-  - Authors: Andrea Melis, Andrea Piroddi, Roberto Girau
-  - Published: 2026-01-15 | Category: `cs.LG`
-  - Links: [arXiv](https://arxiv.org/abs/2601.10519v1) | [PDF](https://arxiv.org/pdf/2601.10519v1)
-  - Matched: robustness
-- **Contextual StereoSet: Stress-Testing Bias Alignment Robustness in Large Language Models**
-  - Authors: Abhinaba Basu, Pavan Chakraborty
-  - Published: 2026-01-15 | Category: `cs.CL`
-  - Links: [arXiv](https://arxiv.org/abs/2601.10460v1) | [PDF](https://arxiv.org/pdf/2601.10460v1)
-  - Matched: robustness, adversarial
-- **SurgGoal: Rethinking Surgical Planning Evaluation via Goal-Satisfiability**
-  - Authors: Ruochen Li, Kun Yuan, Yufei Xia, Yue Zhou, Qingyu Lu, Weihang Li, Youxiang Zhu, Nassir Navab
-  - Published: 2026-01-15 | Category: `cs.CL`
-  - Links: [arXiv](https://arxiv.org/abs/2601.10455v1) | [PDF](https://arxiv.org/pdf/2601.10455v1)
-  - Matched: safety, safe
-- **CS-GBA: A Critical Sample-based Gradient-guided Backdoor Attack for Offline Reinforcement Learning**
-  - Authors: Yuanjie Zhao, Junnan Qiu, Yue Ding, Jie Li
-  - Published: 2026-01-15 | Category: `cs.LG`
-  - Links: [arXiv](https://arxiv.org/abs/2601.10407v1) | [PDF](https://arxiv.org/pdf/2601.10407v1)
-  - Matched: safety, safe, out-of-distribution
-- **LatentRefusal: Latent-Signal Refusal for Unanswerable Text-to-SQL Queries**
-  - Authors: Xuancheng Ren, Shijing Hu, Zhihui Lu, Jiangqi Huang, Qiang Duan
-  - Published: 2026-01-15 | Category: `cs.AI`
-  - Links: [arXiv](https://arxiv.org/abs/2601.10398v1) | [PDF](https://arxiv.org/pdf/2601.10398v1)
-  - Matched: safety, safe, uncertainty
-- **Online identification of nonlinear time-varying systems with uncertain information**
-  - Authors: He Ren, Gaowei Yan, Hang Liu, Lifeng Cao, Zhijun Zhao, Gang Dang
-  - Published: 2026-01-15 | Category: `cs.RO`
-  - Links: [arXiv](https://arxiv.org/abs/2601.10379v1) | [PDF](https://arxiv.org/pdf/2601.10379v1)
-  - Matched: uncertainty, robustness
-- **FastStair: Learning to Run Up Stairs with Humanoid Robots**
-  - Authors: Yan Liu, Tao Yu, Haolin Song, Hongbo Zhu, Nianzong Hu, Yuzhi Hao, Xiuyong Yao, Xizhe Zang et al.
-  - Published: 2026-01-15 | Category: `cs.RO`
-  - Links: [arXiv](https://arxiv.org/abs/2601.10365v1) | [PDF](https://arxiv.org/pdf/2601.10365v1)
-  - Matched: safety, safe
-- **PLGC: Pseudo-Labeled Graph Condensation**
-  - Authors: Jay Nandy, Arnab Kumar Mondal, Anuj Rathore, Mahesh Chandran
-  - Published: 2026-01-15 | Category: `cs.LG`
-  - Links: [arXiv](https://arxiv.org/abs/2601.10358v1) | [PDF](https://arxiv.org/pdf/2601.10358v1)
-  - Matched: robustness
-- **EvoMorph: Counterfactual Explanations for Continuous Time-Series Extrinsic Regression Applied to Photoplethysmography**
-  - Authors: Mesut Ceylan, Alexis Tabin, Patrick Langer, Elgar Fleisch, Filipe Barata
-  - Published: 2026-01-15 | Category: `cs.LG`
-  - Links: [arXiv](https://arxiv.org/abs/2601.10356v1) | [PDF](https://arxiv.org/pdf/2601.10356v1)
-  - Matched: uncertainty
-- **Low-Complexity Blind Estimator of SNR and MSE for mmWave Multi-Antenna Communications**
-  - Authors: Hanyoung Park, Ji-Woong Choi
-  - Published: 2026-01-15 | Category: `eess.SP`
-  - Links: [arXiv](https://arxiv.org/abs/2601.10331v1) | [PDF](https://arxiv.org/pdf/2601.10331v1)
-  - Matched: robustness
-- **SRAW-Attack: Space-Reweighted Adversarial Warping Attack for SAR Target Recognition**
-  - Authors: Yiming Zhang, Weibo Qin, Yuntian Liu, Feng Wang
-  - Published: 2026-01-15 | Category: `cs.CV`
-  - Links: [arXiv](https://arxiv.org/abs/2601.10324v1) | [PDF](https://arxiv.org/pdf/2601.10324v1)
-  - Matched: robustness, adversarial
-- **ROMA: Real-time Omni-Multimodal Assistant with Interactive Streaming Understanding**
-  - Authors: Xueyun Tian, Wei Li, Bingbing Xu, Heng Dong, Yuanzhuo Wang, Huawei Shen
-  - Published: 2026-01-15 | Category: `cs.CV`
-  - Links: [arXiv](https://arxiv.org/abs/2601.10323v1) | [PDF](https://arxiv.org/pdf/2601.10323v1)
-  - Matched: robustness
-- **Hierarchical Refinement of Universal Multimodal Attacks on Vision-Language Models**
-  - Authors: Peng-Fei Zhang, Zi Huang
-  - Published: 2026-01-15 | Category: `cs.CV`
-  - Links: [arXiv](https://arxiv.org/abs/2601.10313v1) | [PDF](https://arxiv.org/pdf/2601.10313v1)
-  - Matched: adversarial
-- **We Need a More Robust Classifier: Dual Causal Learning Empowers Domain-Incremental Time Series Classification**
-  - Authors: Zhipeng Liu, Peibo Duan, Xuan Tang, Haodong Jing, Mingyang Geng, Yongsheng Huang, Jialu Xu, Bin Zhang et al.
-  - Published: 2026-01-15 | Category: `cs.LG`
-  - Links: [arXiv](https://arxiv.org/abs/2601.10312v1) | [PDF](https://arxiv.org/pdf/2601.10312v1)
-  - Matched: robustness
-- **Early Fault Detection on CMAPSS with Unsupervised LSTM Autoencoders**
-  - Authors: P. Sánchez, K. Reyes, B. Radu, E. Fernández
-  - Published: 2026-01-15 | Category: `cs.LG`
-  - Links: [arXiv](https://arxiv.org/abs/2601.10269v1) | [PDF](https://arxiv.org/pdf/2601.10269v1)
-  - Matched: fault detection
 
 ---
 
-Back to main page: [README](../README.md)
+- **Proactive Local-Minima-Free Robot Navigation: Blending Motion Prediction with Safe Control**  
+  Yifan Xue, Ze Zhang, Knut Åkesson, Nadia Figueroa  
+  _2026-01-15_ · https://arxiv.org/abs/2601.10233v1 · `cs.RO`  
+  <details><summary>Abstract</summary>
+
+  This work addresses the challenge of safe and efficient mobile robot navigation in complex dynamic environments with concave moving obstacles. Reactive safe controllers like Control Barrier Functions (CBFs) design obstacle avoidance strategies based only on the current states of the obstacles, risking future collisions. To alleviate this problem, we use Gaussian processes to learn barrier functions online from multimodal motion predictions of obstacles generated by neural networks trained with energy-based learning. The learned barrier functions are then fed into quadratic programs using modulated CBFs (MCBFs), a local-minimum-free version of CBFs, to achieve safe and efficient navigation. The proposed framework makes two key contributions. First, it develops a prediction-to-barrier function online learning pipeline. Second, it introduces an autonomous parameter tuning algorithm that adapts MCBFs to deforming, prediction-based barrier functions. The framework is evaluated in both simulations and real-world experiments, consistently outperforming baselines and demonstrating superior safety and efficiency in crowded dynamic environments.
+
+  </details>
+
+
+
+- **SatMap: Revisiting Satellite Maps as Prior for Online HD Map Construction**  
+  Kanak Mazumder, Fabian B. Flohr  
+  _2026-01-15_ · https://arxiv.org/abs/2601.10512v1 · `cs.CV`  
+  <details><summary>Abstract</summary>
+
+  Online high-definition (HD) map construction is an essential part of a safe and robust end-to-end autonomous driving (AD) pipeline. Onboard camera-based approaches suffer from limited depth perception and degraded accuracy due to occlusion. In this work, we propose SatMap, an online vectorized HD map estimation method that integrates satellite maps with multi-view camera observations and directly predicts a vectorized HD map for downstream prediction and planning modules. Our method leverages lane-level semantics and texture from satellite imagery captured from a Bird's Eye View (BEV) perspective as a global prior, effectively mitigating depth ambiguity and occlusion. In our experiments on the nuScenes dataset, SatMap achieves 34.8% mAP performance improvement over the camera-only baseline and 8.5% mAP improvement over the camera-LiDAR fusion baseline. Moreover, we evaluate our model in long-range and adverse weather conditions to demonstrate the advantages of using a satellite prior map. Source code will be available at https://iv.ee.hm.edu/satmap/.
+
+  </details>
+
+
+
+- **CHORAL: Traversal-Aware Planning for Safe and Efficient Heterogeneous Multi-Robot Routing**  
+  David Morilla-Cabello, Eduardo Montijano  
+  _2026-01-15_ · https://arxiv.org/abs/2601.10340v1 · `cs.RO`  
+  <details><summary>Abstract</summary>
+
+  Monitoring large, unknown, and complex environments with autonomous robots poses significant navigation challenges, where deploying teams of heterogeneous robots with complementary capabilities can substantially improve both mission performance and feasibility. However, effectively modeling how different robotic platforms interact with the environment requires rich, semantic scene understanding. Despite this, existing approaches often assume homogeneous robot teams or focus on discrete task compatibility rather than continuous routing. Consequently, scene understanding is not fully integrated into routing decisions, limiting their ability to adapt to the environment and to leverage each robot's strengths. In this paper, we propose an integrated semantic-aware framework for coordinating heterogeneous robots. Starting from a reconnaissance flight, we build a metric-semantic map using open-vocabulary vision models and use it to identify regions requiring closer inspection and capability-aware paths for each platform to reach them. These are then incorporated into a heterogeneous vehicle routing formulation that jointly assigns inspection tasks and computes robot trajectories. Experiments in simulation and in a real inspection mission with three robotic platforms demonstrate the effectiveness of our approach in planning safer and more efficient routes by explicitly accounting for each platform's navigation capabilities. We release our framework, CHORAL, as open source to support reproducibility and deployment of diverse robot teams.
+
+  </details>
+
+
+
+- **SVII-3D: Advancing Roadside Infrastructure Inventory with Decimeter-level 3D Localization and Comprehension from Sparse Street Imagery**  
+  Chong Liu, Luxuan Fu, Yang Jia, Zhen Dong, Bisheng Yang  
+  _2026-01-15_ · https://arxiv.org/abs/2601.10535v1 · `cs.CV`  
+  <details><summary>Abstract</summary>
+
+  The automated creation of digital twins and precise asset inventories is a critical task in smart city construction and facility lifecycle management. However, utilizing cost-effective sparse imagery remains challenging due to limited robustness, inaccurate localization, and a lack of fine-grained state understanding. To address these limitations, SVII-3D, a unified framework for holistic asset digitization, is proposed. First, LoRA fine-tuned open-set detection is fused with a spatial-attention matching network to robustly associate observations across sparse views. Second, a geometry-guided refinement mechanism is introduced to resolve structural errors, achieving precise decimeter-level 3D localization. Third, transcending static geometric mapping, a Vision-Language Model agent leveraging multi-modal prompting is incorporated to automatically diagnose fine-grained operational states. Experiments demonstrate that SVII-3D significantly improves identification accuracy and minimizes localization errors. Consequently, this framework offers a scalable, cost-effective solution for high-fidelity infrastructure digitization, effectively bridging the gap between sparse perception and automated intelligent maintenance.
+
+  </details>
+
+
+
+- **BikeActions: An Open Platform and Benchmark for Cyclist-Centric VRU Action Recognition**  
+  Max A. Buettner, Kanak Mazumder, Luca Koecher, Mario Finkbeiner, Sebastian Niebler, Fabian B. Flohr  
+  _2026-01-15_ · https://arxiv.org/abs/2601.10521v1 · `cs.CV`  
+  <details><summary>Abstract</summary>
+
+  Anticipating the intentions of Vulnerable Road Users (VRUs) is a critical challenge for safe autonomous driving (AD) and mobile robotics. While current research predominantly focuses on pedestrian crossing behaviors from a vehicle's perspective, interactions within dense shared spaces remain underexplored. To bridge this gap, we introduce FUSE-Bike, the first fully open perception platform of its kind. Equipped with two LiDARs, a camera, and GNSS, it facilitates high-fidelity, close-range data capture directly from a cyclist's viewpoint. Leveraging this platform, we present BikeActions, a novel multi-modal dataset comprising 852 annotated samples across 5 distinct action classes, specifically tailored to improve VRU behavior modeling. We establish a rigorous benchmark by evaluating state-of-the-art graph convolution and transformer-based models on our publicly released data splits, establishing the first performance baselines for this challenging task. We release the full dataset together with data curation tools, the open hardware design, and the benchmark code to foster future research in VRU action understanding under https://iv.ee.hm.edu/bikeactions/.
+
+  </details>
+
+
+
+- **RAG-3DSG: Enhancing 3D Scene Graphs with Re-Shot Guided Retrieval-Augmented Generation**  
+  Yue Chang, Rufeng Chen, Zhaofan Zhang, Yi Chen, Sihong Xie  
+  _2026-01-15_ · https://arxiv.org/abs/2601.10168v1 · `cs.CV`  
+  <details><summary>Abstract</summary>
+
+  Open-vocabulary 3D Scene Graph (3DSG) generation can enhance various downstream tasks in robotics, such as manipulation and navigation, by leveraging structured semantic representations. A 3DSG is constructed from multiple images of a scene, where objects are represented as nodes and relationships as edges. However, existing works for open-vocabulary 3DSG generation suffer from both low object-level recognition accuracy and speed, mainly due to constrained viewpoints, occlusions, and redundant surface density. To address these challenges, we propose RAG-3DSG to mitigate aggregation noise through re-shot guided uncertainty estimation and support object-level Retrieval-Augmented Generation (RAG) via reliable low-uncertainty objects. Furthermore, we propose a dynamic downsample-mapping strategy to accelerate cross-image object aggregation with adaptive granularity. Experiments on Replica dataset demonstrate that RAG-3DSG significantly improves node captioning accuracy in 3DSG generation while reducing the mapping time by two-thirds compared to the vanilla version.
+
+  </details>
+
+
+
+- **See Less, Drive Better: Generalizable End-to-End Autonomous Driving via Foundation Models Stochastic Patch Selection**  
+  Amir Mallak, Erfan Aasi, Shiva Sreeram, Tsun-Hsuan Wang, Daniela Rus, Alaa Maalouf  
+  _2026-01-15_ · https://arxiv.org/abs/2601.10707v1 · `cs.CV`  
+  <details><summary>Abstract</summary>
+
+  Recent advances in end-to-end autonomous driving show that policies trained on patch-aligned features extracted from foundation models generalize better to Out-of-Distribution (OOD). We hypothesize that due to the self-attention mechanism, each patch feature implicitly embeds/contains information from all other patches, represented in a different way and intensity, making these descriptors highly redundant. We quantify redundancy in such (BLIP2) features via PCA and cross-patch similarity: $90$% of variance is captured by $17/64$ principal components, and strong inter-token correlations are pervasive. Training on such overlapping information leads the policy to overfit spurious correlations, hurting OOD robustness. We present Stochastic-Patch-Selection (SPS), a simple yet effective approach for learning policies that are more robust, generalizable, and efficient. For every frame, SPS randomly masks a fraction of patch descriptors, not feeding them to the policy model, while preserving the spatial layout of the remaining patches. Thus, the policy is provided with different stochastic but complete views of the (same) scene: every random subset of patches acts like a different, yet still sensible, coherent projection of the world. The policy thus bases its decisions on features that are invariant to which specific tokens survive. Extensive experiments confirm that across all OOD scenarios, our method outperforms the state of the art (SOTA), achieving a $6.2$% average improvement and up to $20.4$% in closed-loop simulations, while being $2.4\times$ faster. We conduct ablations over masking rates and patch-feature reorganization, training and evaluating 9 systems, with 8 of them surpassing prior SOTA. Finally, we show that the same learned policy transfers to a physical, real-world car without any tuning.
+
+  </details>
+
+
+
+- **A Safety Report on GPT-5.2, Gemini 3 Pro, Qwen3-VL, Doubao 1.8, Grok 4.1 Fast, Nano Banana Pro, and Seedream 4.5**  
+  Xingjun Ma, Yixu Wang, Hengyuan Xu, Yutao Wu, Yifan Ding, Yunhan Zhao, Zilong Wang, Jiabin Hua, Ming Wen, Jianan Liu, et al.  
+  _2026-01-15_ · https://arxiv.org/abs/2601.10527v1 · `cs.AI`  
+  <details><summary>Abstract</summary>
+
+  The rapid evolution of Large Language Models (LLMs) and Multimodal Large Language Models (MLLMs) has produced substantial gains in reasoning, perception, and generative capability across language and vision. However, whether these advances yield commensurate improvements in safety remains unclear, in part due to fragmented evaluation practices limited to single modalities or threat models. In this report, we present an integrated safety evaluation of 7 frontier models: GPT-5.2, Gemini 3 Pro, Qwen3-VL, Doubao 1.8, Grok 4.1 Fast, Nano Banana Pro, and Seedream 4.5. We evaluate each model across language, vision-language, and image generation settings using a unified protocol that integrates benchmark evaluation, adversarial evaluation, multilingual evaluation, and compliance evaluation. Aggregating our evaluations into safety leaderboards and model safety profiles across multiple evaluation modes reveals a sharply heterogeneous safety landscape. While GPT-5.2 demonstrates consistently strong and balanced safety performance across evaluations, other models exhibit pronounced trade-offs among benchmark safety, adversarial alignment, multilingual generalization, and regulatory compliance. Both language and vision-language modalities show significant vulnerability under adversarial evaluation, with all models degrading substantially despite strong results on standard benchmarks. Text-to-image models achieve relatively stronger alignment in regulated visual risk categories, yet remain brittle under adversarial or semantically ambiguous prompts. Overall, these results show that safety in frontier models is inherently multidimensional--shaped by modality, language, and evaluation scheme, underscoring the need for standardized safety evaluations to accurately assess real-world risk and guide responsible model development and deployment.
+
+  </details>
+
+
+
+- **SurgGoal: Rethinking Surgical Planning Evaluation via Goal-Satisfiability**  
+  Ruochen Li, Kun Yuan, Yufei Xia, Yue Zhou, Qingyu Lu, Weihang Li, Youxiang Zhu, Nassir Navab  
+  _2026-01-15_ · https://arxiv.org/abs/2601.10455v1 · `cs.CL`  
+  <details><summary>Abstract</summary>
+
+  Surgical planning integrates visual perception, long-horizon reasoning, and procedural knowledge, yet it remains unclear whether current evaluation protocols reliably assess vision-language models (VLMs) in safety-critical settings. Motivated by a goal-oriented view of surgical planning, we define planning correctness via phase-goal satisfiability, where plan validity is determined by expert-defined surgical rules. Based on this definition, we introduce a multicentric meta-evaluation benchmark with valid procedural variations and invalid plans containing order and content errors. Using this benchmark, we show that sequence similarity metrics systematically misjudge planning quality, penalizing valid plans while failing to identify invalid ones. We therefore adopt a rule-based goal-satisfiability metric as a high-precision meta-evaluation reference to assess Video-LLMs under progressively constrained settings, revealing failures due to perception errors and under-constrained reasoning. Structural knowledge consistently improves performance, whereas semantic guidance alone is unreliable and benefits larger models only when combined with structural constraints.
+
+  </details>
+
+
+
+- **Advancing Adaptive Multi-Stage Video Anomaly Reasoning: A Benchmark Dataset and Method**  
+  Chao Huang, Benfeng Wang, Wei Wang, Jie Wen, Li Shen, Wenqi Ren, Yong Xu, Xiaochun Cao  
+  _2026-01-15_ · https://arxiv.org/abs/2601.10165v1 · `cs.CV`  
+  <details><summary>Abstract</summary>
+
+  Recent progress in reasoning capabilities of Multimodal Large Language Models(MLLMs) has highlighted their potential for performing complex video understanding tasks. However, in the domain of Video Anomaly Detection and Understanding (VAD&U), existing MLLM-based methods are largely limited to anomaly localization or post-hoc description, lacking explicit reasoning processes, risk awareness, and decision-oriented interpretation. To address this gap, we define a new task termed Video Anomaly Reasoning (VAR), which elevates video anomaly analysis from descriptive understanding to structured, multi-stage reasoning. VAR explicitly requires models to perform progressive reasoning over anomalous events before answering anomaly-related questions, encompassing visual perception, causal interpretation, and risk-aware decision making. To support this task, we present a new dataset with 8,641 videos, where each video is annotated with diverse question types corresponding to different reasoning depths, totaling more than 50,000 samples, making it one of the largest datasets for video anomaly. The annotations are based on a structured Perception-Cognition-Action Chain-of-Thought (PerCoAct-CoT), which formalizes domain-specific reasoning priors for video anomaly understanding. This design enables systematic evaluation of multi-stage and adaptive anomaly reasoning. In addition, we propose Anomaly-Aware Group Relative Policy Optimization to further enhance reasoning reliability under weak supervision. Building upon the proposed task and dataset, we develop an end-to-end MLLM-based VAR model termed Vad-R1-Plus, which supports adaptive hierarchical reasoning and risk-aware decision making. Extensive experiments demonstrate that the proposed benchmark and method effectively advance the reasoning capabilities of MLLMs on VAR tasks, outperforming both open-source and proprietary baselines.
+
+  </details>
+
+
+
+- **Adversarial Evasion Attacks on Computer Vision using SHAP Values**  
+  Frank Mollard, Marcus Becker, Florian Roehrbein  
+  _2026-01-15_ · https://arxiv.org/abs/2601.10587v1 · `cs.CV`  
+  <details><summary>Abstract</summary>
+
+  The paper introduces a white-box attack on computer vision models using SHAP values. It demonstrates how adversarial evasion attacks can compromise the performance of deep learning models by reducing output confidence or inducing misclassifications. Such attacks are particularly insidious as they can deceive the perception of an algorithm while eluding human perception due to their imperceptibility to the human eye. The proposed attack leverages SHAP values to quantify the significance of individual inputs to the output at the inference stage. A comparison is drawn between the SHAP attack and the well-known Fast Gradient Sign Method. We find evidence that SHAP attacks are more robust in generating misclassifications particularly in gradient hiding scenarios.
+
+  </details>
+
+
+
+- **Breaking Up with Normatively Monolithic Agency with GRACE: A Reason-Based Neuro-Symbolic Architecture for Safe and Ethical AI Alignment**  
+  Felix Jahn, Yannic Muskalla, Lisa Dargasz, Patrick Schramowski, Kevin Baum  
+  _2026-01-15_ · https://arxiv.org/abs/2601.10520v1 · `cs.AI`  
+  <details><summary>Abstract</summary>
+
+  As AI agents become increasingly autonomous, widely deployed in consequential contexts, and efficacious in bringing about real-world impacts, ensuring that their decisions are not only instrumentally effective but also normatively aligned has become critical. We introduce a neuro-symbolic reason-based containment architecture, Governor for Reason-Aligned ContainmEnt (GRACE), that decouples normative reasoning from instrumental decision-making and can contain AI agents of virtually any design. GRACE restructures decision-making into three modules: a Moral Module (MM) that determines permissible macro actions via deontic logic-based reasoning; a Decision-Making Module (DMM) that encapsulates the target agent while selecting instrumentally optimal primitive actions in accordance with derived macro actions; and a Guard that monitors and enforces moral compliance. The MM uses a reason-based formalism providing a semantic foundation for deontic logic, enabling interpretability, contestability, and justifiability. Its symbolic representation enriches the DMM's informational context and supports formal verification and statistical guarantees of alignment enforced by the Guard. We demonstrate GRACE on an example of a LLM therapy assistant, showing how it enables stakeholders to understand, contest, and refine agent behavior.
+
+  </details>
+
+
+
+- **NSR-Boost: A Neuro-Symbolic Residual Boosting Framework for Industrial Legacy Models**  
+  Ziming Dai, Dabiao Ma, Jinle Tong, Mengyuan Han, Jian Yang, Haojun Fei  
+  _2026-01-15_ · https://arxiv.org/abs/2601.10457v1 · `cs.AI`  
+  <details><summary>Abstract</summary>
+
+  Although the Gradient Boosted Decision Trees (GBDTs) dominate industrial tabular applications, upgrading legacy models in high-concurrency production environments still faces prohibitive retraining costs and systemic risks. To address this problem, we present NSR-Boost, a neuro-symbolic residual boosting framework designed specifically for industrial scenarios. Its core advantage lies in being "non-intrusive". It treats the legacy model as a frozen model and performs targeted repairs on "hard regions" where predictions fail. The framework comprises three key stages: first, finding hard regions through residuals, then generating interpretable experts by generating symbolic code structures using Large Language Model (LLM) and fine-tuning parameters using Bayesian optimization, and finally dynamically integrating experts with legacy model output through a lightweight aggregator. We report on the successful deployment of NSR-Boost within the core financial risk control system at Qfin Holdings. This framework not only significantly outperforms state-of-the-art (SOTA) baselines across six public datasets and one private dataset, more importantly, shows excellent performance gains on real-world online data. In conclusion, it effectively captures long-tail risks missed by traditional models and offers a safe, low-cost evolutionary paradigm for industry.
+
+  </details>
+
+
+
+- **FastStair: Learning to Run Up Stairs with Humanoid Robots**  
+  Yan Liu, Tao Yu, Haolin Song, Hongbo Zhu, Nianzong Hu, Yuzhi Hao, Xiuyong Yao, Xizhe Zang, Hua Chen, Jie Zhao  
+  _2026-01-15_ · https://arxiv.org/abs/2601.10365v1 · `cs.RO`  
+  <details><summary>Abstract</summary>
+
+  Running up stairs is effortless for humans but remains extremely challenging for humanoid robots due to the simultaneous requirements of high agility and strict stability. Model-free reinforcement learning (RL) can generate dynamic locomotion, yet implicit stability rewards and heavy reliance on task-specific reward shaping tend to result in unsafe behaviors, especially on stairs; conversely, model-based foothold planners encode contact feasibility and stability structure, but enforcing their hard constraints often induces conservative motion that limits speed. We present FastStair, a planner-guided, multi-stage learning framework that reconciles these complementary strengths to achieve fast and stable stair ascent. FastStair integrates a parallel model-based foothold planner into the RL training loop to bias exploration toward dynamically feasible contacts and to pretrain a safety-focused base policy. To mitigate planner-induced conservatism and the discrepancy between low- and high-speed action distributions, the base policy was fine-tuned into speed-specialized experts and then integrated via Low-Rank Adaptation (LoRA) to enable smooth operation across the full commanded-speed range. We deploy the resulting controller on the Oli humanoid robot, achieving stable stair ascent at commanded speeds up to 1.65 m/s and traversing a 33-step spiral staircase (17 cm rise per step) in 12 s, demonstrating robust high-speed performance on long staircases. Notably, the proposed approach served as the champion solution in the Canton Tower Robot Run Up Competition.
+
+  </details>
+
+
+
+- **ROMA: Real-time Omni-Multimodal Assistant with Interactive Streaming Understanding**  
+  Xueyun Tian, Wei Li, Bingbing Xu, Heng Dong, Yuanzhuo Wang, Huawei Shen  
+  _2026-01-15_ · https://arxiv.org/abs/2601.10323v1 · `cs.CV`  
+  <details><summary>Abstract</summary>
+
+  Recent Omni-multimodal Large Language Models show promise in unified audio, vision, and text modeling. However, streaming audio-video understanding remains challenging, as existing approaches suffer from disjointed capabilities: they typically exhibit incomplete modality support or lack autonomous proactive monitoring. To address this, we present ROMA, a real-time omni-multimodal assistant for unified reactive and proactive interaction. ROMA processes continuous inputs as synchronized multimodal units, aligning dense audio with discrete video frames to handle granularity mismatches. For online decision-making, we introduce a lightweight speak head that decouples response initiation from generation to ensure precise triggering without task conflict. We train ROMA with a curated streaming dataset and a two-stage curriculum that progressively optimizes for streaming format adaptation and proactive responsiveness. To standardize the fragmented evaluation landscape, we reorganize diverse benchmarks into a unified suite covering both proactive (alert, narration) and reactive (QA) settings. Extensive experiments across 12 benchmarks demonstrate ROMA achieves state-of-the-art performance on proactive tasks while competitive in reactive settings, validating its robustness in unified real-time omni-multimodal understanding.
+
+  </details>
+
+
+
+- **From Physical Degradation Models to Task-Aware All-in-One Image Restoration**  
+  Hu Gao, Xiaoning Lei, Xichen Xu, Xingjian Wang, Lizhuang Ma  
+  _2026-01-15_ · https://arxiv.org/abs/2601.10192v1 · `cs.CV`  
+  <details><summary>Abstract</summary>
+
+  All-in-one image restoration aims to adaptively handle multiple restoration tasks with a single trained model. Although existing methods achieve promising results by introducing prompt information or leveraging large models, the added learning modules increase system complexity and hinder real-time applicability. In this paper, we adopt a physical degradation modeling perspective and predict a task-aware inverse degradation operator for efficient all-in-one image restoration. The framework consists of two stages. In the first stage, the predicted inverse operator produces an initial restored image together with an uncertainty perception map that highlights regions difficult to reconstruct, ensuring restoration reliability. In the second stage, the restoration is further refined under the guidance of this uncertainty map. The same inverse operator prediction network is used in both stages, with task-aware parameters introduced after operator prediction to adapt to different degradation tasks. Moreover, by accelerating the convolution of the inverse operator, the proposed method achieves efficient all-in-one image restoration. The resulting tightly integrated architecture, termed OPIR, is extensively validated through experiments, demonstrating superior all-in-one restoration performance while remaining highly competitive on task-aligned restoration.
+
+  </details>
+
+
+
+- **History Is Not Enough: An Adaptive Dataflow System for Financial Time-Series Synthesis**  
+  Haochong Xia, Yao Long Teng, Regan Tan, Molei Qin, Xinrun Wang, Bo An  
+  _2026-01-15_ · https://arxiv.org/abs/2601.10143v1 · `cs.AI`  
+  <details><summary>Abstract</summary>
+
+  In quantitative finance, the gap between training and real-world performance-driven by concept drift and distributional non-stationarity-remains a critical obstacle for building reliable data-driven systems. Models trained on static historical data often overfit, resulting in poor generalization in dynamic markets. The mantra "History Is Not Enough" underscores the need for adaptive data generation that learns to evolve with the market rather than relying solely on past observations. We present a drift-aware dataflow system that integrates machine learning-based adaptive control into the data curation process. The system couples a parameterized data manipulation module comprising single-stock transformations, multi-stock mix-ups, and curation operations, with an adaptive planner-scheduler that employs gradient-based bi-level optimization to control the system. This design unifies data augmentation, curriculum learning, and data workflow management under a single differentiable framework, enabling provenance-aware replay and continuous data quality monitoring. Extensive experiments on forecasting and reinforcement learning trading tasks demonstrate that our framework enhances model robustness and improves risk-adjusted returns. The system provides a generalizable approach to adaptive data management and learning-guided workflow automation for financial data.
+
+  </details>
+
+
+
+- **MATRIX AS PLAN: Structured Logical Reasoning with Feedback-Driven Replanning**  
+  Ke Chen, Jiandian Zeng, Zihao Peng, Guo Li, Guangxue Zhang, Tian Wang  
+  _2026-01-15_ · https://arxiv.org/abs/2601.10101v1 · `cs.AI`  
+  <details><summary>Abstract</summary>
+
+  As knowledge and semantics on the web grow increasingly complex, enhancing Large Language Models (LLMs) comprehension and reasoning capabilities has become particularly important. Chain-of-Thought (CoT) prompting has been shown to enhance the reasoning capabilities of LLMs. However, it still falls short on logical reasoning tasks that rely on symbolic expressions and strict deductive rules. Neuro-symbolic methods address this gap by enforcing formal correctness through external solvers. Yet these solvers are highly format-sensitive, and small instabilities in model outputs can lead to frequent processing failures. LLM-driven approaches avoid parsing brittleness, but they lack structured representations and process-level error-correction mechanisms. To further enhance the logical reasoning capabilities of LLMs, we propose MatrixCoT, a structured CoT framework with a matrix-based plan. Specifically, we normalize and type natural language expressions, attach explicit citation fields, and introduce a matrix-based planning method to preserve global relations among steps. The plan becomes a verifiable artifact, making execution more stable. For verification, we also add a feedback-driven replanning mechanism. Under semantic-equivalence constraints, it identifies omissions and defects, rewrites and compresses the dependency matrix, and produces a more trustworthy final answer. Experiments on five logical-reasoning benchmarks and five LLMs show that, without relying on external solvers, MatrixCoT enhances both robustness and interpretability when tackling complex symbolic reasoning tasks, while maintaining competitive performance.
+
+  </details>
+
+

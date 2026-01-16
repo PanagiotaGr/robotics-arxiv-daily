@@ -1,62 +1,43 @@
 # Multi-Robot & Swarms
 
-**Last update:** 2026-01-16
+_Robotics arXiv Daily_
 
-> Auto-generated. Edit `config.yml` to change keywords/topics.
+_Updated: 2026-01-16 14:06 UTC_
 
-## Latest
+Total papers shown: **3**
 
-- **Distributed Perceptron under Bounded Staleness, Partial Participation, and Noisy Communication**
-  - Authors: Keval Jain, Anant Raj, Saurav Prakash, Girish Varma
-  - Published: 2026-01-15 | Category: `cs.LG`
-  - Links: [arXiv](https://arxiv.org/abs/2601.10705v1) | [PDF](https://arxiv.org/pdf/2601.10705v1)
-  - Matched: distributed
-- **Coarsening Causal DAG Models**
-  - Authors: Francisco Madaleno, Pratik Misra, Alex Markham
-  - Published: 2026-01-15 | Category: `stat.ML`
-  - Links: [arXiv](https://arxiv.org/abs/2601.10531v1) | [PDF](https://arxiv.org/pdf/2601.10531v1)
-  - Matched: distributed
-- **Codebook Design for Limited Feedback in Near-Field XL-MIMO Systems**
-  - Authors: Liujia Yao, Changsheng You, Zixuan Huang, Chao Zhou, Zhaohui Yang, Xiaoyang Li
-  - Published: 2026-01-15 | Category: `cs.IT`
-  - Links: [arXiv](https://arxiv.org/abs/2601.10391v1) | [PDF](https://arxiv.org/pdf/2601.10391v1)
-  - Matched: distributed
-- **Graph Regularized PCA**
-  - Authors: Antonio Briola, Marwin Schmidt, Fabio Caccioli, Carlos Ros Perez, James Singleton, Christian Michler, Tomaso Aste
-  - Published: 2026-01-15 | Category: `cs.LG`
-  - Links: [arXiv](https://arxiv.org/abs/2601.10199v1) | [PDF](https://arxiv.org/pdf/2601.10199v1)
-  - Matched: distributed
-- **CtD: Composition through Decomposition in Emergent Communication**
-  - Authors: Boaz Carmeli, Ron Meir, Yonatan Belinkov
-  - Published: 2026-01-15 | Category: `cs.AI`
-  - Links: [arXiv](https://arxiv.org/abs/2601.10169v1) | [PDF](https://arxiv.org/pdf/2601.10169v1)
-  - Matched: coordination
-- **MMPG: MoE-based Adaptive Multi-Perspective Graph Fusion for Protein Representation Learning**
-  - Authors: Yusong Wang, Jialun Shen, Zhihao Wu, Yicheng Xu, Shiyin Tan, Mingkun Xu, Changshuo Wang, Zixing Song et al.
-  - Published: 2026-01-15 | Category: `cs.AI`
-  - Links: [arXiv](https://arxiv.org/abs/2601.10157v1) | [PDF](https://arxiv.org/pdf/2601.10157v1)
-  - Matched: consensus
-- **CoCoPlan: Adaptive Coordination and Communication for Multi-robot Systems in Dynamic and Unknown Environments**
-  - Authors: Xintong Zhang, Junfeng Chen, Yuxiao Zhu, Bing Luo, Meng Guo
-  - Published: 2026-01-15 | Category: `cs.RO`
-  - Links: [arXiv](https://arxiv.org/abs/2601.10116v1) | [PDF](https://arxiv.org/pdf/2601.10116v1)
-  - Matched: multi-robot, coordination
-- **PID-Guided Partial Alignment for Multimodal Decentralized Federated Learning**
-  - Authors: Yanhang Shi, Xiaoyu Wang, Houwei Cao, Jian Li, Yong Liu
-  - Published: 2026-01-15 | Category: `cs.LG`
-  - Links: [arXiv](https://arxiv.org/abs/2601.10012v1) | [PDF](https://arxiv.org/pdf/2601.10012v1)
-  - Matched: coordination
-- **Distributed Hypothesis Testing Under A Covertness Constraint**
-  - Authors: Ismaila Salihou Adamou, Michèle Wigger
-  - Published: 2026-01-14 | Category: `eess.SP`
-  - Links: [arXiv](https://arxiv.org/abs/2601.09837v1) | [PDF](https://arxiv.org/pdf/2601.09837v1)
-  - Matched: distributed
-- **QFed: Parameter-Compact Quantum-Classical Federated Learning**
-  - Authors: Samar Abdelghani, Soumaya Cherkaoui
-  - Published: 2026-01-14 | Category: `cs.LG`
-  - Links: [arXiv](https://arxiv.org/abs/2601.09809v1) | [PDF](https://arxiv.org/pdf/2601.09809v1)
-  - Matched: distributed
 
 ---
 
-Back to main page: [README](../README.md)
+- **Terrain-Adaptive Mobile 3D Printing with Hierarchical Control**  
+  Shuangshan Nors Li, J. Nathan Kutz  
+  _2026-01-15_ · https://arxiv.org/abs/2601.10208v1 · `cs.RO`  
+  <details><summary>Abstract</summary>
+
+  Mobile 3D printing on unstructured terrain remains challenging due to the conflict between platform mobility and deposition precision. Existing gantry-based systems achieve high accuracy but lack mobility, while mobile platforms struggle to maintain print quality on uneven ground. We present a framework that tightly integrates AI-driven disturbance prediction with multi-modal sensor fusion and hierarchical hardware control, forming a closed-loop perception-learning-actuation system. The AI module learns terrain-to-perturbation mappings from IMU, vision, and depth sensors, enabling proactive compensation rather than reactive correction. This intelligence is embedded into a three-layer control architecture: path planning, predictive chassis-manipulator coordination, and precision hardware execution. Through outdoor experiments on terrain with slopes and surface irregularities, we demonstrate sub-centimeter printing accuracy while maintaining full platform mobility. This AI-hardware integration establishes a practical foundation for autonomous construction in unstructured environments.
+
+  </details>
+
+
+
+- **CHORAL: Traversal-Aware Planning for Safe and Efficient Heterogeneous Multi-Robot Routing**  
+  David Morilla-Cabello, Eduardo Montijano  
+  _2026-01-15_ · https://arxiv.org/abs/2601.10340v1 · `cs.RO`  
+  <details><summary>Abstract</summary>
+
+  Monitoring large, unknown, and complex environments with autonomous robots poses significant navigation challenges, where deploying teams of heterogeneous robots with complementary capabilities can substantially improve both mission performance and feasibility. However, effectively modeling how different robotic platforms interact with the environment requires rich, semantic scene understanding. Despite this, existing approaches often assume homogeneous robot teams or focus on discrete task compatibility rather than continuous routing. Consequently, scene understanding is not fully integrated into routing decisions, limiting their ability to adapt to the environment and to leverage each robot's strengths. In this paper, we propose an integrated semantic-aware framework for coordinating heterogeneous robots. Starting from a reconnaissance flight, we build a metric-semantic map using open-vocabulary vision models and use it to identify regions requiring closer inspection and capability-aware paths for each platform to reach them. These are then incorporated into a heterogeneous vehicle routing formulation that jointly assigns inspection tasks and computes robot trajectories. Experiments in simulation and in a real inspection mission with three robotic platforms demonstrate the effectiveness of our approach in planning safer and more efficient routes by explicitly accounting for each platform's navigation capabilities. We release our framework, CHORAL, as open source to support reproducibility and deployment of diverse robot teams.
+
+  </details>
+
+
+
+- **CoCoPlan: Adaptive Coordination and Communication for Multi-robot Systems in Dynamic and Unknown Environments**  
+  Xintong Zhang, Junfeng Chen, Yuxiao Zhu, Bing Luo, Meng Guo  
+  _2026-01-15_ · https://arxiv.org/abs/2601.10116v1 · `cs.RO`  
+  <details><summary>Abstract</summary>
+
+  Multi-robot systems can greatly enhance efficiency through coordination and collaboration, yet in practice, full-time communication is rarely available and interactions are constrained to close-range exchanges. Existing methods either maintain all-time connectivity, rely on fixed schedules, or adopt pairwise protocols, but none adapt effectively to dynamic spatio-temporal task distributions under limited communication, resulting in suboptimal coordination. To address this gap, we propose CoCoPlan, a unified framework that co-optimizes collaborative task planning and team-wise intermittent communication. Our approach integrates a branch-and-bound architecture that jointly encodes task assignments and communication events, an adaptive objective function that balances task efficiency against communication latency, and a communication event optimization module that strategically determines when, where and how the global connectivity should be re-established. Extensive experiments demonstrate that it outperforms state-of-the-art methods by achieving a 22.4% higher task completion rate, reducing communication overhead by 58.6%, and improving the scalability by supporting up to 100 robots in dynamic environments. Hardware experiments include the complex 2D office environment and large-scale 3D disaster-response scenario.
+
+  </details>
+
+
