@@ -18,9 +18,6 @@ from dateutil import parser as dtparser
 
 ARXIV_API_BASE = "http://export.arxiv.org/api/query"
 
-README_START = "<!-- AUTO-GENERATED:START -->"
-README_END = "<!-- AUTO-GENERATED:END -->"
-
 
 # ----------------------------
 # Data model
@@ -224,48 +221,6 @@ def write_index(updated_str: str, topics_meta: List[Dict[str, Any]], days_back: 
 
 
 # ----------------------------
-# README update (between markers)
-# ----------------------------
-
-def update_readme(topics_meta: List[Dict[str, Any]], days_back: int) -> None:
-    readme_path = "README.md"
-    if not os.path.exists(readme_path):
-        return
-
-    with open(readme_path, "r", encoding="utf-8") as f:
-        text = f.read()
-
-    updated_date = datetime.now(timezone.utc).strftime("%Y-%m-%d")
-
-    lines: List[str] = []
-    lines.append("## Latest\n")
-    lines.append(f"Updated on: **{updated_date}**  \n")
-    lines.append(f"Window: last **{days_back}** days\n\n")
-    lines.append("Generated pages are available under `docs/`.\n")
-    lines.append("\n## Topic Navigator\n")
-    lines.append("| Topic | Papers | Link |")
-    lines.append("|------|-------:|------|")
-
-    for t in topics_meta:
-        # README is repo root; topic pages are in docs/topics/
-        lines.append(f"| {t['name']} | {t['count']} | [view](docs/topics/{t['slug']}.md) |")
-
-    block = "\n".join(lines) + "\n"
-
-    if README_START not in text or README_END not in text:
-        text = text.rstrip() + f"\n\n{README_START}\n{README_END}\n"
-
-    pattern = re.compile(
-        re.escape(README_START) + r".*?" + re.escape(README_END),
-        flags=re.DOTALL,
-    )
-    new_text = pattern.sub(f"{README_START}\n\n{block}\n{README_END}", text)
-
-    with open(readme_path, "w", encoding="utf-8") as f:
-        f.write(new_text)
-
-
-# ----------------------------
 # Main
 # ----------------------------
 
@@ -282,7 +237,6 @@ def main() -> int:
 
     fetch_multiplier = int(cfg.get("fetch_multiplier", 10))
     hard_cap_results = int(cfg.get("hard_cap_results", 300))
-    fetch_n = min(max_per_topic * fetch_multiplier, hard_cap_results)
 
     match_in = (cfg.get("match_in", "title+abstract") or "title+abstract").strip().lower()
 
@@ -293,6 +247,10 @@ def main() -> int:
 
     if not isinstance(topics_map, dict) or not topics_map:
         raise SystemExit("Config error: 'topics' must be a mapping of {Topic Name: [keywords...]}")
+
+    # Decide fetch size for the pool
+    # We want enough papers so topics don't go 0 just because top 20 are off-topic.
+    fetch_n = min(max_per_topic * fetch_multiplier, hard_cap_results)
 
     # Build pool query and fetch
     pool_query = build_category_query(categories)
@@ -307,22 +265,23 @@ def main() -> int:
             return norm(p.title)
         if match_in in ("abstract", "summary", "abs"):
             return norm(p.summary)
+        # default
         return norm(p.title + " " + p.summary)
 
-    # 3) Global exclude
+    # 3) Global exclude (if any) - applied on chosen match_in text
     if exclude_any:
         exc_pats = compile_terms(exclude_any)
         pool = [p for p in pool if not matches_any(paper_text(p), exc_pats)]
 
-    # 4) Global gate
+    # 4) Global gate must_have_any
     if must_have_any:
         gate_pats = compile_terms(must_have_any)
         pool = [p for p in pool if matches_any(paper_text(p), gate_pats)]
 
+    # 5) Topic assignment + ranking
     updated_str = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
     topics_meta: List[Dict[str, Any]] = []
 
-    # 5) Topic assignment + ranking
     for topic_name, keywords in topics_map.items():
         slug = slugify(topic_name)
         kw_pats = compile_terms(keywords or [])
@@ -340,6 +299,7 @@ def main() -> int:
             seen_ids.add(p.arxiv_id)
             scored.append((c, p))
 
+        # Sort: more keyword hits first, then newest, then stable tie-breakers
         scored.sort(
             key=lambda cp: (
                 -cp[0],
@@ -353,11 +313,10 @@ def main() -> int:
         write_topic_page(topic_name, slug, papers, updated_str)
         topics_meta.append({"name": topic_name, "slug": slug, "count": len(papers)})
 
-    # Output index + README
+    # Index
     write_index(updated_str, topics_meta, days_back)
-    update_readme(topics_meta, days_back)
+    print("Done. Pages generated under docs/")
 
-    print("Done. Pages generated under docs/ and README updated.")
     return 0
 
 
