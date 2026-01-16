@@ -1,35 +1,25 @@
 # Navigation, Planning & Control
 
-**Last update:** 2026-01-15
+**Last update:** 2026-01-16
 
 > Auto-generated. Edit `config.yml` to change keywords/topics.
 
 ## Latest
 
-- **SoK: Enhancing Cryptographic Collaborative Learning with Differential Privacy**
-  - Authors: Francesco Capano, Jonas Böhler, Benjamin Weggenmann
-  - Published: 2026-01-14 | Category: `cs.CR`
-  - Links: [arXiv](https://arxiv.org/abs/2601.09460v1) | [PDF](https://arxiv.org/pdf/2601.09460v1)
-  - Matched: mpc
-- **Feedback-Based Mobile Robot Navigation in 3-D Environments Using Artificial Potential Functions Technical Report**
-  - Authors: Ro'i Lang, Elon Rimon
-  - Published: 2026-01-14 | Category: `cs.RO`
-  - Links: [arXiv](https://arxiv.org/abs/2601.09318v1) | [PDF](https://arxiv.org/pdf/2601.09318v1)
-  - Matched: navigation, motion planning
-- **Towards Open Environments and Instructions: General Vision-Language Navigation via Fast-Slow Interactive Reasoning**
-  - Authors: Yang Li, Aming Wu, Zihao Zhang, Yahong Han
-  - Published: 2026-01-14 | Category: `cs.CV`
-  - Links: [arXiv](https://arxiv.org/abs/2601.09111v1) | [PDF](https://arxiv.org/pdf/2601.09111v1)
+- **Lunar-G2R: Geometry-to-Reflectance Learning for High-Fidelity Lunar BRDF Estimation**
+  - Authors: Clementine Grethen, Nicolas Menga, Roland Brochard, Geraldine Morin, Simone Gasparini, Jeremy Lebreton, Manuel Sanchez Gestido
+  - Published: 2026-01-15 | Category: `cs.CV`
+  - Links: [arXiv](https://arxiv.org/abs/2601.10449v1) | [PDF](https://arxiv.org/pdf/2601.10449v1)
   - Matched: navigation
-- **An Inexact Weighted Proximal Trust-Region Method**
-  - Authors: Leandro Farias Maia, Robert Baraldi, Drew P. Kouri
-  - Published: 2026-01-13 | Category: `math.OC`
-  - Links: [arXiv](https://arxiv.org/abs/2601.09024v1) | [PDF](https://arxiv.org/pdf/2601.09024v1)
-  - Matched: optimal control
-- **Fairness risk and its privacy-enabled solution in AI-driven robotic applications**
-  - Authors: Le Liu, Bangguo Yu, Nynke Vellinga, Ming Cao
-  - Published: 2026-01-13 | Category: `cs.RO`
-  - Links: [arXiv](https://arxiv.org/abs/2601.08953v1) | [PDF](https://arxiv.org/pdf/2601.08953v1)
+- **MATRIX AS PLAN: Structured Logical Reasoning with Feedback-Driven Replanning**
+  - Authors: Ke Chen, Jiandian Zeng, Zihao Peng, Guo Li, Guangxue Zhang, Tian Wang
+  - Published: 2026-01-15 | Category: `cs.AI`
+  - Links: [arXiv](https://arxiv.org/abs/2601.10101v1) | [PDF](https://arxiv.org/pdf/2601.10101v1)
+  - Matched: replanning
+- **The PROPER Approach to Proactivity: Benchmarking and Advancing Knowledge Gap Navigation**
+  - Authors: Kirandeep Kaur, Vinayak Gupta, Aditya Gupta, Chirag Shah
+  - Published: 2026-01-14 | Category: `cs.LG`
+  - Links: [arXiv](https://arxiv.org/abs/2601.09926v1) | [PDF](https://arxiv.org/pdf/2601.09926v1)
   - Matched: navigation
 
 ---

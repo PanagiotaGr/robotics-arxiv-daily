@@ -1,46 +1,41 @@
 # Autonomous Driving & AV
 
-**Last update:** 2026-01-15
+**Last update:** 2026-01-16
 
 > Auto-generated. Edit `config.yml` to change keywords/topics.
 
 ## Latest
 
-- **SCE-SLAM: Scale-Consistent Monocular SLAM via Scene Coordinate Embeddings**
-  - Authors: Yuchen Wu, Jiahe Li, Xiaohan Yu, Lina Yu, Jin Zheng, Xiao Bai
-  - Published: 2026-01-14 | Category: `cs.CV`
-  - Links: [arXiv](https://arxiv.org/abs/2601.09665v1) | [PDF](https://arxiv.org/pdf/2601.09665v1)
-  - Matched: waymo, kitti
-- **Terminally constrained flow-based generative models from an optimal control perspective**
-  - Authors: Weiguo Gao, Ming Li, Qianxiao Li
-  - Published: 2026-01-14 | Category: `cs.LG`
-  - Links: [arXiv](https://arxiv.org/abs/2601.09474v1) | [PDF](https://arxiv.org/pdf/2601.09474v1)
-  - Matched: trajectory planning
-- **MAD: Motion Appearance Decoupling for efficient Driving World Models**
-  - Authors: Ahmad Rahimi, Valentin Gerard, Eloi Zablocki, Matthieu Cord, Alexandre Alahi
-  - Published: 2026-01-14 | Category: `cs.CV`
-  - Links: [arXiv](https://arxiv.org/abs/2601.09452v1) | [PDF](https://arxiv.org/pdf/2601.09452v1)
+- **DeepUrban: Interaction-Aware Trajectory Prediction and Planning for Automated Driving by Aerial Imagery**
+  - Authors: Constantin Selzer, Fabian B. Flohr
+  - Published: 2026-01-15 | Category: `cs.CV`
+  - Links: [arXiv](https://arxiv.org/abs/2601.10554v1) | [PDF](https://arxiv.org/pdf/2601.10554v1)
+  - Matched: autonomous driving, nuscenes
+- **BikeActions: An Open Platform and Benchmark for Cyclist-Centric VRU Action Recognition**
+  - Authors: Max A. Buettner, Kanak Mazumder, Luca Koecher, Mario Finkbeiner, Sebastian Niebler, Fabian B. Flohr
+  - Published: 2026-01-15 | Category: `cs.CV`
+  - Links: [arXiv](https://arxiv.org/abs/2601.10521v1) | [PDF](https://arxiv.org/pdf/2601.10521v1)
   - Matched: autonomous driving
-- **Data Scaling for Navigation in Unknown Environments**
-  - Authors: Lauri Suomela, Naoki Takahata, Sasanka Kuruppu Arachchige, Harry Edelman, Joni-Kristian Kämäräinen
-  - Published: 2026-01-14 | Category: `cs.RO`
-  - Links: [arXiv](https://arxiv.org/abs/2601.09444v1) | [PDF](https://arxiv.org/pdf/2601.09444v1)
+- **SatMap: Revisiting Satellite Maps as Prior for Online HD Map Construction**
+  - Authors: Kanak Mazumder, Fabian B. Flohr
+  - Published: 2026-01-15 | Category: `cs.CV`
+  - Links: [arXiv](https://arxiv.org/abs/2601.10512v1) | [PDF](https://arxiv.org/pdf/2601.10512v1)
+  - Matched: autonomous driving, bev, hd map, nuscenes
+- **VERHallu: Evaluating and Mitigating Event Relation Hallucination in Video Large Language Models**
+  - Authors: Zefan Zhang, Kehua Zhu, Shijie Jiang, Hongyuan Lu, Shengkai Sun, Tian Bai
+  - Published: 2026-01-15 | Category: `cs.CV`
+  - Links: [arXiv](https://arxiv.org/abs/2601.10010v1) | [PDF](https://arxiv.org/pdf/2601.10010v1)
+  - Matched: bev
+- **OT-Drive: Out-of-Distribution Off-Road Traversable Area Segmentation via Optimal Transport**
+  - Authors: Zhihua Zhao, Guoqiang Li, Chen Min, Kangping Lu
+  - Published: 2026-01-15 | Category: `cs.CV`
+  - Links: [arXiv](https://arxiv.org/abs/2601.09952v1) | [PDF](https://arxiv.org/pdf/2601.09952v1)
   - Matched: autonomous driving
-- **ReflexDiffusion: Reflection-Enhanced Trajectory Planning for High-lateral-acceleration Scenarios in Autonomous Driving**
-  - Authors: Xuemei Yao, Xiao Yang, Jianbin Sun, Liuwei Xie, Xuebin Shao, Xiyu Fang, Hang Su, Kewei Yang
-  - Published: 2026-01-14 | Category: `cs.RO`
-  - Links: [arXiv](https://arxiv.org/abs/2601.09377v1) | [PDF](https://arxiv.org/pdf/2601.09377v1)
-  - Matched: autonomous driving, trajectory planning
-- **DeTracker: Motion-decoupled Vehicle Detection and Tracking in Unstabilized Satellite Videos**
-  - Authors: Jiajun Chen, Jing Xiao, Shaohan Cao, Yuming Zhu, Liang Liao, Jun Pan, Mi Wang
+- **LCF3D: A Robust and Real-Time Late-Cascade Fusion Framework for 3D Object Detection in Autonomous Driving**
+  - Authors: Carlo Sgaravatti, Riccardo Pieroni, Matteo Corno, Sergio M. Savaresi, Luca Magri, Giacomo Boracchi
   - Published: 2026-01-14 | Category: `cs.CV`
-  - Links: [arXiv](https://arxiv.org/abs/2601.09240v1) | [PDF](https://arxiv.org/pdf/2601.09240v1)
-  - Matched: multi-object tracking
-- **Towards a Self-Driving Trigger at the LHC: Adaptive Response in Real Time**
-  - Authors: Shaghayegh Emami, Cecilia Tosciri, Giovanna Salvi, Zixin Ding, Yuxin Chen, Abhijith Gandrakota, Christian Herwig, David W. Miller et al.
-  - Published: 2026-01-13 | Category: `physics.ins-det`
-  - Links: [arXiv](https://arxiv.org/abs/2601.08910v1) | [PDF](https://arxiv.org/pdf/2601.08910v1)
-  - Matched: self-driving
+  - Links: [arXiv](https://arxiv.org/abs/2601.09812v1) | [PDF](https://arxiv.org/pdf/2601.09812v1)
+  - Matched: autonomous driving, 3d detection, nuscenes, kitti
 
 ---
 

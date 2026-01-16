@@ -1,111 +1,111 @@
 # Drones & Aerial Robotics
 
-**Last update:** 2026-01-15
+**Last update:** 2026-01-16
 
 > Auto-generated. Edit `config.yml` to change keywords/topics.
 
 ## Latest
 
-- **SAM3-DMS: Decoupled Memory Selection for Multi-target Video Segmentation of SAM3**
-  - Authors: Ruiqi Shen, Chang Liu, Henghui Ding
-  - Published: 2026-01-14 | Category: `cs.CV`
-  - Links: [arXiv](https://arxiv.org/abs/2601.09699v1) | [PDF](https://arxiv.org/pdf/2601.09699v1)
+- **DInf-Grid: A Neural Differential Equation Solver with Differentiable Feature Grids**
+  - Authors: Navami Kairanda, Shanthika Naik, Marc Habermann, Avinash Sharma, Christian Theobalt, Vladislav Golyanik
+  - Published: 2026-01-15 | Category: `cs.LG`
+  - Links: [arXiv](https://arxiv.org/abs/2601.10715v1) | [PDF](https://arxiv.org/pdf/2601.10715v1)
   - Matched: imu
-- **LARGE: A Locally Adaptive Regularization Approach for Estimating Gaussian Graphical Models**
-  - Authors: Ha Nguyen, Sumanta Basu
-  - Published: 2026-01-14 | Category: `stat.ME`
-  - Links: [arXiv](https://arxiv.org/abs/2601.09686v1) | [PDF](https://arxiv.org/pdf/2601.09686v1)
+- **Communication-Efficient and Privacy-Adaptable Mechanism -- a Federated Learning Scheme with Convergence Analysis**
+  - Authors: Chun Hei Michael Shiu, Chih Wei Ling
+  - Published: 2026-01-15 | Category: `cs.LG`
+  - Links: [arXiv](https://arxiv.org/abs/2601.10701v1) | [PDF](https://arxiv.org/pdf/2601.10701v1)
   - Matched: imu
-- **Image2Garment: Simulation-ready Garment Generation from a Single Image**
-  - Authors: Selim Emir Can, Jan Ackermann, Kiyohiro Nakayama, Ruofan Liu, Tong Wu, Yang Zheng, Hugo Bertiche, Menglei Chai et al.
-  - Published: 2026-01-14 | Category: `cs.CV`
-  - Links: [arXiv](https://arxiv.org/abs/2601.09658v1) | [PDF](https://arxiv.org/pdf/2601.09658v1)
+- **Data-driven stochastic reduced-order modeling of parametrized dynamical systems**
+  - Authors: Andrew F. Ilersich, Kevin Course, Prasanth B. Nair
+  - Published: 2026-01-15 | Category: `cs.LG`
+  - Links: [arXiv](https://arxiv.org/abs/2601.10690v1) | [PDF](https://arxiv.org/pdf/2601.10690v1)
   - Matched: imu
-- **FairShare: Auditable Geographic Fairness for Multi-Operator LEO Spectrum Sharing**
-  - Authors: Seyed Bagher Hashemi Natanzi, Hossein Mohammadi, Vuk Marojevic, Bo Tang
-  - Published: 2026-01-14 | Category: `cs.NI`
-  - Links: [arXiv](https://arxiv.org/abs/2601.09641v1) | [PDF](https://arxiv.org/pdf/2601.09641v1)
+- **Breaking the Storage-Bandwidth Tradeoff in Distributed Storage with Quantum Entanglement**
+  - Authors: Lei Hu, Mohamed Nomeir, Alptug Aytekin, Sennur Ulukus
+  - Published: 2026-01-15 | Category: `cs.IT`
+  - Links: [arXiv](https://arxiv.org/abs/2601.10676v1) | [PDF](https://arxiv.org/pdf/2601.10676v1)
   - Matched: imu
-- **LLM for Large-Scale Optimization Model Auto-Formulation: A Lightweight Few-Shot Learning Approach**
-  - Authors: Kuo Liang, Yuhang Lu, Jianming Mao, Shuyi Sun, Chunwei Yang, Congcong Zeng, Xiao Jin, Hanzhang Qin et al.
-  - Published: 2026-01-14 | Category: `cs.AI`
-  - Links: [arXiv](https://arxiv.org/abs/2601.09635v1) | [PDF](https://arxiv.org/pdf/2601.09635v1)
+- **Adjusted Similarity Measures and a Violation of Expectations**
+  - Authors: William L. Lippitt, Edward J. Bedrick, Nichole E. Carlson
+  - Published: 2026-01-15 | Category: `stat.ME`
+  - Links: [arXiv](https://arxiv.org/abs/2601.10641v1) | [PDF](https://arxiv.org/pdf/2601.10641v1)
   - Matched: imu
-- **GRCF: Two-Stage Groupwise Ranking and Calibration Framework for Multimodal Sentiment Analysis**
-  - Authors: Manning Gao, Leheng Zhang, Shiqin Han, Haifeng Hu, Yuncheng Jiang, Sijie Mai
-  - Published: 2026-01-14 | Category: `cs.CV`
-  - Links: [arXiv](https://arxiv.org/abs/2601.09606v1) | [PDF](https://arxiv.org/pdf/2601.09606v1)
+- **Achievable Degrees of Freedom Analysis and Optimization in Massive MIMO via Characteristic Mode Analysis**
+  - Authors: Shaohua Yue, Siyu Miao, Shuhao Zeng, Fenghan Lin, Boya Di
+  - Published: 2026-01-15 | Category: `eess.SP`
+  - Links: [arXiv](https://arxiv.org/abs/2601.10576v1) | [PDF](https://arxiv.org/pdf/2601.10576v1)
   - Matched: imu
-- **Sim2real Image Translation Enables Viewpoint-Robust Policies from Fixed-Camera Datasets**
-  - Authors: Jeremiah Coholich, Justin Wit, Robert Azarcon, Zsolt Kira
-  - Published: 2026-01-14 | Category: `cs.CV`
-  - Links: [arXiv](https://arxiv.org/abs/2601.09605v1) | [PDF](https://arxiv.org/pdf/2601.09605v1)
+- **causalfe: Causal Forests with Fixed Effects in Python**
+  - Authors: Harry Aytug
+  - Published: 2026-01-15 | Category: `econ.EM`
+  - Links: [arXiv](https://arxiv.org/abs/2601.10555v1) | [PDF](https://arxiv.org/pdf/2601.10555v1)
   - Matched: imu
-- **Iterative Differential Entropy Minimization (IDEM) method for fine rigid pairwise 3D Point Cloud Registration: A Focus on the Metric**
-  - Authors: Emmanuele Barberi, Felice Sfravara, Filippo Cucinotta
-  - Published: 2026-01-14 | Category: `cs.CV`
-  - Links: [arXiv](https://arxiv.org/abs/2601.09601v1) | [PDF](https://arxiv.org/pdf/2601.09601v1)
+- **Model See, Model Do? Exposure-Aware Evaluation of Bug-vs-Fix Preference in Code LLMs**
+  - Authors: Ali Al-Kaswan, Claudio Spiess, Prem Devanbu, Arie van Deursen, Maliheh Izadi
+  - Published: 2026-01-15 | Category: `cs.SE`
+  - Links: [arXiv](https://arxiv.org/abs/2601.10496v1) | [PDF](https://arxiv.org/pdf/2601.10496v1)
   - Matched: imu
-- **Energy-Entropy Regularization: The True Power of Minimal Looped Transformers**
-  - Authors: Wai-Lun Lam
-  - Published: 2026-01-14 | Category: `cs.LG`
-  - Links: [arXiv](https://arxiv.org/abs/2601.09588v1) | [PDF](https://arxiv.org/pdf/2601.09588v1)
+- **CROCS: A Two-Stage Clustering Framework for Behaviour-Centric Consumer Segmentation with Smart Meter Data**
+  - Authors: Luke W. Yerbury, Ricardo J. G. B. Campello, G. C. Livingston, Mark Goldsworthy, Lachlan O'Neil
+  - Published: 2026-01-15 | Category: `stat.ML`
+  - Links: [arXiv](https://arxiv.org/abs/2601.10494v1) | [PDF](https://arxiv.org/pdf/2601.10494v1)
   - Matched: imu
-- **Residual Power Flow for Neural Solvers**
-  - Authors: Jochen Stiasny, Jochen Cremer
-  - Published: 2026-01-14 | Category: `eess.SY`
-  - Links: [arXiv](https://arxiv.org/abs/2601.09533v1) | [PDF](https://arxiv.org/pdf/2601.09533v1)
+- **Urban Socio-Semantic Segmentation with Vision-Language Reasoning**
+  - Authors: Yu Wang, Yi Wang, Rui Dai, Yujie Wang, Kaikui Liu, Xiangxiang Chu, Yansheng Li
+  - Published: 2026-01-15 | Category: `cs.CV`
+  - Links: [arXiv](https://arxiv.org/abs/2601.10477v1) | [PDF](https://arxiv.org/pdf/2601.10477v1)
   - Matched: imu
-- **Learning Whole-Body Human-Humanoid Interaction from Human-Human Demonstrations**
-  - Authors: Wei-Jin Huang, Yue-Yi Zhang, Yi-Lin Wei, Zhi-Wei Xia, Juantao Tan, Yuan-Ming Li, Zhilin Zhao, Wei-Shi Zheng
-  - Published: 2026-01-14 | Category: `cs.RO`
-  - Links: [arXiv](https://arxiv.org/abs/2601.09518v1) | [PDF](https://arxiv.org/pdf/2601.09518v1)
+- **CHORAL: Traversal-Aware Planning for Safe and Efficient Heterogeneous Multi-Robot Routing**
+  - Authors: David Morilla-Cabello, Eduardo Montijano
+  - Published: 2026-01-15 | Category: `cs.RO`
+  - Links: [arXiv](https://arxiv.org/abs/2601.10340v1) | [PDF](https://arxiv.org/pdf/2601.10340v1)
   - Matched: imu
-- **Deep Operator Networks for Surrogate Modeling of Cyclic Adsorption Processes with Varying Initial Conditions**
-  - Authors: Beatrice Ceccanti, Mattia Galanti, Ivo Roghair, Martin van Sint Annaland
-  - Published: 2026-01-14 | Category: `cs.LG`
-  - Links: [arXiv](https://arxiv.org/abs/2601.09491v1) | [PDF](https://arxiv.org/pdf/2601.09491v1)
+- **An analytic theory of convolutional neural network inverse problems solvers**
+  - Authors: Minh Hai Nguyen, Quoc Bao Do, Edouard Pauwels, Pierre Weiss
+  - Published: 2026-01-15 | Category: `cs.CV`
+  - Links: [arXiv](https://arxiv.org/abs/2601.10334v1) | [PDF](https://arxiv.org/pdf/2601.10334v1)
   - Matched: imu
-- **Echo-Side Integrated Sensing and Communication via Space-Time Reconfigurable Intelligent Surfaces**
-  - Authors: Marouan Mizmizi, Stefano Tebaldini, Umberto Spagnolini
-  - Published: 2026-01-14 | Category: `eess.SP`
-  - Links: [arXiv](https://arxiv.org/abs/2601.09484v1) | [PDF](https://arxiv.org/pdf/2601.09484v1)
+- **Queueing-Aware Optimization of Reasoning Tokens for Accuracy-Latency Trade-offs in LLM Servers**
+  - Authors: Emre Ozbas, Melih Bastopcu
+  - Published: 2026-01-15 | Category: `cs.LG`
+  - Links: [arXiv](https://arxiv.org/abs/2601.10274v1) | [PDF](https://arxiv.org/pdf/2601.10274v1)
   - Matched: imu
-- **Two-Scale Spatial Deployment for Cost-Effective Wireless Networks via Cooperative IRSs and Movable Antennas**
-  - Authors: Ying Gao, Qingqing Wu, Ziyuan Zheng, Yanze Zhu, Wen Chen, Xin Lin, Shanpu Shen
-  - Published: 2026-01-14 | Category: `eess.SP`
-  - Links: [arXiv](https://arxiv.org/abs/2601.09463v1) | [PDF](https://arxiv.org/pdf/2601.09463v1)
+- **MoST: Mixing Speech and Text with Modality-Aware Mixture of Experts**
+  - Authors: Yuxuan Lou, Kai Yang, Yang You
+  - Published: 2026-01-15 | Category: `cs.CL`
+  - Links: [arXiv](https://arxiv.org/abs/2601.10272v1) | [PDF](https://arxiv.org/pdf/2601.10272v1)
   - Matched: imu
-- **DeepLight: A Sobolev-trained Image-to-Image Surrogate Model for Light Transport in Tissue**
-  - Authors: Philipp Haim, Vasilis Ntziachristos, Torsten Enßlin, Dominik Jüstel
-  - Published: 2026-01-14 | Category: `cs.LG`
-  - Links: [arXiv](https://arxiv.org/abs/2601.09439v1) | [PDF](https://arxiv.org/pdf/2601.09439v1)
+- **Sim2Real Deep Transfer for Per-Device CFO Calibration**
+  - Authors: Jingze Zheng, Zhiguo Shi, Shibo He, Chaojie Gu
+  - Published: 2026-01-15 | Category: `eess.SP`
+  - Links: [arXiv](https://arxiv.org/abs/2601.10264v1) | [PDF](https://arxiv.org/pdf/2601.10264v1)
   - Matched: imu
-- **Beamforming Gain with Nonideal Phase Shifters**
-  - Authors: Heedong Do, Angel Lozano
-  - Published: 2026-01-14 | Category: `eess.SP`
-  - Links: [arXiv](https://arxiv.org/abs/2601.09426v1) | [PDF](https://arxiv.org/pdf/2601.09426v1)
+- **NoReGeo: Non-Reasoning Geometry Benchmark**
+  - Authors: Irina Abdullaeva, Anton Vasiliuk, Elizaveta Goncharova, Temurbek Rahmatullaev, Zagorulko Ivan, Maxim Kurkin, Andrey Kuznetsov
+  - Published: 2026-01-15 | Category: `cs.AI`
+  - Links: [arXiv](https://arxiv.org/abs/2601.10254v1) | [PDF](https://arxiv.org/pdf/2601.10254v1)
   - Matched: imu
-- **Policy-Based Reinforcement Learning with Action Masking for Dynamic Job Shop Scheduling under Uncertainty: Handling Random Arrivals and Machine Failures**
-  - Authors: Sofiene Lassoued, Stefan Lier, Andreas Schwung
-  - Published: 2026-01-14 | Category: `cs.AI`
-  - Links: [arXiv](https://arxiv.org/abs/2601.09293v1) | [PDF](https://arxiv.org/pdf/2601.09293v1)
+- **X-SAM: Boosting Sharpness-Aware Minimization with Dominant-Eigenvector Gradient Correction**
+  - Authors: Hongru Duan, Yongle Chen, Lei Guan
+  - Published: 2026-01-15 | Category: `cs.LG`
+  - Links: [arXiv](https://arxiv.org/abs/2601.10251v1) | [PDF](https://arxiv.org/pdf/2601.10251v1)
   - Matched: imu
-- **Coordinated Pandemic Control with Large Language Model Agents as Policymaking Assistants**
-  - Authors: Ziyi Shi, Xusen Guo, Hongliang Lu, Mingxing Peng, Haotian Wang, Zheng Zhu, Zhenning Li, Yuxuan Liang et al.
-  - Published: 2026-01-14 | Category: `cs.AI`
-  - Links: [arXiv](https://arxiv.org/abs/2601.09264v1) | [PDF](https://arxiv.org/pdf/2601.09264v1)
+- **Attend to what I say: Highlighting relevant content on slides**
+  - Authors: Megha Mariam K M, C. V. Jawahar
+  - Published: 2026-01-15 | Category: `cs.CV`
+  - Links: [arXiv](https://arxiv.org/abs/2601.10244v1) | [PDF](https://arxiv.org/pdf/2601.10244v1)
   - Matched: imu
-- **HGATSolver: A Heterogeneous Graph Attention Solver for Fluid-Structure Interaction**
-  - Authors: Qin-Yi Zhang, Hong Wang, Siyao Liu, Haichuan Lin, Linying Cao, Xiao-Hu Zhou, Chen Chen, Shuangyi Wang et al.
-  - Published: 2026-01-14 | Category: `cs.LG`
-  - Links: [arXiv](https://arxiv.org/abs/2601.09251v1) | [PDF](https://arxiv.org/pdf/2601.09251v1)
+- **Fundamental Limitations of Favorable Privacy-Utility Guarantees for DP-SGD**
+  - Authors: Murat Bilgehan Ertan, Marten van Dijk
+  - Published: 2026-01-15 | Category: `cs.LG`
+  - Links: [arXiv](https://arxiv.org/abs/2601.10237v1) | [PDF](https://arxiv.org/pdf/2601.10237v1)
   - Matched: imu
-- **Reward Learning through Ranking Mean Squared Error**
-  - Authors: Chaitanya Kharyal, Calarina Muslimani, Matthew E. Taylor
-  - Published: 2026-01-14 | Category: `cs.LG`
-  - Links: [arXiv](https://arxiv.org/abs/2601.09236v1) | [PDF](https://arxiv.org/pdf/2601.09236v1)
-  - Matched: imu
+- **Proactive Local-Minima-Free Robot Navigation: Blending Motion Prediction with Safe Control**
+  - Authors: Yifan Xue, Ze Zhang, Knut Åkesson, Nadia Figueroa
+  - Published: 2026-01-15 | Category: `cs.RO`
+  - Links: [arXiv](https://arxiv.org/abs/2601.10233v1) | [PDF](https://arxiv.org/pdf/2601.10233v1)
+  - Matched: imu, obstacle avoidance
 
 ---
 

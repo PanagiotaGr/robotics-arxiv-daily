@@ -1,111 +1,111 @@
 # Safety, Robustness, Uncertainty
 
-**Last update:** 2026-01-15
+**Last update:** 2026-01-16
 
 > Auto-generated. Edit `config.yml` to change keywords/topics.
 
 ## Latest
 
-- **Value-Aware Numerical Representations for Transformer Language Models**
-  - Authors: Andreea Dutulescu, Stefan Ruseti, Mihai Dascalu
-  - Published: 2026-01-14 | Category: `cs.CL`
-  - Links: [arXiv](https://arxiv.org/abs/2601.09706v1) | [PDF](https://arxiv.org/pdf/2601.09706v1)
+- **See Less, Drive Better: Generalizable End-to-End Autonomous Driving via Foundation Models Stochastic Patch Selection**
+  - Authors: Amir Mallak, Erfan Aasi, Shiva Sreeram, Tsun-Hsuan Wang, Daniela Rus, Alaa Maalouf
+  - Published: 2026-01-15 | Category: `cs.CV`
+  - Links: [arXiv](https://arxiv.org/abs/2601.10707v1) | [PDF](https://arxiv.org/pdf/2601.10707v1)
+  - Matched: out-of-distribution, robustness
+- **ProbFM: Probabilistic Time Series Foundation Model with Uncertainty Decomposition**
+  - Authors: Arundeep Chinta, Lucas Vinh Tran, Jay Katukuri
+  - Published: 2026-01-15 | Category: `cs.LG`
+  - Links: [arXiv](https://arxiv.org/abs/2601.10591v1) | [PDF](https://arxiv.org/pdf/2601.10591v1)
+  - Matched: uncertainty, calibration
+- **Adversarial Evasion Attacks on Computer Vision using SHAP Values**
+  - Authors: Frank Mollard, Marcus Becker, Florian Roehrbein
+  - Published: 2026-01-15 | Category: `cs.CV`
+  - Links: [arXiv](https://arxiv.org/abs/2601.10587v1) | [PDF](https://arxiv.org/pdf/2601.10587v1)
+  - Matched: adversarial
+- **Defending Large Language Models Against Jailbreak Attacks via In-Decoding Safety-Awareness Probing**
+  - Authors: Yinzhi Zhao, Ming Wang, Shi Feng, Xiaocui Yang, Daling Wang, Yifei Zhang
+  - Published: 2026-01-15 | Category: `cs.AI`
+  - Links: [arXiv](https://arxiv.org/abs/2601.10543v1) | [PDF](https://arxiv.org/pdf/2601.10543v1)
+  - Matched: safety, safe
+- **A Safety Report on GPT-5.2, Gemini 3 Pro, Qwen3-VL, Doubao 1.8, Grok 4.1 Fast, Nano Banana Pro, and Seedream 4.5**
+  - Authors: Xingjun Ma, Yixu Wang, Hengyuan Xu, Yutao Wu, Yifan Ding, Yunhan Zhao, Zilong Wang, Jiabin Hua et al.
+  - Published: 2026-01-15 | Category: `cs.AI`
+  - Links: [arXiv](https://arxiv.org/abs/2601.10527v1) | [PDF](https://arxiv.org/pdf/2601.10527v1)
+  - Matched: safety, safe, adversarial
+- **Transformer-Based Cognitive Radio: Adaptive Modulation Strategies Using Transformer Models**
+  - Authors: Andrea Melis, Andrea Piroddi, Roberto Girau
+  - Published: 2026-01-15 | Category: `cs.LG`
+  - Links: [arXiv](https://arxiv.org/abs/2601.10519v1) | [PDF](https://arxiv.org/pdf/2601.10519v1)
   - Matched: robustness
-- **Evaluating GAN-LSTM for Smart Meter Anomaly Detection in Power Systems**
-  - Authors: Fahimeh Orvati Nia, Shima Salehi, Joshua Peeples
-  - Published: 2026-01-14 | Category: `eess.SP`
-  - Links: [arXiv](https://arxiv.org/abs/2601.09701v1) | [PDF](https://arxiv.org/pdf/2601.09701v1)
-  - Matched: adversarial, anomaly detection
-- **The Promptware Kill Chain: How Prompt Injections Gradually Evolved Into a Multi-Step Malware**
-  - Authors: Ben Nassi, Bruce Schneier, Oleg Brodt
-  - Published: 2026-01-14 | Category: `cs.CR`
-  - Links: [arXiv](https://arxiv.org/abs/2601.09625v1) | [PDF](https://arxiv.org/pdf/2601.09625v1)
+- **Contextual StereoSet: Stress-Testing Bias Alignment Robustness in Large Language Models**
+  - Authors: Abhinaba Basu, Pavan Chakraborty
+  - Published: 2026-01-15 | Category: `cs.CL`
+  - Links: [arXiv](https://arxiv.org/abs/2601.10460v1) | [PDF](https://arxiv.org/pdf/2601.10460v1)
+  - Matched: robustness, adversarial
+- **SurgGoal: Rethinking Surgical Planning Evaluation via Goal-Satisfiability**
+  - Authors: Ruochen Li, Kun Yuan, Yufei Xia, Yue Zhou, Qingyu Lu, Weihang Li, Youxiang Zhu, Nassir Navab
+  - Published: 2026-01-15 | Category: `cs.CL`
+  - Links: [arXiv](https://arxiv.org/abs/2601.10455v1) | [PDF](https://arxiv.org/pdf/2601.10455v1)
   - Matched: safety, safe
-- **CogRail: Benchmarking VLMs in Cognitive Intrusion Perception for Intelligent Railway Transportation Systems**
-  - Authors: Yonglin Tian, Qiyao Zhang, Wei Xu, Yutong Wang, Yihao Wu, Xinyi Li, Xingyuan Dai, Hui Zhang et al.
-  - Published: 2026-01-14 | Category: `cs.CV`
-  - Links: [arXiv](https://arxiv.org/abs/2601.09613v1) | [PDF](https://arxiv.org/pdf/2601.09613v1)
+- **CS-GBA: A Critical Sample-based Gradient-guided Backdoor Attack for Offline Reinforcement Learning**
+  - Authors: Yuanjie Zhao, Junnan Qiu, Yue Ding, Jie Li
+  - Published: 2026-01-15 | Category: `cs.LG`
+  - Links: [arXiv](https://arxiv.org/abs/2601.10407v1) | [PDF](https://arxiv.org/pdf/2601.10407v1)
+  - Matched: safety, safe, out-of-distribution
+- **LatentRefusal: Latent-Signal Refusal for Unanswerable Text-to-SQL Queries**
+  - Authors: Xuancheng Ren, Shijing Hu, Zhihui Lu, Jiangqi Huang, Qiang Duan
+  - Published: 2026-01-15 | Category: `cs.AI`
+  - Links: [arXiv](https://arxiv.org/abs/2601.10398v1) | [PDF](https://arxiv.org/pdf/2601.10398v1)
+  - Matched: safety, safe, uncertainty
+- **Online identification of nonlinear time-varying systems with uncertain information**
+  - Authors: He Ren, Gaowei Yan, Hang Liu, Lifeng Cao, Zhijun Zhao, Gang Dang
+  - Published: 2026-01-15 | Category: `cs.RO`
+  - Links: [arXiv](https://arxiv.org/abs/2601.10379v1) | [PDF](https://arxiv.org/pdf/2601.10379v1)
+  - Matched: uncertainty, robustness
+- **FastStair: Learning to Run Up Stairs with Humanoid Robots**
+  - Authors: Yan Liu, Tao Yu, Haolin Song, Hongbo Zhu, Nianzong Hu, Yuzhi Hao, Xiuyong Yao, Xizhe Zang et al.
+  - Published: 2026-01-15 | Category: `cs.RO`
+  - Links: [arXiv](https://arxiv.org/abs/2601.10365v1) | [PDF](https://arxiv.org/pdf/2601.10365v1)
   - Matched: safety, safe
-- **Information Access of the Oppressed: A Problem-Posing Framework for Envisioning Emancipatory Information Access Platforms**
-  - Authors: Bhaskar Mitra, Nicola Neophytou, Sireesh Gururaja
-  - Published: 2026-01-14 | Category: `cs.CY`
-  - Links: [arXiv](https://arxiv.org/abs/2601.09600v1) | [PDF](https://arxiv.org/pdf/2601.09600v1)
-  - Matched: safety, safe
-- **GlovEgo-HOI: Bridging the Synthetic-to-Real Gap for Industrial Egocentric Human-Object Interaction Detection**
-  - Authors: Alfio Spoto, Rosario Leonardi, Francesco Ragusa, Giovanni Maria Farinella
-  - Published: 2026-01-14 | Category: `cs.CV`
-  - Links: [arXiv](https://arxiv.org/abs/2601.09528v1) | [PDF](https://arxiv.org/pdf/2601.09528v1)
-  - Matched: safety, safe
-- **Class Adaptive Conformal Training**
-  - Authors: Badr-Eddine Marani, Julio Silva-Rodriguez, Ismail Ben Ayed, Maria Vakalopoulou, Stergios Christodoulidis, Jose Dolz
-  - Published: 2026-01-14 | Category: `cs.LG`
-  - Links: [arXiv](https://arxiv.org/abs/2601.09522v1) | [PDF](https://arxiv.org/pdf/2601.09522v1)
+- **PLGC: Pseudo-Labeled Graph Condensation**
+  - Authors: Jay Nandy, Arnab Kumar Mondal, Anuj Rathore, Mahesh Chandran
+  - Published: 2026-01-15 | Category: `cs.LG`
+  - Links: [arXiv](https://arxiv.org/abs/2601.10358v1) | [PDF](https://arxiv.org/pdf/2601.10358v1)
+  - Matched: robustness
+- **EvoMorph: Counterfactual Explanations for Continuous Time-Series Extrinsic Regression Applied to Photoplethysmography**
+  - Authors: Mesut Ceylan, Alexis Tabin, Patrick Langer, Elgar Fleisch, Filipe Barata
+  - Published: 2026-01-15 | Category: `cs.LG`
+  - Links: [arXiv](https://arxiv.org/abs/2601.10356v1) | [PDF](https://arxiv.org/pdf/2601.10356v1)
   - Matched: uncertainty
-- **FairGU: Fairness-aware Graph Unlearning in Social Network**
-  - Authors: Renqiang Luo, Yongshuai Yang, Huafei Huang, Qing Qing, Mingliang Hou, Ziqi Xu, Yi Yu, Jingjing Zhou et al.
-  - Published: 2026-01-14 | Category: `cs.LG`
-  - Links: [arXiv](https://arxiv.org/abs/2601.09469v1) | [PDF](https://arxiv.org/pdf/2601.09469v1)
-  - Matched: safe
-- **High-fidelity lunar topographic reconstruction across diverse terrain and illumination environments using deep learning**
-  - Authors: Hao Chen, Philipp Gläser, Konrad Willner, Jürgen Oberst
-  - Published: 2026-01-14 | Category: `astro-ph.EP`
-  - Links: [arXiv](https://arxiv.org/abs/2601.09468v1) | [PDF](https://arxiv.org/pdf/2601.09468v1)
+- **Low-Complexity Blind Estimator of SNR and MSE for mmWave Multi-Antenna Communications**
+  - Authors: Hanyoung Park, Ji-Woong Choi
+  - Published: 2026-01-15 | Category: `eess.SP`
+  - Links: [arXiv](https://arxiv.org/abs/2601.10331v1) | [PDF](https://arxiv.org/pdf/2601.10331v1)
   - Matched: robustness
-- **Monte-Carlo Tree Search with Neural Network Guidance for Lane-Free Autonomous Driving**
-  - Authors: Ioannis Peridis, Dimitrios Troullinos, Georgios Chalkiadakis, Pantelis Giankoulidis, Ioannis Papamichail, Markos Papageorgiou
-  - Published: 2026-01-14 | Category: `cs.AI`
-  - Links: [arXiv](https://arxiv.org/abs/2601.09353v1) | [PDF](https://arxiv.org/pdf/2601.09353v1)
-  - Matched: safety, safe
-- **Blue Teaming Function-Calling Agents**
-  - Authors: Greta Dolcetti, Giulio Zizzo, Sergio Maffeis
-  - Published: 2026-01-14 | Category: `cs.CR`
-  - Links: [arXiv](https://arxiv.org/abs/2601.09292v1) | [PDF](https://arxiv.org/pdf/2601.09292v1)
-  - Matched: safe, robustness
-- **STaR: Sensitive Trajectory Regulation for Unlearning in Large Reasoning Models**
-  - Authors: Jingjing Zhou, Gaoxiang Cong, Li Su, Liang Li
-  - Published: 2026-01-14 | Category: `cs.AI`
-  - Links: [arXiv](https://arxiv.org/abs/2601.09281v1) | [PDF](https://arxiv.org/pdf/2601.09281v1)
-  - Matched: safety, safe
-- **BrainSegNet: A Novel Framework for Whole-Brain MRI Parcellation Enhanced by Large Models**
-  - Authors: Yucheng Li, Xiaofan Wang, Junyi Wang, Yijie Li, Xi Zhu, Mubai Du, Dian Sheng, Wei Zhang et al.
-  - Published: 2026-01-14 | Category: `cs.CV`
-  - Links: [arXiv](https://arxiv.org/abs/2601.09263v1) | [PDF](https://arxiv.org/pdf/2601.09263v1)
+- **SRAW-Attack: Space-Reweighted Adversarial Warping Attack for SAR Target Recognition**
+  - Authors: Yiming Zhang, Weibo Qin, Yuntian Liu, Feng Wang
+  - Published: 2026-01-15 | Category: `cs.CV`
+  - Links: [arXiv](https://arxiv.org/abs/2601.10324v1) | [PDF](https://arxiv.org/pdf/2601.10324v1)
+  - Matched: robustness, adversarial
+- **ROMA: Real-time Omni-Multimodal Assistant with Interactive Streaming Understanding**
+  - Authors: Xueyun Tian, Wei Li, Bingbing Xu, Heng Dong, Yuanzhuo Wang, Huawei Shen
+  - Published: 2026-01-15 | Category: `cs.CV`
+  - Links: [arXiv](https://arxiv.org/abs/2601.10323v1) | [PDF](https://arxiv.org/pdf/2601.10323v1)
   - Matched: robustness
-- **Vision-Conditioned Variational Bayesian Last Layer Dynamics Models**
-  - Authors: Paul Brunzema, Thomas Lew, Ray Zhang, Takeru Shirasawa, John Subosits, Marcus Greiff
-  - Published: 2026-01-14 | Category: `cs.RO`
-  - Links: [arXiv](https://arxiv.org/abs/2601.09178v1) | [PDF](https://arxiv.org/pdf/2601.09178v1)
-  - Matched: safety, safe
-- **Geometric Stability: The Missing Axis of Representations**
-  - Authors: Prashant C. Raju
-  - Published: 2026-01-14 | Category: `cs.LG`
-  - Links: [arXiv](https://arxiv.org/abs/2601.09173v1) | [PDF](https://arxiv.org/pdf/2601.09173v1)
-  - Matched: safety, safe
-- **Multi-Teacher Ensemble Distillation: A Mathematical Framework for Probability-Domain Knowledge Aggregation**
-  - Authors: Aaron R. Flouro, Shawn P. Chadwick
-  - Published: 2026-01-14 | Category: `cs.LG`
-  - Links: [arXiv](https://arxiv.org/abs/2601.09165v1) | [PDF](https://arxiv.org/pdf/2601.09165v1)
-  - Matched: safety, safe
-- **From Snow to Rain: Evaluating Robustness, Calibration, and Complexity of Model-Based Robust Training**
-  - Authors: Josué Martínez-Martínez, Olivia Brown, Giselle Zeno, Pooya Khorrami, Rajmonda Caceres
-  - Published: 2026-01-14 | Category: `cs.CV`
-  - Links: [arXiv](https://arxiv.org/abs/2601.09153v1) | [PDF](https://arxiv.org/pdf/2601.09153v1)
-  - Matched: safety, safe, calibration, robustness, adversarial
-- **SSVP: Synergistic Semantic-Visual Prompting for Industrial Zero-Shot Anomaly Detection**
-  - Authors: Chenhao Fu, Han Fang, Xiuzheng Zheng, Wenbo Wei, Yonghua Li, Hao Sun, Xuelong Li
-  - Published: 2026-01-14 | Category: `cs.CV`
-  - Links: [arXiv](https://arxiv.org/abs/2601.09147v1) | [PDF](https://arxiv.org/pdf/2601.09147v1)
-  - Matched: calibration, robustness, anomaly detection
-- **SkinFlow: Efficient Information Transmission for Open Dermatological Diagnosis via Dynamic Visual Encoding and Staged RL**
-  - Authors: Lijun Liu, Linwei Chen, Zhishou Zhang, Meng Tian, Hengfu Cui, Ruiyang Li, Zhaocheng Liu, Qiang Ju et al.
-  - Published: 2026-01-14 | Category: `cs.CV`
-  - Links: [arXiv](https://arxiv.org/abs/2601.09136v1) | [PDF](https://arxiv.org/pdf/2601.09136v1)
-  - Matched: safety, safe
-- **A Marketplace for AI-Generated Adult Content and Deepfakes**
-  - Authors: Shalmoli Ghosh, Matthew R. DeVerna, Filippo Menczer
-  - Published: 2026-01-14 | Category: `cs.CY`
-  - Links: [arXiv](https://arxiv.org/abs/2601.09117v1) | [PDF](https://arxiv.org/pdf/2601.09117v1)
-  - Matched: safe
+- **Hierarchical Refinement of Universal Multimodal Attacks on Vision-Language Models**
+  - Authors: Peng-Fei Zhang, Zi Huang
+  - Published: 2026-01-15 | Category: `cs.CV`
+  - Links: [arXiv](https://arxiv.org/abs/2601.10313v1) | [PDF](https://arxiv.org/pdf/2601.10313v1)
+  - Matched: adversarial
+- **We Need a More Robust Classifier: Dual Causal Learning Empowers Domain-Incremental Time Series Classification**
+  - Authors: Zhipeng Liu, Peibo Duan, Xuan Tang, Haodong Jing, Mingyang Geng, Yongsheng Huang, Jialu Xu, Bin Zhang et al.
+  - Published: 2026-01-15 | Category: `cs.LG`
+  - Links: [arXiv](https://arxiv.org/abs/2601.10312v1) | [PDF](https://arxiv.org/pdf/2601.10312v1)
+  - Matched: robustness
+- **Early Fault Detection on CMAPSS with Unsupervised LSTM Autoencoders**
+  - Authors: P. Sánchez, K. Reyes, B. Radu, E. Fernández
+  - Published: 2026-01-15 | Category: `cs.LG`
+  - Links: [arXiv](https://arxiv.org/abs/2601.10269v1) | [PDF](https://arxiv.org/pdf/2601.10269v1)
+  - Matched: fault detection
 
 ---
 
