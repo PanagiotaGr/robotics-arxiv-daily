@@ -41,12 +41,34 @@ Window: last **2** days
 
 
 <!-- BEGIN TODAY -->
-| Topic | Papers | Link |
-|------|--------|------|
-| Autonomous Driving & AV |  | view |
-| SLAM, Localization & Mapping |  | view |
-| Drones & Aerial Robotics |  | view |
-| 3D Gaussian Splatting & Neural Rendering (Robotics) |  |  |
+<!-- BEGIN TODAY -->
+
+## ✅ Today
+
+**Last update:** 2026-01-16
+**Daily archive:** [`digests/2026-01-16.md`](digests/2026-01-16.md)
+
+*Auto-generated. Edit `config.yaml` to change topics/keywords.*
+
+### Latest arXiv Digest
+
+Updated: **2026-01-16**
+Window: last **2** days
+
+| Topic                                               | Papers | Link                                                              |
+| --------------------------------------------------- | -----: | ----------------------------------------------------------------- |
+| Autonomous Driving & AV                             |      — | [view](topics/autonomous-driving-av.md)                           |
+| Drones & Aerial Robotics                            |      — | [view](topics/drones-aerial-robotics.md)                          |
+| SLAM, Localization & Mapping                        |      — | [view](topics/slam-localization-mapping.md)                       |
+| Navigation, Planning & Control                      |      — | [view](topics/navigation-planning-control.md)                     |
+| Manipulation & Grasping                             |      — | [view](topics/manipulation-grasping.md)                           |
+| Robot Learning (RL, IL, Foundation Models)          |      — | [view](topics/robot-learning-rl-il-foundation-models.md)          |
+| Multi-Robot & Swarms                                |      — | [view](topics/multi-robot-swarms.md)                              |
+| Safety, Robustness, Uncertainty                     |      — | [view](topics/safety-robustness-uncertainty.md)                   |
+| 3D Gaussian Splatting & Neural Rendering (Robotics) |      — | [view](topics/3d-gaussian-splatting-neural-rendering-robotics.md) |
+
+<!-- END TODAY -->
+
 
 ### Browse by topic (links)
 
