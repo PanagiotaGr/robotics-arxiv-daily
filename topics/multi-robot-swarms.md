@@ -2,52 +2,41 @@
 
 _Robotics arXiv Daily_
 
-_Updated: 2026-01-21 06:53 UTC_
+_Updated: 2026-01-22 06:51 UTC_
 
-Total papers shown: **4**
+Total papers shown: **3**
 
 
 ---
 
-- **Communication-Free Collective Navigation for a Swarm of UAVs via LiDAR-Based Deep Reinforcement Learning**  
-  Myong-Yol Choi, Hankyoul Ko, Hanse Cho, Changseung Kim, Seunghwan Kim, Jaemin Seo, Hyondong Oh  
-  _2026-01-20_ · https://arxiv.org/abs/2601.13657v1 · `cs.RO`  
+- **Integrated Sensing, Communication and Control enabled Agile UAV Swarm**  
+  Zhiqing Wei, Yucong Du, Zhiyong Feng, Haotian Liu, Yanpeng Cui, Tao Zhang, Ying Zhou, Huici Wu  
+  _2026-01-21_ · https://arxiv.org/abs/2601.14783v1 · `eess.SP`  
   <details><summary>Abstract</summary>
 
-  This paper presents a deep reinforcement learning (DRL) based controller for collective navigation of unmanned aerial vehicle (UAV) swarms in communication-denied environments, enabling robust operation in complex, obstacle-rich environments. Inspired by biological swarms where informed individuals guide groups without explicit communication, we employ an implicit leader-follower framework. In this paradigm, only the leader possesses goal information, while follower UAVs learn robust policies using only onboard LiDAR sensing, without requiring any inter-agent communication or leader identification. Our system utilizes LiDAR point clustering and an extended Kalman filter for stable neighbor tracking, providing reliable perception independent of external positioning systems. The core of our approach is a DRL controller, trained in GPU-accelerated Nvidia Isaac Sim, that enables followers to learn complex emergent behaviors - balancing flocking and obstacle avoidance - using only local perception. This allows the swarm to implicitly follow the leader while robustly addressing perceptual challenges such as occlusion and limited field-of-view. The robustness and sim-to-real transfer of our approach are confirmed through extensive simulations and challenging real-world experiments with a swarm of five UAVs, which successfully demonstrated collective navigation across diverse indoor and outdoor environments without any communication or external localization.
+  Uncrewed aerial vehicle (UAV) swarms are pivotal in the applications such as disaster relief, aerial base station (BS) and logistics transportation. These scenarios require the capabilities in accurate sensing, efficient communication and flexible control for real-time and reliable task execution. However, sensing, communication and control are studied independently in traditional research, which limits the overall performance of UAV swarms. To overcome this disadvantage, we propose a deeply coupled scheme of integrated sensing, communication and control (ISCC) for UAV swarms, which is a systemic paradigm that transcends traditional isolated designs of sensing, communication and control by establishing a tightly-coupled closed-loop through the co-optimization of sensing, communication and control. In this article, we firstly analyze the requirements of scenarios and key performance metrics. Subsequently, the enabling technologies are proposed, including communication-and-control-enhanced sensing, sensing-and-control-enhanced communication, and sensing-and-communication-enhanced control. Simulation results validate the performance of the proposed ISCC framework, demonstrating its application potential in the future.
 
   </details>
 
 
 
-- **The Orchestration of Multi-Agent Systems: Architectures, Protocols, and Enterprise Adoption**  
-  Apoorva Adimulam, Rajesh Gupta, Sumit Kumar  
-  _2026-01-20_ · https://arxiv.org/abs/2601.13671v1 · `cs.MA`  
+- **Federated Transformer-GNN for Privacy-Preserving Brain Tumor Localization with Modality-Level Explainability**  
+  Andrea Protani, Riccardo Taiello, Marc Molina Van Den Bosch, Luigi Serio  
+  _2026-01-21_ · https://arxiv.org/abs/2601.15042v1 · `cs.CV`  
   <details><summary>Abstract</summary>
 
-  Orchestrated multi-agent systems represent the next stage in the evolution of artificial intelligence, where autonomous agents collaborate through structured coordination and communication to achieve complex, shared objectives. This paper consolidates and formalizes the technical composition of such systems, presenting a unified architectural framework that integrates planning, policy enforcement, state management, and quality operations into a coherent orchestration layer. Another primary contribution of this work is the in-depth technical delineation of two complementary communication protocols - the Model Context Protocol, which standardizes how agents access external tools and contextual data, and the Agent2Agent protocol, which governs peer coordination, negotiation, and delegation. Together, these protocols establish an interoperable communication substrate that enables scalable, auditable, and policy-compliant reasoning across distributed agent collectives. Beyond protocol design, the paper details how orchestration logic, governance frameworks, and observability mechanisms collectively sustain system coherence, transparency, and accountability. By synthesizing these elements into a cohesive technical blueprint, this paper provides comprehensive treatments of orchestrated multi-agent systems - bridging conceptual architectures with implementation-ready design principles for enterprise-scale AI ecosystems.
+  Deep learning models for brain tumor analysis require large and diverse datasets that are often siloed across healthcare institutions due to privacy regulations. We present a federated learning framework for brain tumor localization that enables multi-institutional collaboration without sharing sensitive patient data. Our method extends a hybrid Transformer-Graph Neural Network architecture derived from prior decoder-free supervoxel GNNs and is deployed within CAFEIN\textsuperscript{\textregistered}, CERN's federated learning platform designed for healthcare environments. We provide an explainability analysis through Transformer attention mechanisms that reveals which MRI modalities drive the model predictions. Experiments on the BraTS dataset demonstrate a key finding: while isolated training on individual client data triggers early stopping well before reaching full training capacity, federated learning enables continued model improvement by leveraging distributed data, ultimately matching centralized performance. This result provides strong justification for federated learning when dealing with complex tasks and high-dimensional input data, as aggregating knowledge from multiple institutions significantly benefits the learning process. Our explainability analysis, validated through rigorous statistical testing on the full test set (paired t-tests with Bonferroni correction), reveals that deeper network layers significantly increase attention to T2 and FLAIR modalities ($p<0.001$, Cohen's $d$=1.50), aligning with clinical practice.
 
   </details>
 
 
 
-- **Remapping and navigation of an embedding space via error minimization: a fundamental organizational principle of cognition in natural and artificial systems**  
-  Benedikt Hartl, Léo Pio-Lopez, Chris Fields, Michael Levin  
-  _2026-01-20_ · https://arxiv.org/abs/2601.14096v1 · `cs.AI`  
+- **Mechanism Shift During Post-training from Autoregressive to Masked Diffusion Language Models**  
+  Injin Kong, Hyoungjoon Lee, Yohan Jo  
+  _2026-01-21_ · https://arxiv.org/abs/2601.14758v1 · `cs.LG`  
   <details><summary>Abstract</summary>
 
-  The emerging field of diverse intelligence seeks an integrated view of problem-solving in agents of very different provenance, composition, and substrates. From subcellular chemical networks to swarms of organisms, and across evolved, engineered, and chimeric systems, it is hypothesized that scale-invariant principles of decision-making can be discovered. We propose that cognition in both natural and synthetic systems can be characterized and understood by the interplay between two equally important invariants: (1) the remapping of embedding spaces, and (2) the navigation within these spaces. Biological collectives, from single cells to entire organisms (and beyond), remap transcriptional, morphological, physiological, or 3D spaces to maintain homeostasis and regenerate structure, while navigating these spaces through distributed error correction. Modern Artificial Intelligence (AI) systems, including transformers, diffusion models, and neural cellular automata enact analogous processes by remapping data into latent embeddings and refining them iteratively through contextualization. We argue that this dual principle - remapping and navigation of embedding spaces via iterative error minimization - constitutes a substrate-independent invariant of cognition. Recognizing this shared mechanism not only illuminates deep parallels between living systems and artificial models, but also provides a unifying framework for engineering adaptive intelligence across scales.
-
-  </details>
-
-
-
-- **TSN-IoT: A Two-Stage NOMA-Enabled Framework for Prioritized Traffic Handling in Dense IoT Networks**  
-  Shama Siddiqui, Anwar Ahmed Khan, Nicola Marchetti  
-  _2026-01-20_ · https://arxiv.org/abs/2601.13680v1 · `eess.SP`  
-  <details><summary>Abstract</summary>
-
-  With the growing applications of the Internet of Things (IoT), a major challenge is to ensure continuous connectivity while providing prioritized access. In dense IoT scenarios, synchronization may be disrupted either by the movement of nodes away from base stations or by the unavailability of reliable Global Navigation Satellite System (GNSS) signals, which can be affected by physical obstructions, multipath fading, or environmental interference, such as such as walls, buildings, moving objects, or electromagnetic noise from surrounding devices. In such contexts, distributed synchronization through Non-Orthogonal Multiple Access (NOMA) offers a promising solution, as it enables simultaneous transmission to multiple users with different power levels, supporting efficient synchronization while minimizing the signaling overhead. Moreover, NOMA also plays a vital role for dynamic priority management in dense and heterogeneous IoT environments. In this article, we proposed a Two-Stage NOMA-Enabled Framework "TSN-IoT" that integrates the mechanisms of conventional Precision Time Protocol (PTP) based synchronization, distributed synchronization and data transmission. The framework is designed as a four-tier architecture that facilitates prioritized data delivery from sensor nodes to the central base station. We demonstrated the performance of "TSN-IoT" through a healthcare use case, where intermittent connectivity and varying data priority levels present key challenges for reliable communication. Synchronization speed and end-to-end delay were evaluated through a series of simulations implemented in Python. Results show that, compared to priority-based Orthogonal Frequency Division Multiple Access (OFDMA), TSN-IoT achieves significantly better performance by offering improved synchronization opportunities and enabling parallel transmissions over the same sub-carrier.
+  Post-training pretrained Autoregressive models (ARMs) into Masked Diffusion models (MDMs) has emerged as a cost-effective strategy to overcome the limitations of sequential generation. However, the internal algorithmic transformations induced by this paradigm shift remain unexplored, leaving it unclear whether post-trained MDMs acquire genuine bidirectional reasoning capabilities or merely repackage autoregressive heuristics. In this work, we address this question by conducting a comparative circuit analysis of ARMs and their MDM counterparts. Our analysis reveals a systematic "mechanism shift" dependent on the structural nature of the task. Structurally, we observe a distinct divergence: while MDMs largely retain autoregressive circuitry for tasks dominated by local causal dependencies, they abandon initialized pathways for global planning tasks, exhibiting distinct rewiring characterized by increased early-layer processing. Semantically, we identify a transition from sharp, localized specialization in ARMs to distributed integration in MDMs. Through these findings, we conclude that diffusion post-training does not merely adapt model parameters but fundamentally reorganizes internal computation to support non-sequential global planning.
 
   </details>
 
