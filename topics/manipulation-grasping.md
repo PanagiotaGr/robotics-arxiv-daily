@@ -2,7 +2,7 @@
 
 _Robotics arXiv Daily_
 
-_Updated: 2026-01-23 06:51 UTC_
+_Updated: 2026-01-24 06:46 UTC_
 
 Total papers shown: **5**
 
