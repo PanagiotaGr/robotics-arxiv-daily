@@ -2,173 +2,107 @@
 
 _Robotics arXiv Daily_
 
-_Updated: 2026-01-27 06:52 UTC_
+_Updated: 2026-01-28 06:52 UTC_
 
-Total papers shown: **15**
+Total papers shown: **9**
 
 
 ---
 
-- **Co-PLNet: A Collaborative Point-Line Network for Prompt-Guided Wireframe Parsing**  
-  Chao Wang, Xuanying Li, Cheng Dai, Jinglei Feng, Yuxiang Luo, Yuqi Ouyang, Hao Qin  
-  _2026-01-26_ · https://arxiv.org/abs/2601.18252v1 · `cs.CV`  
+- **The S3LI Vulcano Dataset: A Dataset for Multi-Modal SLAM in Unstructured Planetary Environments**  
+  Riccardo Giubilato, Marcus Gerhard Müller, Marco Sewtz, Laura Alejandra Encinar Gonzalez, John Folkesson, Rudolph Triebel  
+  _2026-01-27_ · https://arxiv.org/abs/2601.19557v1 · `cs.CV`  
   <details><summary>Abstract</summary>
 
-  Wireframe parsing aims to recover line segments and their junctions to form a structured geometric representation useful for downstream tasks such as Simultaneous Localization and Mapping (SLAM). Existing methods predict lines and junctions separately and reconcile them post-hoc, causing mismatches and reduced robustness. We present Co-PLNet, a point-line collaborative framework that exchanges spatial cues between the two tasks, where early detections are converted into spatial prompts via a Point-Line Prompt Encoder (PLP-Encoder), which encodes geometric attributes into compact and spatially aligned maps. A Cross-Guidance Line Decoder (CGL-Decoder) then refines predictions with sparse attention conditioned on complementary prompts, enforcing point-line consistency and efficiency. Experiments on Wireframe and YorkUrban show consistent improvements in accuracy and robustness, together with favorable real-time efficiency, demonstrating our effectiveness for structured geometry perception.
+  We release the S3LI Vulcano dataset, a multi-modal dataset towards development and benchmarking of Simultaneous Localization and Mapping (SLAM) and place recognition algorithms that rely on visual and LiDAR modalities. Several sequences are recorded on the volcanic island of Vulcano, from the Aeolian Islands in Sicily, Italy. The sequences provide users with data from a variety of environments, textures and terrains, including basaltic or iron-rich rocks, geological formations from old lava channels, as well as dry vegetation and water. The data (rmc.dlr.de/s3li_dataset) is accompanied by an open source toolkit (github.com/DLR-RM/s3li-toolkit) providing tools for generating ground truth poses as well as preparation of labelled samples for place recognition tasks.
 
   </details>
 
 
 
-- **Low Cost, High Efficiency: LiDAR Place Recognition in Vineyards with Matryoshka Representation Learning**  
-  Judith Vilella-Cantos, Mauro Martini, Marcello Chiaberge, Mónica Ballesta, David Valiente  
-  _2026-01-26_ · https://arxiv.org/abs/2601.18714v1 · `cs.CV`  
+- **VGGT-SLAM 2.0: Real time Dense Feed-forward Scene Reconstruction**  
+  Dominic Maggio, Luca Carlone  
+  _2026-01-27_ · https://arxiv.org/abs/2601.19887v1 · `cs.CV`  
   <details><summary>Abstract</summary>
 
-  Localization in agricultural environments is challenging due to their unstructured nature and lack of distinctive landmarks. Although agricultural settings have been studied in the context of object classification and segmentation, the place recognition task for mobile robots is not trivial in the current state of the art. In this study, we propose MinkUNeXt-VINE, a lightweight, deep-learning-based method that surpasses state-of-the-art methods in vineyard environments thanks to its pre-processing and Matryoshka Representation Learning multi-loss approach. Our method prioritizes enhanced performance with low-cost, sparse LiDAR inputs and lower-dimensionality outputs to ensure high efficiency in real-time scenarios. Additionally, we present a comprehensive ablation study of the results on various evaluation cases and two extensive long-term vineyard datasets employing different LiDAR sensors. The results demonstrate the efficiency of the trade-off output produced by this approach, as well as its robust performance on low-cost and low-resolution input data. The code is publicly available for reproduction.
+  We present VGGT-SLAM 2.0, a real time RGB feed-forward SLAM system which substantially improves upon VGGT-SLAM for incrementally aligning submaps created from VGGT. Firstly, we remove high-dimensional 15-degree-of-freedom drift and planar degeneracy from VGGT-SLAM by creating a new factor graph design while still addressing the reconstruction ambiguity of VGGT given unknown camera intrinsics. Secondly, by studying the attention layers of VGGT, we show that one of the layers is well suited to assist in image retrieval verification for free without additional training, which enables both rejecting false positive matches and allows for completing more loop closures. Finally, we conduct a suite of experiments which includes showing VGGT-SLAM 2.0 can easily be adapted for open-set object detection and demonstrating real time performance while running online onboard a ground robot using a Jetson Thor. We also test in environments ranging from cluttered indoor apartments and office scenes to a 4,200 square foot barn, and we also demonstrate VGGT-SLAM 2.0 achieves the highest accuracy on the TUM dataset with about 23 percent less pose error than VGGT-SLAM. Code will be released upon publication.
 
   </details>
 
 
 
-- **AI-enabled Satellite Edge Computing: A Single-Pixel Feature based Shallow Classification Model for Hyperspectral Imaging**  
-  Li Fang, Tianyu Li, Yanghong Lin, Shudong Zhou, Wei Yao  
-  _2026-01-26_ · https://arxiv.org/abs/2601.18560v1 · `cs.CV`  
+- **Enhancing Inverse Perspective Mapping for Automatic Vectorized Road Map Generation**  
+  Hongji Liu, Linwei Zheng, Yongjian Li, Mingkai Tang, Xiaoyang Yan, Ming Liu, Jun Ma  
+  _2026-01-27_ · https://arxiv.org/abs/2601.19536v1 · `cs.RO`  
   <details><summary>Abstract</summary>
 
-  As the important component of the Earth observation system, hyperspectral imaging satellites provide high-fidelity and enriched information for the formulation of related policies due to the powerful spectral measurement capabilities. However, the transmission speed of the satellite downlink has become a major bottleneck in certain applications, such as disaster monitoring and emergency mapping, which demand a fast response ability. We propose an efficient AI-enabled Satellite Edge Computing paradigm for hyperspectral image classification, facilitating the satellites to attain autonomous decision-making. To accommodate the resource constraints of satellite platforms, the proposed method adopts a lightweight, non-deep learning framework integrated with a few-shot learning strategy. Moreover, onboard processing on satellites could be faced with sensor failure and scan pattern errors, which result in degraded image quality with bad/misaligned pixels and mixed noise. To address these challenges, we develop a novel two-stage pixel-wise label propagation scheme that utilizes only intrinsic spectral features at the single pixel level without the necessity to consider spatial structural information as requested by deep neural networks. In the first stage, initial pixel labels are obtained by propagating selected anchor labels through the constructed anchor-pixel affinity matrix. Subsequently, a top-k pruned sparse graph is generated by directly computing pixel-level similarities. In the second stage, a closed-form solution derived from the sparse graph is employed to replace iterative computations. Furthermore, we developed a rank constraint-based graph clustering algorithm to determine the anchor labels.
+  In this study, we present a low-cost and unified framework for vectorized road mapping leveraging enhanced inverse perspective mapping (IPM). In this framework, Catmull-Rom splines are utilized to characterize lane lines, and all the other ground markings are depicted using polygons uniformly. The results from instance segmentation serve as references to refine the three-dimensional position of spline control points and polygon corner points. In conjunction with this process, the homography matrix of IPM and vehicle poses are optimized simultaneously. Our proposed framework significantly reduces the mapping errors associated with IPM. It also improves the accuracy of the initial IPM homography matrix and the predicted vehicle poses. Furthermore, it addresses the limitations imposed by the coplanarity assumption in IPM. These enhancements enable IPM to be effectively applied to vectorized road mapping, which serves a cost-effective solution with enhanced accuracy. In addition, our framework generalizes road map elements to include all common ground markings and lane lines. The proposed framework is evaluated in two different practical scenarios, and the test results show that our method can automatically generate high-precision maps with near-centimeter-level accuracy. Importantly, the optimized IPM matrix achieves an accuracy comparable to that of manual calibration, while the accuracy of vehicle poses is also significantly improved.
 
   </details>
 
 
 
-- **Unsupervised Text Segmentation via Kernel Change-Point Detection on Sentence Embeddings**  
-  Mumin Jia, Jairo Diaz-Rodriguez  
-  _2026-01-26_ · https://arxiv.org/abs/2601.18788v1 · `cs.CL`  
+- **Generative Latent Alignment for Interpretable Radar Based Occupancy Detection in Ambient Assisted Living**  
+  Huy Trinh  
+  _2026-01-27_ · https://arxiv.org/abs/2601.19853v1 · `eess.SP`  
   <details><summary>Abstract</summary>
 
-  Unsupervised text segmentation is crucial because boundary labels are expensive, subjective, and often fail to transfer across domains and granularity choices. We propose Embed-KCPD, a training-free method that represents sentences as embedding vectors and estimates boundaries by minimizing a penalized KCPD objective. Beyond the algorithmic instantiation, we develop, to our knowledge, the first dependence-aware theory for KCPD under $m$-dependent sequences, a finite-memory abstraction of short-range dependence common in language. We prove an oracle inequality for the population penalized risk and a localization guarantee showing that each true change point is recovered within a window that is small relative to segment length. To connect theory to practice, we introduce an LLM-based simulation framework that generates synthetic documents with controlled finite-memory dependence and known boundaries, validating the predicted scaling behavior. Across standard segmentation benchmarks, Embed-KCPD often outperforms strong unsupervised baselines. A case study on Taylor Swift's tweets illustrates that Embed-KCPD combines strong theoretical guarantees, simulated reliability, and practical effectiveness for text segmentation.
+  In this work, we study how to make mmWave radar presence detection more interpretable for Ambient Assisted Living (AAL) settings, where camera-based sensing raises privacy concerns. We propose a Generative Latent Alignment (GLA) framework that combines a lightweight convolutional variational autoencoder with a frozen CLIP text encoder to learn a low-dimensional latent representation of radar Range-Angle (RA) heatmaps. The latent space is softly aligned with two semantic anchors corresponding to "empty room" and "person present", and Grad-CAM is applied in this aligned latent space to visualize which spatial regions support each presence decision. On our mmWave radar dataset, we qualitatively observe that the "person present" class produces compact Grad-CAM blobs that coincide with strong RA returns, whereas "empty room" samples yield diffuse or no evidence. We also conduct an ablation study using unrelated text prompts, which degrades both reconstruction and localization, suggesting that radar-specific anchors are important for meaningful explanations in this setting.
 
   </details>
 
 
 
-- **Contrasting Global and Patient-Specific Regression Models via a Neural Network Representation**  
-  Max Behrens, Daiana Stolz, Eleni Papakonstantinou, Janis M. Nolde, Gabriele Bellerino, Angelika Rohde, Moritz Hess, Harald Binder  
-  _2026-01-26_ · https://arxiv.org/abs/2601.18658v1 · `stat.ME`  
+- **Out-of-Distribution Generalization via Invariant Trajectories for Multimodal Large Language Model Editing**  
+  Jiajie Su, Haoyuan Wang, Xiaohua Feng, Yunshan Ma, Xiaobo Xia, Yuyuan Li, Xiaolin Zheng, Jianmao Xiao, Chaochao Chen  
+  _2026-01-27_ · https://arxiv.org/abs/2601.19700v1 · `cs.LG`  
   <details><summary>Abstract</summary>
 
-  When developing clinical prediction models, it can be challenging to balance between global models that are valid for all patients and personalized models tailored to individuals or potentially unknown subgroups. To aid such decisions, we propose a diagnostic tool for contrasting global regression models and patient-specific (local) regression models. The core utility of this tool is to identify where and for whom a global model may be inadequate. We focus on regression models and specifically suggest a localized regression approach that identifies regions in the predictor space where patients are not well represented by the global model. As localization becomes challenging when dealing with many predictors, we propose modeling in a dimension-reduced latent representation obtained from an autoencoder. Using such a neural network architecture for dimension reduction enables learning a latent representation simultaneously optimized for both good data reconstruction and for revealing local outcome-related associations suitable for robust localized regression. We illustrate the proposed approach with a clinical study involving patients with chronic obstructive pulmonary disease. Our findings indicate that the global model is adequate for most patients but that indeed specific subgroups benefit from personalized models. We also demonstrate how to map these subgroup models back to the original predictors, providing insight into why the global model falls short for these groups. Thus, the principal application and diagnostic yield of our tool is the identification and characterization of patients or subgroups whose outcome associations deviate from the global model.
+  Knowledge editing emerges as a crucial technique for efficiently correcting incorrect or outdated knowledge in large language models (LLM). Existing editing methods for unimodal LLM rely on a rigid parameter-to-output mapping, which causes causal-underfit and causal-overfit in cascaded reasoning for Multimodal LLM (MLLM). In this paper, we reformulate MLLM editing as an out-of-distribution (OOD) generalization problem, where the goal is to discern semantic shift with factual shift and thus achieve robust editing among diverse cross-modal prompting. The key challenge of this OOD problem lies in identifying invariant causal trajectories that generalize accurately while suppressing spurious correlations. To address it, we propose ODEdit, a plug-and-play invariant learning based framework that optimizes the tripartite OOD risk objective to simultaneously enhance editing reliability, locality, and generality.We further introduce an edit trajectory invariant learning method, which integrates a total variation penalty into the risk minimization objective to stabilize edit trajectories against environmental variations. Theoretical analysis and extensive experiments demonstrate the effectiveness of ODEdit.
 
   </details>
 
 
 
-- **Synchronization and Localization in Ad-Hoc ICAS Networks Using a Two-Stage Kuramoto Method**  
-  Dominik Neudert-Schulz, Thomas Dallmann  
-  _2026-01-26_ · https://arxiv.org/abs/2601.18643v1 · `eess.SP`  
+- **Learning Adaptive Parallel Execution for Efficient Code Localization**  
+  Ke Xu, Siyang Xiao, Ming Liang, Yichen Yu, Zhixiang Wang, Jingxuan Xu, Dajun Chen, Wei Jiang, Yong Li  
+  _2026-01-27_ · https://arxiv.org/abs/2601.19568v1 · `cs.AI`  
   <details><summary>Abstract</summary>
 
-  To enable Integrated Communications and Sensing (ICAS) in a peer-to-peer vehicular network, precise synchronization in frequency and phase among the communicating entities is required. In addition, self-driving cars need accurate position estimates of the surrounding vehicles. In this work, we propose a joint, distributed synchronization and localization scheme for a network of communicating entities. Our proposed scheme is mostly signal-agnostic and therefore can be applied to a wide range of possible ICAS signals. We also mitigate the effect of finite sampling frequencies, which otherwise would degrade the synchronization and localization performance severely.
+  Code localization constitutes a key bottleneck in automated software development pipelines. While concurrent tool execution can enhance discovery speed, current agents demonstrate a 34.9\% redundant invocation rate, which negates parallelism benefits. We propose \textbf{FuseSearch}, reformulating parallel code localization as a \textbf{joint quality-efficiency optimization} task. Through defining \textbf{tool efficiency} -- the ratio of unique information gain to invocation count -- we utilize a two-phase SFT and RL training approach for learning adaptive parallel strategies. Different from fixed-breadth approaches, FuseSearch dynamically modulates search breadth according to task context, evolving from exploration phases to refinement stages. Evaluated on SWE-bench Verified, FuseSearch-4B achieves SOTA-level performance (84.7\% file-level and 56.4\% function-level $F_1$ scores) with 93.6\% speedup, utilizing 67.7\% fewer turns and 68.9\% fewer tokens. Results indicate that efficiency-aware training naturally improves quality through eliminating noisy redundant signals, enabling high-performance cost-effective localization agents.
 
   </details>
 
 
 
-- **Adaptive Domain Shift in Diffusion Models for Cross-Modality Image Translation**  
-  Zihao Wang, Yuzhou Chen, Shaogang Ren  
-  _2026-01-26_ · https://arxiv.org/abs/2601.18623v1 · `cs.CV`  
+- **Bridging Information Asymmetry: A Hierarchical Framework for Deterministic Blind Face Restoration**  
+  Zhengjian Yao, Jiakui Hu, Kaiwen Li, Hangzhou He, Xinliang Zhang, Shuang Zeng, Lei Zhu, Yanye Lu  
+  _2026-01-27_ · https://arxiv.org/abs/2601.19506v1 · `cs.CV`  
   <details><summary>Abstract</summary>
 
-  Cross-modal image translation remains brittle and inefficient. Standard diffusion approaches often rely on a single, global linear transfer between domains. We find that this shortcut forces the sampler to traverse off-manifold, high-cost regions, inflating the correction burden and inviting semantic drift. We refer to this shared failure mode as fixed-schedule domain transfer. In this paper, we embed domain-shift dynamics directly into the generative process. Our model predicts a spatially varying mixing field at every reverse step and injects an explicit, target-consistent restoration term into the drift. This in-step guidance keeps large updates on-manifold and shifts the model's role from global alignment to local residual correction. We provide a continuous-time formulation with an exact solution form and derive a practical first-order sampler that preserves marginal consistency. Empirically, across translation tasks in medical imaging, remote sensing, and electroluminescence semantic mapping, our framework improves structural fidelity and semantic consistency while converging in fewer denoising steps.
+  Blind face restoration remains a persistent challenge due to the inherent ill-posedness of reconstructing holistic structures from severely constrained observations. Current generative approaches, while capable of synthesizing realistic textures, often suffer from information asymmetry -- the intrinsic disparity between the information-sparse low quality inputs and the information-dense high quality outputs. This imbalance leads to a one-to-many mapping, where insufficient constraints result in stochastic uncertainty and hallucinatory artifacts. To bridge this gap, we present \textbf{Pref-Restore}, a hierarchical framework that integrates discrete semantic logic with continuous texture generation to achieve deterministic, preference-aligned restoration. Our methodology fundamentally addresses this information disparity through two complementary strategies: (1) Augmenting Input Density: We employ an auto-regressive integrator to reformulate textual instructions into dense latent queries, injecting high-level semantic stability to constrain the degraded signals; (2) Pruning Output Distribution: We pioneer the integration of on-policy reinforcement learning directly into the diffusion restoration loop. By transforming human preferences into differentiable constraints, we explicitly penalize stochastic deviations, thereby sharpening the posterior distribution toward the desired high-fidelity outcomes. Extensive experiments demonstrate that Pref-Restore achieves state-of-the-art performance across synthetic and real-world benchmarks. Furthermore, empirical analysis confirms that our preference-aligned strategy significantly reduces solution entropy, establishing a robust pathway toward reliable and deterministic blind restoration.
 
   </details>
 
 
 
-- **Geometry-Free Conditional Diffusion Modeling for Solving the Inverse Electrocardiography Problem**  
-  Ramiro Valdes Jara, Adam Meyers  
-  _2026-01-26_ · https://arxiv.org/abs/2601.18615v1 · `cs.LG`  
+- **Fast Converging 3D Gaussian Splatting for 1-Minute Reconstruction**  
+  Ziyu Zhang, Tianle Liu, Diantao Tu, Shuhan Shen  
+  _2026-01-27_ · https://arxiv.org/abs/2601.19489v1 · `cs.CV`  
   <details><summary>Abstract</summary>
 
-  This paper proposes a data-driven model for solving the inverse problem of electrocardiography, the mathematical problem that forms the basis of electrocardiographic imaging (ECGI). We present a conditional diffusion framework that learns a probabilistic mapping from noisy body surface signals to heart surface electric potentials. The proposed approach leverages the generative nature of diffusion models to capture the non-unique and underdetermined nature of the ECGI inverse problem, enabling probabilistic sampling of multiple reconstructions rather than a single deterministic estimate. Unlike traditional methods, the proposed framework is geometry-free and purely data-driven, alleviating the need for patient-specific mesh construction. We evaluate the method on a real ECGI dataset and compare it against strong deterministic baselines, including a convolutional neural network, long short-term memory network, and transformer-based model. The results demonstrate that the proposed diffusion approach achieves improved reconstruction accuracy, highlighting the potential of diffusion models as a robust tool for noninvasive cardiac electrophysiology imaging.
+  We present a fast 3DGS reconstruction pipeline designed to converge within one minute, developed for the SIGGRAPH Asia 3DGS Fast Reconstruction Challenge. The challenge consists of an initial round using SLAM-generated camera poses (with noisy trajectories) and a final round using COLMAP poses (highly accurate). To robustly handle these heterogeneous settings, we develop a two-stage solution. In the first round, we use reverse per-Gaussian parallel optimization and compact forward splatting based on Taming-GS and Speedy-splat, load-balanced tiling, an anchor-based Neural-Gaussian representation enabling rapid convergence with fewer learnable parameters, initialization from monocular depth and partially from feed-forward 3DGS models, and a global pose refinement module for noisy SLAM trajectories. In the final round, the accurate COLMAP poses change the optimization landscape; we disable pose refinement, revert from Neural-Gaussians back to standard 3DGS to eliminate MLP inference overhead, introduce multi-view consistency-guided Gaussian splitting inspired by Fast-GS, and introduce a depth estimator to supervise the rendered depth. Together, these techniques enable high-fidelity reconstruction under a strict one-minute budget. Our method achieved the top performance with a PSNR of 28.43 and ranked first in the competition.
 
   </details>
 
 
 
-- **Generative Diffusion Augmentation with Quantum-Enhanced Discrimination for Medical Image Diagnosis**  
-  Jingsong Xia, Siqi Wang  
-  _2026-01-26_ · https://arxiv.org/abs/2601.18556v1 · `cs.CV`  
+- **Metric $k$-clustering using only Weak Comparison Oracles**  
+  Rahul Raychaudhury, Aryan Esmailpour, Sainyam Galhotra, Stavros Sintos  
+  _2026-01-27_ · https://arxiv.org/abs/2601.19333v1 · `cs.LG`  
   <details><summary>Abstract</summary>
 
-  In biomedical engineering, artificial intelligence has become a pivotal tool for enhancing medical diagnostics, particularly in medical image classification tasks such as detecting pneumonia from chest X-rays and breast cancer screening. However, real-world medical datasets frequently exhibit severe class imbalance, where positive samples substantially outnumber negative samples, leading to biased models with low recall rates for minority classes. This imbalance not only compromises diagnostic accuracy but also poses clinical misdiagnosis risks. To address this challenge, we propose SDA-QEC (Simplified Diffusion Augmentation with Quantum-Enhanced Classification), an innovative framework that integrates simplified diffusion-based data augmentation with quantum-enhanced feature discrimination. Our approach employs a lightweight diffusion augmentor to generate high-quality synthetic samples for minority classes, rebalancing the training distribution. Subsequently, a quantum feature layer embedded within MobileNetV2 architecture enhances the model's discriminative capability through high-dimensional feature mapping in Hilbert space. Comprehensive experiments on coronary angiography image classification demonstrate that SDA-QEC achieves 98.33% accuracy, 98.78% AUC, and 98.33% F1-score, significantly outperforming classical baselines including ResNet18, MobileNetV2, DenseNet121, and VGG16. Notably, our framework simultaneously attains 98.33% sensitivity and 98.33% specificity, achieving a balanced performance critical for clinical deployment. The proposed method validates the feasibility of integrating generative augmentation with quantum-enhanced modeling in real-world medical imaging tasks, offering a novel research pathway for developing highly reliable medical AI systems in small-sample, highly imbalanced, and high-risk diagnostic scenarios.
-
-  </details>
-
-
-
-- **Fast and Safe Trajectory Optimization for Mobile Manipulators With Neural Configuration Space Distance Field**  
-  Yulin Li, Zhiyuan Song, Yiming Li, Zhicheng Song, Kai Chen, Chunxin Zheng, Zhihai Bi, Jiahang Cao, Sylvain Calinon, Fan Shi, et al.  
-  _2026-01-26_ · https://arxiv.org/abs/2601.18548v1 · `cs.RO`  
-  <details><summary>Abstract</summary>
-
-  Mobile manipulators promise agile, long-horizon behavior by coordinating base and arm motion, yet whole-body trajectory optimization in cluttered, confined spaces remains difficult due to high-dimensional nonconvexity and the need for fast, accurate collision reasoning. Configuration Space Distance Fields (CDF) enable fixed-base manipulators to model collisions directly in configuration space via smooth, implicit distances. This representation holds strong potential to bypass the nonlinear configuration-to-workspace mapping while preserving accurate whole-body geometry and providing optimization-friendly collision costs. Yet, extending this capability to mobile manipulators is hindered by unbounded workspaces and tighter base-arm coupling. We lift this promise to mobile manipulation with Generalized Configuration Space Distance Fields (GCDF), extending CDF to robots with both translational and rotational joints in unbounded workspaces with tighter base-arm coupling. We prove that GCDF preserves Euclidean-like local distance structure and accurately encodes whole-body geometry in configuration space, and develop a data generation and training pipeline that yields continuous neural GCDFs with accurate values and gradients, supporting efficient GPU-batched queries. Building on this representation, we develop a high-performance sequential convex optimization framework centered on GCDF-based collision reasoning. The solver scales to large numbers of implicit constraints through (i) online specification of neural constraints, (ii) sparsity-aware active-set detection with parallel batched evaluation across thousands of constraints, and (iii) incremental constraint management for rapid replanning under scene changes.
-
-  </details>
-
-
-
-- **Dualband OFDM Delay Estimation for Multi-Target Localization**  
-  Jialun Kou, Achiel Colpaert, Zhuangzhuang Cui, Sofie Pollin  
-  _2026-01-26_ · https://arxiv.org/abs/2601.18478v1 · `eess.SP`  
-  <details><summary>Abstract</summary>
-
-  Integrated localization and communication systems aim to reuse communication waveforms for simultaneous data transmission and localization, but delay resolution is fundamentally limited by the available bandwidth. In practice, large contiguous bandwidths are difficult to obtain due to hardware constraints and spectrum fragmentation. Aggregating non-contiguous narrow bands can increase the effective frequency span, but a non-contiguous frequency layout introduces challenges such as elevated sidelobes and ambiguity in delay estimation. This paper introduces a point-spread-function (PSF)-centric framework for dual-band OFDM delay estimation. We model the observed delay profile as the convolution of the true target response with a PSF determined by the dual-band subcarrier selection pattern, explicitly linking band configuration to resolution and ambiguity. To suppress PSF-induced artifacts, we adapt the RELAX algorithm for dual-band multi-target delay estimation. Simulations demonstrate improved robustness and accuracy in dual-band scenarios, supporting ILC under fragmented spectrum.
-
-  </details>
-
-
-
-- **Deep Reinforcement Learning for Hybrid RIS Assisted MIMO Communications**  
-  Phuong Nam Tran, Nhan Thanh Nguyen, Markku Juntti  
-  _2026-01-26_ · https://arxiv.org/abs/2601.18453v1 · `eess.SP`  
-  <details><summary>Abstract</summary>
-
-  Hybrid reconfigurable intelligent surfaces (HRIS) enhance wireless systems by combining passive reflection with active signal amplification. However, jointly optimizing the transmit beamforming with the HRIS reflection and amplification coefficients to maximize spectral efficiency (SE) is a non-convex problem, and conventional iterative solutions are computationally intensive. To address this, we propose a deep reinforcement learning (DRL) framework that learns a direct mapping from channel state information to the near-optimal transmit beamforming and HRIS configurations. The DRL model is trained offline, after which it can compute the beamforming and HRIS configurations with low complexity and latency. Simulation results demonstrate that our DRL-based method achieves 95% of the SE obtained by the alternating optimization benchmark, while significantly lowering the computational complexity.
-
-  </details>
-
-
-
-- **OREHAS: A fully automated deep-learning pipeline for volumetric endolymphatic hydrops quantification in MRI**  
-  Caterina Fuster-Barceló, Claudia Castrillón, Laura Rodrigo-Muñoz, Victor Manuel Vega-Suárez, Nicolás Pérez-Fernández, Gorka Bastarrika, Arrate Muñoz-Barrutia  
-  _2026-01-26_ · https://arxiv.org/abs/2601.18368v1 · `cs.CV`  
-  <details><summary>Abstract</summary>
-
-  We present OREHAS (Optimized Recognition & Evaluation of volumetric Hydrops in the Auditory System), the first fully automatic pipeline for volumetric quantification of endolymphatic hydrops (EH) from routine 3D-SPACE-MRC and 3D-REAL-IR MRI. The system integrates three components -- slice classification, inner ear localization, and sequence-specific segmentation -- into a single workflow that computes per-ear endolymphatic-to-vestibular volume ratios (ELR) directly from whole MRI volumes, eliminating the need for manual intervention. Trained with only 3 to 6 annotated slices per patient, OREHAS generalized effectively to full 3D volumes, achieving Dice scores of 0.90 for SPACE-MRC and 0.75 for REAL-IR. In an external validation cohort with complete manual annotations, OREHAS closely matched expert ground truth (VSI = 74.3%) and substantially outperformed the clinical syngo.via software (VSI = 42.5%), which tended to overestimate endolymphatic volumes. Across 19 test patients, vestibular measurements from OREHAS were consistent with syngo.via, while endolymphatic volumes were systematically smaller and more physiologically realistic. These results show that reliable and reproducible EH quantification can be achieved from standard MRI using limited supervision. By combining efficient deep-learning-based segmentation with a clinically aligned volumetric workflow, OREHAS reduces operator dependence, ensures methodological consistency. Besides, the results are compatible with established imaging protocols. The approach provides a robust foundation for large-scale studies and for recalibrating clinical diagnostic thresholds based on accurate volumetric measurements of the inner ear.
-
-  </details>
-
-
-
-- **Analytic Incremental Learning For Sound Source Localization With Imbalance Rectification**  
-  Zexia Fan, Yu Chen, Qiquan Zhang, Kainan Chen, Xinyuan Qian  
-  _2026-01-26_ · https://arxiv.org/abs/2601.18335v1 · `cs.SD`  
-  <details><summary>Abstract</summary>
-
-  Sound source localization (SSL) demonstrates remarkable results in controlled settings but struggles in real-world deployment due to dual imbalance challenges: intra-task imbalance arising from long-tailed direction-of-arrival (DoA) distributions, and inter-task imbalance induced by cross-task skews and overlaps. These often lead to catastrophic forgetting, significantly degrading the localization accuracy. To mitigate these issues, we propose a unified framework with two key innovations. Specifically, we design a GCC-PHAT-based data augmentation (GDA) method that leverages peak characteristics to alleviate intra-task distribution skews. We also propose an Analytic dynamic imbalance rectifier (ADIR) with task-adaption regularization, which enables analytic updates that adapt to inter-task dynamics. On the SSLR benchmark, our proposal achieves state-of-the-art (SoTA) results of 89.0% accuracy, 5.3° mean absolute error, and 1.6 backward transfer, demonstrating robustness to evolving imbalances without exemplar storage.
-
-  </details>
-
-
-
-- **What Do Learned Models Measure?**  
-  Indrė Žliobaitė  
-  _2026-01-26_ · https://arxiv.org/abs/2601.18278v1 · `cs.LG`  
-  <details><summary>Abstract</summary>
-
-  In many scientific and data-driven applications, machine learning models are increasingly used as measurement instruments, rather than merely as predictors of predefined labels. When the measurement function is learned from data, the mapping from observations to quantities is determined implicitly by the training distribution and inductive biases, allowing multiple inequivalent mappings to satisfy standard predictive evaluation criteria. We formalize learned measurement functions as a distinct focus of evaluation and introduce measurement stability, a property capturing invariance of the measured quantity across admissible realizations of the learning process and across contexts. We show that standard evaluation criteria in machine learning, including generalization error, calibration, and robustness, do not guarantee measurement stability. Through a real-world case study, we show that models with comparable predictive performance can implement systematically inequivalent measurement functions, with distribution shift providing a concrete illustration of this failure. Taken together, our results highlight a limitation of existing evaluation frameworks in settings where learned model outputs are identified as measurements, motivating the need for an additional evaluative dimension.
+  Clustering is a fundamental primitive in unsupervised learning. However, classical algorithms for $k$-clustering (such as $k$-median and $k$-means) assume access to exact pairwise distances -- an unrealistic requirement in many modern applications. We study clustering in the \emph{Rank-model (R-model)}, where access to distances is entirely replaced by a \emph{quadruplet oracle} that provides only relative distance comparisons. In practice, such an oracle can represent learned models or human feedback, and is expected to be noisy and entail an access cost. Given a metric space with $n$ input items, we design randomized algorithms that, using only a noisy quadruplet oracle, compute a set of $O(k \cdot \mathsf{polylog}(n))$ centers along with a mapping from the input items to the centers such that the clustering cost of the mapping is at most constant times the optimum $k$-clustering cost. Our method achieves a query complexity of $O(n\cdot k \cdot \mathsf{polylog}(n))$ for arbitrary metric spaces and improves to $O((n+k^2) \cdot \mathsf{polylog}(n))$ when the underlying metric has bounded doubling dimension. When the metric has bounded doubling dimension we can further improve the approximation from constant to $1+\varepsilon$, for any arbitrarily small constant $\varepsilon\in(0,1)$, while preserving the same asymptotic query complexity. Our framework demonstrates how noisy, low-cost oracles, such as those derived from large language models, can be systematically integrated into scalable clustering algorithms.
 
   </details>
 

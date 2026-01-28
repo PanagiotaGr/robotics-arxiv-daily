@@ -2,52 +2,41 @@
 
 _Robotics arXiv Daily_
 
-_Updated: 2026-01-27 06:52 UTC_
+_Updated: 2026-01-28 06:52 UTC_
 
-Total papers shown: **4**
+Total papers shown: **3**
 
 
 ---
 
-- **$α^3$-SecBench: A Large-Scale Evaluation Suite of Security, Resilience, and Trust for LLM-based UAV Agents over 6G Networks**  
-  Mohamed Amine Ferrag, Abderrahmane Lakas, Merouane Debbah  
-  _2026-01-26_ · https://arxiv.org/abs/2601.18754v1 · `cs.CR`  
+- **Perception-to-Pursuit: Track-Centric Temporal Reasoning for Open-World Drone Detection and Autonomous Chasing**  
+  Venkatakrishna Reddy Oruganti  
+  _2026-01-27_ · https://arxiv.org/abs/2601.19318v1 · `cs.RO`  
   <details><summary>Abstract</summary>
 
-  Autonomous unmanned aerial vehicle (UAV) systems are increasingly deployed in safety-critical, networked environments where they must operate reliably in the presence of malicious adversaries. While recent benchmarks have evaluated large language model (LLM)-based UAV agents in reasoning, navigation, and efficiency, systematic assessment of security, resilience, and trust under adversarial conditions remains largely unexplored, particularly in emerging 6G-enabled settings. We introduce $α^{3}$-SecBench, the first large-scale evaluation suite for assessing the security-aware autonomy of LLM-based UAV agents under realistic adversarial interference. Building on multi-turn conversational UAV missions from $α^{3}$-Bench, the framework augments benign episodes with 20,000 validated security overlay attack scenarios targeting seven autonomy layers, including sensing, perception, planning, control, communication, edge/cloud infrastructure, and LLM reasoning. $α^{3}$-SecBench evaluates agents across three orthogonal dimensions: security (attack detection and vulnerability attribution), resilience (safe degradation behavior), and trust (policy-compliant tool usage). We evaluate 23 state-of-the-art LLMs from major industrial providers and leading AI labs using thousands of adversarially augmented UAV episodes sampled from a corpus of 113,475 missions spanning 175 threat types. While many models reliably detect anomalous behavior, effective mitigation, vulnerability attribution, and trustworthy control actions remain inconsistent. Normalized overall scores range from 12.9% to 57.1%, highlighting a significant gap between anomaly detection and security-aware autonomous decision-making. We release $α^{3}$-SecBench on GitHub: https://github.com/maferrag/AlphaSecBench
+  Autonomous drone pursuit requires not only detecting drones but also predicting their trajectories in a manner that enables kinematically feasible interception. Existing tracking methods optimize for prediction accuracy but ignore pursuit feasibility, resulting in trajectories that are physically impossible to intercept 99.9% of the time. We propose Perception-to-Pursuit (P2P), a track-centric temporal reasoning framework that bridges detection and actionable pursuit planning. Our method represents drone motion as compact 8-dimensional tokens capturing velocity, acceleration, scale, and smoothness, enabling a 12-frame causal transformer to reason about future behavior. We introduce the Intercept Success Rate (ISR) metric to measure pursuit feasibility under realistic interceptor constraints. Evaluated on the Anti-UAV-RGBT dataset with 226 real drone sequences, P2P achieves 28.12 pixel average displacement error and 0.597 ISR, representing a 77% improvement in trajectory prediction and 597x improvement in pursuit feasibility over tracking-only baselines, while maintaining perfect drone classification accuracy (100%). Our work demonstrates that temporal reasoning over motion patterns enables both accurate prediction and actionable pursuit planning.
 
   </details>
 
 
 
-- **EFSI-DETR: Efficient Frequency-Semantic Integration for Real-Time Small Object Detection in UAV Imagery**  
-  Yu Xia, Chang Liu, Tianqi Xiang, Zhigang Tu  
-  _2026-01-26_ · https://arxiv.org/abs/2601.18597v1 · `cs.CV`  
+- **A DVL Aided Loosely Coupled Inertial Navigation Strategy for AUVs with Attitude Error Modeling and Variance Propagation**  
+  Jin Huang, Zichen Liu, Haoda Li, Zhikun Wang, Ying Chen  
+  _2026-01-27_ · https://arxiv.org/abs/2601.19509v1 · `cs.RO`  
   <details><summary>Abstract</summary>
 
-  Real-time small object detection in Unmanned Aerial Vehicle (UAV) imagery remains challenging due to limited feature representation and ineffective multi-scale fusion. Existing methods underutilize frequency information and rely on static convolutional operations, which constrain the capacity to obtain rich feature representations and hinder the effective exploitation of deep semantic features. To address these issues, we propose EFSI-DETR, a novel detection framework that integrates efficient semantic feature enhancement with dynamic frequency-spatial guidance. EFSI-DETR comprises two main components: (1) a Dynamic Frequency-Spatial Unified Synergy Network (DyFusNet) that jointly exploits frequency and spatial cues for robust multi-scale feature fusion, (2) an Efficient Semantic Feature Concentrator (ESFC) that enables deep semantic extraction with minimal computational cost. Furthermore, a Fine-grained Feature Retention (FFR) strategy is adopted to incorporate spatially rich shallow features during fusion to preserve fine-grained details, crucial for small object detection in UAV imagery. Extensive experiments on VisDrone and CODrone benchmarks demonstrate that our EFSI-DETR achieves the state-of-the-art performance with real-time efficiency, yielding improvement of \textbf{1.6}\% and \textbf{5.8}\% in AP and AP$_{s}$ on VisDrone, while obtaining \textbf{188} FPS inference speed on a single RTX 4090 GPU.
+  In underwater navigation systems, strap-down inertial navigation system/Doppler velocity log (SINS/DVL)-based loosely coupled architectures are widely adopted. Conventional approaches project DVL velocities from the body coordinate system to the navigation coordinate system using SINS-derived attitude; however, accumulated attitude estimation errors introduce biases into velocity projection and degrade navigation performance during long-term operation. To address this issue, two complementary improvements are introduced. First, a vehicle attitude error-aware DVL velocity transformation model is formulated by incorporating attitude error terms into the observation equation to reduce projection-induced velocity bias. Second, a covariance matrix-based variance propagation method is developed to transform DVL measurement uncertainty across coordinate systems, introducing an expectation-based attitude error compensation term to achieve statistically consistent noise modeling. Simulation and field experiment results demonstrate that both improvements individually enhance navigation accuracy and confirm that accumulated attitude errors affect both projected velocity measurements and their associated uncertainty. When jointly applied, long-term error divergence is effectively suppressed. Field experimental results show that the proposed approach achieves a 78.3% improvement in 3D position RMSE and a 71.8% reduction in the maximum component-wise position error compared with the baseline IMU+DVL method, providing a robust solution for improving long-term SINS/DVL navigation performance.
 
   </details>
 
 
 
-- **Discriminability-Driven Spatial-Channel Selection with Gradient Norm for Drone Signal OOD Detection**  
-  Chuhan Feng, Jing Li, Jie Li, Lu Lv, Fengkui Gong  
-  _2026-01-26_ · https://arxiv.org/abs/2601.18329v1 · `cs.LG`  
+- **Towards Gold-Standard Depth Estimation for Tree Branches in UAV Forestry: Benchmarking Deep Stereo Matching Methods**  
+  Yida Lin, Bing Xue, Mengjie Zhang, Sam Schofield, Richard Green  
+  _2026-01-27_ · https://arxiv.org/abs/2601.19461v1 · `cs.CV`  
   <details><summary>Abstract</summary>
 
-  We propose a drone signal out-of-distribution (OOD) detection algorithm based on discriminability-driven spatial-channel selection with a gradient norm. Time-frequency image features are adaptively weighted along both spatial and channel dimensions by quantifying inter-class similarity and variance based on protocol-specific time-frequency characteristics. Subsequently, a gradient-norm metric is introduced to measure perturbation sensitivity for capturing the inherent instability of OOD samples, which is then fused with energy-based scores for joint inference. Simulation results demonstrate that the proposed algorithm provides superior discriminative power and robust performance via SNR and various drone types.
-
-  </details>
-
-
-
-- **Cognitive Fusion of ZC Sequences and Time-Frequency Images for Out-of-Distribution Detection of Drone Signals**  
-  Jie Li, Jing Li, Lu Lv, Zhanyu Ju, Fengkui Gong  
-  _2026-01-26_ · https://arxiv.org/abs/2601.18326v1 · `cs.LG`  
-  <details><summary>Abstract</summary>
-
-  We propose a drone signal out-of-distribution detection (OODD) algorithm based on the cognitive fusion of Zadoff-Chu (ZC) sequences and time-frequency images (TFI). ZC sequences are identified by analyzing the communication protocols of DJI drones, while TFI capture the time-frequency characteristics of drone signals with unknown or non-standard communication protocols. Both modalities are used jointly to enable OODD in the drone remote identification (RID) task. Specifically, ZC sequence features and TFI features are generated from the received radio frequency signals, which are then processed through dedicated feature extraction module to enhance and align them. The resultant multi-modal features undergo multi-modal feature interaction, single-modal feature fusion, and multi-modal feature fusion to produce features that integrate and complement information across modalities. Discrimination scores are computed from the fused features along both spatial and channel dimensions to capture time-frequency characteristic differences dictated by the communication protocols, and these scores will be transformed into adaptive attention weights. The weighted features are then passed through a Softmax function to produce the signal classification results. Simulation results demonstrate that the proposed algorithm outperforms existing algorithms and achieves 1.7% and 7.5% improvements in RID and OODD metrics, respectively. The proposed algorithm also performs strong robustness under varying flight conditions and across different drone types.
+  Autonomous UAV forestry operations require robust depth estimation with strong cross-domain generalization, yet existing evaluations focus on urban and indoor scenarios, leaving a critical gap for vegetation-dense environments. We present the first systematic zero-shot evaluation of eight stereo methods spanning iterative refinement, foundation model, diffusion-based, and 3D CNN paradigms. All methods use officially released pretrained weights (trained on Scene Flow) and are evaluated on four standard benchmarks (ETH3D, KITTI 2012/2015, Middlebury) plus a novel 5,313-pair Canterbury Tree Branches dataset ($1920 \times 1080$). Results reveal scene-dependent patterns: foundation models excel on structured scenes (BridgeDepth: 0.23 px on ETH3D; DEFOM: 4.65 px on Middlebury), while iterative methods show variable cross-benchmark performance (IGEV++: 0.36 px on ETH3D but 6.77 px on Middlebury; IGEV: 0.33 px on ETH3D but 4.99 px on Middlebury). Qualitative evaluation on the Tree Branches dataset establishes DEFOM as the gold-standard baseline for vegetation depth estimation, with superior cross-domain consistency (consistently ranking 1st-2nd across benchmarks, average rank 1.75). DEFOM predictions will serve as pseudo-ground-truth for future benchmarking.
 
   </details>
 
