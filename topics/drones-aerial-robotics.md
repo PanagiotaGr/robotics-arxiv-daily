@@ -2,41 +2,30 @@
 
 _Robotics arXiv Daily_
 
-_Updated: 2026-01-28 06:52 UTC_
+_Updated: 2026-01-29 07:02 UTC_
 
-Total papers shown: **3**
+Total papers shown: **2**
 
 
 ---
 
-- **Perception-to-Pursuit: Track-Centric Temporal Reasoning for Open-World Drone Detection and Autonomous Chasing**  
-  Venkatakrishna Reddy Oruganti  
-  _2026-01-27_ · https://arxiv.org/abs/2601.19318v1 · `cs.RO`  
+- **A New Dataset and Framework for Robust Road Surface Classification via Camera-IMU Fusion**  
+  Willams de Lima Costa, Thifany Ketuli Silva de Souza, Jonas Ferreira Silva, Carlos Gabriel Bezerra Pereira, Bruno Reis Vila Nova, Leonardo Silvino Brito, Rafael Raider Leoni, Juliano Silva, Valter Ferreira, Sibele Miguel Soares Neto, et al.  
+  _2026-01-28_ · https://arxiv.org/abs/2601.20847v1 · `cs.CV`  
   <details><summary>Abstract</summary>
 
-  Autonomous drone pursuit requires not only detecting drones but also predicting their trajectories in a manner that enables kinematically feasible interception. Existing tracking methods optimize for prediction accuracy but ignore pursuit feasibility, resulting in trajectories that are physically impossible to intercept 99.9% of the time. We propose Perception-to-Pursuit (P2P), a track-centric temporal reasoning framework that bridges detection and actionable pursuit planning. Our method represents drone motion as compact 8-dimensional tokens capturing velocity, acceleration, scale, and smoothness, enabling a 12-frame causal transformer to reason about future behavior. We introduce the Intercept Success Rate (ISR) metric to measure pursuit feasibility under realistic interceptor constraints. Evaluated on the Anti-UAV-RGBT dataset with 226 real drone sequences, P2P achieves 28.12 pixel average displacement error and 0.597 ISR, representing a 77% improvement in trajectory prediction and 597x improvement in pursuit feasibility over tracking-only baselines, while maintaining perfect drone classification accuracy (100%). Our work demonstrates that temporal reasoning over motion patterns enables both accurate prediction and actionable pursuit planning.
+  Road surface classification (RSC) is a key enabler for environment-aware predictive maintenance systems. However, existing RSC techniques often fail to generalize beyond narrow operational conditions due to limited sensing modalities and datasets that lack environmental diversity. This work addresses these limitations by introducing a multimodal framework that fuses images and inertial measurements using a lightweight bidirectional cross-attention module followed by an adaptive gating layer that adjusts modality contributions under domain shifts. Given the limitations of current benchmarks, especially regarding lack of variability, we introduce ROAD, a new dataset composed of three complementary subsets: (i) real-world multimodal recordings with RGB-IMU streams synchronized using a gold-standard industry datalogger, captured across diverse lighting, weather, and surface conditions; (ii) a large vision-only subset designed to assess robustness under adverse illumination and heterogeneous capture setups; and (iii) a synthetic subset generated to study out-of-distribution generalization in scenarios difficult to obtain in practice. Experiments show that our method achieves a +1.4 pp improvement over the previous state-of-the-art on the PVS benchmark and an +11.6 pp improvement on our multimodal ROAD subset, with consistently higher F1-scores on minority classes. The framework also demonstrates stable performance across challenging visual conditions, including nighttime, heavy rain, and mixed-surface transitions. These findings indicate that combining affordable camera and IMU sensors with multimodal attention mechanisms provides a scalable, robust foundation for road surface understanding, particularly relevant for regions where environmental variability and cost constraints limit the adoption of high-end sensing suites.
 
   </details>
 
 
 
-- **A DVL Aided Loosely Coupled Inertial Navigation Strategy for AUVs with Attitude Error Modeling and Variance Propagation**  
-  Jin Huang, Zichen Liu, Haoda Li, Zhikun Wang, Ying Chen  
-  _2026-01-27_ · https://arxiv.org/abs/2601.19509v1 · `cs.RO`  
+- **CoBA: Integrated Deep Learning Model for Reliable Low-Altitude UAV Classification in mmWave Radio Networks**  
+  Junaid Sajid, Ivo Müürsepp, Luca Reggiani, Davide Scazzoli, Federico Francesco Luigi Mariani, Maurizio Magarini, Rizwan Ahmad, Muhammad Mahtab Alam  
+  _2026-01-28_ · https://arxiv.org/abs/2601.20605v1 · `cs.LG`  
   <details><summary>Abstract</summary>
 
-  In underwater navigation systems, strap-down inertial navigation system/Doppler velocity log (SINS/DVL)-based loosely coupled architectures are widely adopted. Conventional approaches project DVL velocities from the body coordinate system to the navigation coordinate system using SINS-derived attitude; however, accumulated attitude estimation errors introduce biases into velocity projection and degrade navigation performance during long-term operation. To address this issue, two complementary improvements are introduced. First, a vehicle attitude error-aware DVL velocity transformation model is formulated by incorporating attitude error terms into the observation equation to reduce projection-induced velocity bias. Second, a covariance matrix-based variance propagation method is developed to transform DVL measurement uncertainty across coordinate systems, introducing an expectation-based attitude error compensation term to achieve statistically consistent noise modeling. Simulation and field experiment results demonstrate that both improvements individually enhance navigation accuracy and confirm that accumulated attitude errors affect both projected velocity measurements and their associated uncertainty. When jointly applied, long-term error divergence is effectively suppressed. Field experimental results show that the proposed approach achieves a 78.3% improvement in 3D position RMSE and a 71.8% reduction in the maximum component-wise position error compared with the baseline IMU+DVL method, providing a robust solution for improving long-term SINS/DVL navigation performance.
-
-  </details>
-
-
-
-- **Towards Gold-Standard Depth Estimation for Tree Branches in UAV Forestry: Benchmarking Deep Stereo Matching Methods**  
-  Yida Lin, Bing Xue, Mengjie Zhang, Sam Schofield, Richard Green  
-  _2026-01-27_ · https://arxiv.org/abs/2601.19461v1 · `cs.CV`  
-  <details><summary>Abstract</summary>
-
-  Autonomous UAV forestry operations require robust depth estimation with strong cross-domain generalization, yet existing evaluations focus on urban and indoor scenarios, leaving a critical gap for vegetation-dense environments. We present the first systematic zero-shot evaluation of eight stereo methods spanning iterative refinement, foundation model, diffusion-based, and 3D CNN paradigms. All methods use officially released pretrained weights (trained on Scene Flow) and are evaluated on four standard benchmarks (ETH3D, KITTI 2012/2015, Middlebury) plus a novel 5,313-pair Canterbury Tree Branches dataset ($1920 \times 1080$). Results reveal scene-dependent patterns: foundation models excel on structured scenes (BridgeDepth: 0.23 px on ETH3D; DEFOM: 4.65 px on Middlebury), while iterative methods show variable cross-benchmark performance (IGEV++: 0.36 px on ETH3D but 6.77 px on Middlebury; IGEV: 0.33 px on ETH3D but 4.99 px on Middlebury). Qualitative evaluation on the Tree Branches dataset establishes DEFOM as the gold-standard baseline for vegetation depth estimation, with superior cross-domain consistency (consistently ranking 1st-2nd across benchmarks, average rank 1.75). DEFOM predictions will serve as pseudo-ground-truth for future benchmarking.
+  Uncrewed Aerial Vehicles (UAVs) are increasingly used in civilian and industrial applications, making secure low-altitude operations crucial. In dense mmWave environments, accurately classifying low-altitude UAVs as either inside authorized or restricted airspaces remains challenging, requiring models that handle complex propagation and signal variability. This paper proposes a deep learning model, referred to as CoBA, which stands for integrated Convolutional Neural Network (CNN), Bidirectional Long Short-Term Memory (BiLSTM), and Attention which leverages Fifth Generation (5G) millimeter-wave (mmWave) radio measurements to classify UAV operations in authorized and restricted airspaces at low altitude. The proposed CoBA model integrates convolutional, bidirectional recurrent, and attention layers to capture both spatial and temporal patterns in UAV radio measurements. To validate the model, a dedicated dataset is collected using the 5G mmWave network at TalTech, with controlled low altitude UAV flights in authorized and restricted scenarios. The model is evaluated against conventional ML models and a fingerprinting-based benchmark. Experimental results show that CoBA achieves superior accuracy, significantly outperforming all baseline models and demonstrating its potential for reliable and regulated UAV airspace monitoring.
 
   </details>
 

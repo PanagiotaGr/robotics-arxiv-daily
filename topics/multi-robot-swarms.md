@@ -2,41 +2,52 @@
 
 _Robotics arXiv Daily_
 
-_Updated: 2026-01-28 06:52 UTC_
+_Updated: 2026-01-29 07:02 UTC_
 
-Total papers shown: **3**
+Total papers shown: **4**
 
 
 ---
 
-- **Judgelight: Trajectory-Level Post-Optimization for Multi-Agent Path Finding via Closed-Subwalk Collapsing**  
-  Yimin Tang, Sven Koenig, Erdem Bıyık  
-  _2026-01-27_ · https://arxiv.org/abs/2601.19388v1 · `cs.RO`  
+- **MeCo: Enhancing LLM-Empowered Multi-Robot Collaboration via Similar Task Memoization**  
+  Baiqing Wang, Helei Cui, Bo Zhang, Xiaolong Zheng, Bin Guo, Zhiwen Yu  
+  _2026-01-28_ · https://arxiv.org/abs/2601.20577v1 · `cs.RO`  
   <details><summary>Abstract</summary>
 
-  Multi-Agent Path Finding (MAPF) is an NP-hard problem with applications in warehouse automation and multi-robot coordination. Learning-based MAPF solvers offer fast and scalable planning but often produce feasible trajectories that contain unnecessary or oscillatory movements. We propose Judgelight, a post-optimization method that improves trajectory quality after a MAPF solver generates a feasible schedule. Judgelight collapses closed subwalks in agents' trajectories to remove redundant movements while preserving all feasibility constraints. We formalize this process as MAPF-Collapse, prove that it is NP-hard, and present an exact optimization approach by formulating it as integer linear programming (ILP) problem. Experimental results show Judgelight consistently reduces solution cost by around 20%, particularly for learning-based solvers, producing trajectories that are better suited for real-world deployment.
+  Multi-robot systems have been widely deployed in real-world applications, providing significant improvements in efficiency and reductions in labor costs. However, most existing multi-robot collaboration methods rely on extensive task-specific training, which limits their adaptability to new or diverse scenarios. Recent research leverages the language understanding and reasoning capabilities of large language models (LLMs) to enable more flexible collaboration without specialized training. Yet, current LLM-empowered approaches remain inefficient: when confronted with identical or similar tasks, they must replan from scratch because they omit task-level similarities. To address this limitation, we propose MeCo, a similarity-aware multi-robot collaboration framework that applies the principle of ``cache and reuse'' (a.k.a., memoization) to reduce redundant computation. Unlike simple task repetition, identifying and reusing solutions for similar but not identical tasks is far more challenging, particularly in multi-robot settings. To this end, MeCo introduces a new similarity testing method that retrieves previously solved tasks with high relevance, enabling effective plan reuse without re-invoking LLMs. Furthermore, we present MeCoBench, the first benchmark designed to evaluate performance on similar-task collaboration scenarios. Experimental results show that MeCo substantially reduces planning costs and improves success rates compared with state-of-the-art approaches.
 
   </details>
 
 
 
-- **Tactile Memory with Soft Robot: Robust Object Insertion via Masked Encoding and Soft Wrist**  
-  Tatsuya Kamijo, Mai Nishimura, Cristian C. Beltran-Hernandez, Nodoka Shibasaki, Masashi Hamaya  
-  _2026-01-27_ · https://arxiv.org/abs/2601.19275v1 · `cs.RO`  
+- **Investigating the Development of Task-Oriented Communication in Vision-Language Models**  
+  Boaz Carmeli, Orr Paradise, Shafi Goldwasser, Yonatan Belinkov, Ron Meir  
+  _2026-01-28_ · https://arxiv.org/abs/2601.20641v1 · `cs.AI`  
   <details><summary>Abstract</summary>
 
-  Tactile memory, the ability to store and retrieve touch-based experience, is critical for contact-rich tasks such as key insertion under uncertainty. To replicate this capability, we introduce Tactile Memory with Soft Robot (TaMeSo-bot), a system that integrates a soft wrist with tactile retrieval-based control to enable safe and robust manipulation. The soft wrist allows safe contact exploration during data collection, while tactile memory reuses past demonstrations via retrieval for flexible adaptation to unseen scenarios. The core of this system is the Masked Tactile Trajectory Transformer (MAT$^\text{3}$), which jointly models spatiotemporal interactions between robot actions, distributed tactile feedback, force-torque measurements, and proprioceptive signals. Through masked-token prediction, MAT$^\text{3}$ learns rich spatiotemporal representations by inferring missing sensory information from context, autonomously extracting task-relevant features without explicit subtask segmentation. We validate our approach on peg-in-hole tasks with diverse pegs and conditions in real-robot experiments. Our extensive evaluation demonstrates that MAT$^\text{3}$ achieves higher success rates than the baselines over all conditions and shows remarkable capability to adapt to unseen pegs and conditions.
+  We investigate whether \emph{LLM-based agents} can develop task-oriented communication protocols that differ from standard natural language in collaborative reasoning tasks. Our focus is on two core properties such task-oriented protocols may exhibit: Efficiency -- conveying task-relevant information more concisely than natural language, and Covertness -- becoming difficult for external observers to interpret, raising concerns about transparency and control. To investigate these aspects, we use a referential-game framework in which vision-language model (VLM) agents communicate, providing a controlled, measurable setting for evaluating language variants. Experiments show that VLMs can develop effective, task-adapted communication patterns. At the same time, they can develop covert protocols that are difficult for humans and external agents to interpret. We also observe spontaneous coordination between similar models without explicitly shared protocols. These findings highlight both the potential and the risks of task-oriented communication, and position referential games as a valuable testbed for future work in this area.
 
   </details>
 
 
 
-- **Information-Theoretic Detection of Bimanual Interactions for Dual-Arm Robot Plan Generation**  
-  Elena Merlo, Marta Lagomarsino, Arash Ajoudani  
-  _2026-01-27_ · https://arxiv.org/abs/2601.19832v1 · `cs.RO`  
+- **A Practical Framework of Key Performance Indicators for Multi-Robot Lunar and Planetary Field Tests**  
+  Julia Richter, David Oberacker, Gabriela Ligeza, Valentin T. Bickel, Philip Arm, William Talbot, Marvin Grosse Besselmann, Florian Kehl, Tristan Schnell, Hendrik Kolvenbach, et al.  
+  _2026-01-28_ · https://arxiv.org/abs/2601.20529v1 · `cs.RO`  
   <details><summary>Abstract</summary>
 
-  Programming by demonstration is a strategy to simplify the robot programming process for non-experts via human demonstrations. However, its adoption for bimanual tasks is an underexplored problem due to the complexity of hand coordination, which also hinders data recording. This paper presents a novel one-shot method for processing a single RGB video of a bimanual task demonstration to generate an execution plan for a dual-arm robotic system. To detect hand coordination policies, we apply Shannon's information theory to analyze the information flow between scene elements and leverage scene graph properties. The generated plan is a modular behavior tree that assumes different structures based on the desired arms coordination. We validated the effectiveness of this framework through multiple subject video demonstrations, which we collected and made open-source, and exploiting data from an external, publicly available dataset. Comparisons with existing methods revealed significant improvements in generating a centralized execution plan for coordinating two-arm systems.
+  Robotic prospecting for critical resources on the Moon, such as ilmenite, rare earth elements, and water ice, requires robust exploration methods given the diverse terrain and harsh environmental conditions. Although numerous analog field trials address these goals, comparing their results remains challenging because of differences in robot platforms and experimental setups. These missions typically assess performance using selected, scenario-specific engineering metrics that fail to establish a clear link between field performance and science-driven objectives. In this paper, we address this gap by deriving a structured framework of KPI from three realistic multi-robot lunar scenarios reflecting scientific objectives and operational constraints. Our framework emphasizes scenario-dependent priorities in efficiency, robustness, and precision, and is explicitly designed for practical applicability in field deployments. We validated the framework in a multi-robot field test and found it practical and easy to apply for efficiency- and robustness-related KPI, whereas precision-oriented KPI require reliable ground-truth data that is not always feasible to obtain in outdoor analog environments. Overall, we propose this framework as a common evaluation standard enabling consistent, goal-oriented comparison of multi-robot field trials and supporting systematic development of robotic systems for future planetary exploration.
+
+  </details>
+
+
+
+- **Decentralized Stochastic Constrained Optimization via Prox-Linearization**  
+  Shivangi Dubey Sharma, Basil M. Idrees, Lavish Arora, Ketan Rajawat  
+  _2026-01-28_ · https://arxiv.org/abs/2601.20345v1 · `math.OC`  
+  <details><summary>Abstract</summary>
+
+  This paper studies consensus-based decentralized stochastic optimization for minimizing possibly non-convex expected objectives with convex non-smooth regularizers and nonlinear functional inequality constraints. We reformulate the constrained problem using the exact-penalty model and develop two algorithms that require only local stochastic gradients and first-order constraint information. The first method, Decentralized Stochastic Momentum-based Prox-Linear Algorithm (D-SMPL), combines constraint linearization with a prox-linear step, resulting in a linearly constrained quadratic subproblem per iteration. Building on this approach, we propose a successive convex approximation (SCA) variant, Decentralized SCA Momentum-based Prox-Linear (D-SCAMPL), which handles additional objective structure through strongly convex surrogate subproblems while still allowing infeasible initialization. Both methods incorporate recursive momentum-based gradient estimators and a consensus mechanism requiring only two communication rounds per iteration. Under standard smoothness and regularity assumptions, both algorithms achieve an oracle complexity of $\mathcal{O}(ε^{-3/2})$, matching the optimal rate known for unconstrained centralized stochastic non-convex optimization. Numerical experiments on energy-optimal ocean trajectory planning corroborate the theory and demonstrate improved performance over existing decentralized baselines.
 
   </details>
 
