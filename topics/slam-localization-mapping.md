@@ -2,63 +2,52 @@
 
 _Robotics arXiv Daily_
 
-_Updated: 2026-01-29 07:02 UTC_
+_Updated: 2026-01-30 07:03 UTC_
 
-Total papers shown: **5**
+Total papers shown: **4**
 
 
 ---
 
-- **Vibro-Sense: Robust Vibration-based Impulse Response Localization and Trajectory Tracking for Robotic Hands**  
-  Wadhah Zai El Amri, Nicolás Navarro-Guerrero  
-  _2026-01-28_ · https://arxiv.org/abs/2601.20555v1 · `cs.RO`  
+- **BLO-Inst: Bi-Level Optimization Based Alignment of YOLO and SAM for Robust Instance Segmentation**  
+  Li Zhang, Pengtao Xie  
+  _2026-01-29_ · https://arxiv.org/abs/2601.22061v1 · `cs.CV`  
   <details><summary>Abstract</summary>
 
-  Rich contact perception is crucial for robotic manipulation, yet traditional tactile skins remain expensive and complex to integrate. This paper presents a scalable alternative: high-accuracy whole-body touch localization via vibro-acoustic sensing. By equipping a robotic hand with seven low-cost piezoelectric microphones and leveraging an Audio Spectrogram Transformer, we decode the vibrational signatures generated during physical interaction. Extensive evaluation across stationary and dynamic tasks reveals a localization error of under 5 mm in static conditions. Furthermore, our analysis highlights the distinct influence of material properties: stiff materials (e.g., metal) excel in impulse response localization due to sharp, high-bandwidth responses, whereas textured materials (e.g., wood) provide superior friction-based features for trajectory tracking. The system demonstrates robustness to the robot's own motion, maintaining effective tracking even during active operation. Our primary contribution is demonstrating that complex physical contact dynamics can be effectively decoded from simple vibrational signals, offering a viable pathway to widespread, affordable contact perception in robotics. To accelerate research, we provide our full datasets, models, and experimental setups as open-source resources.
+  The Segment Anything Model has revolutionized image segmentation with its zero-shot capabilities, yet its reliance on manual prompts hinders fully automated deployment. While integrating object detectors as prompt generators offers a pathway to automation, existing pipelines suffer from two fundamental limitations: objective mismatch, where detectors optimized for geometric localization do not correspond to the optimal prompting context required by SAM, and alignment overfitting in standard joint training, where the detector simply memorizes specific prompt adjustments for training samples rather than learning a generalizable policy. To bridge this gap, we introduce BLO-Inst, a unified framework that aligns detection and segmentation objectives by bi-level optimization. We formulate the alignment as a nested optimization problem over disjoint data splits. In the lower level, the SAM is fine-tuned to maximize segmentation fidelity given the current detection proposals on a subset ($D_1$). In the upper level, the detector is updated to generate bounding boxes that explicitly minimize the validation loss of the fine-tuned SAM on a separate subset ($D_2$). This effectively transforms the detector into a segmentation-aware prompt generator, optimizing the bounding boxes not just for localization accuracy, but for downstream mask quality. Extensive experiments demonstrate that BLO-Inst achieves superior performance, outperforming standard baselines on tasks in general and biomedical domains.
 
   </details>
 
 
 
-- **Statistical Properties of Target Localization Using Passive Radar Systems**  
-  Mats Viberg, Daniele Gerosa, Tomas McKelvey, Thomas Eriksson  
-  _2026-01-28_ · https://arxiv.org/abs/2601.20817v1 · `eess.SP`  
+- **Holographic generative flows with AdS/CFT**  
+  Ehsan Mirafzali, Sanjit Shashi, Sanya Murdeshwar, Edgar Shaghoulian, Daniele Venturi, Razvan Marinescu  
+  _2026-01-29_ · https://arxiv.org/abs/2601.22033v1 · `cs.LG`  
   <details><summary>Abstract</summary>
 
-  Passive Radar Systems have received tremendous attention during the past few decades, due to their low cost and ability to remain covert during operation. Such systems do not transmit any energy themselves, but rely on a so-called Illuminator-of-Opportunity (IO), for example a commercial TV station. A network of Receiving Nodes (RN) receive the direct signal as well as reflections from possible targets. The RNs transmit information to a Central Node (CN), that performs the final target detection, localization and tracking. A large number of methods and algorithms for target detection and localization have been proposed in the literature. In the present contribution, the focus is on the seminal Extended Cancelation Algorithm (ECA), in which each RN estimates target parameters after canceling interference from the direct-path as well as clutter from unwanted stationary objects. This is done by exploiting a separate Reference Channel (RC), which captures the IO signal without interference apart from receiver noise. We derive the statistical properties of the ECA parameter estimates under the assumption of a high Signal-to-Noise Ratio (SNR), and we give a sufficient condition for the SNR in the RC to enable statistically efficient estimates. The theoretical results are corroborated through computer simulations, which show that the theory agrees well with empirical results above a certain SNR threshold. The results can be used to predict the performance of passive radar systems in given scenarios, which is useful for feasibility studies as well as system design.
+  We present a framework for generative machine learning that leverages the holographic principle of quantum gravity, or to be more precise its manifestation as the anti-de Sitter/conformal field theory (AdS/CFT) correspondence, with techniques for deep learning and transport theory. Our proposal is to represent the flow of data from a base distribution to some learned distribution using the bulk-to-boundary mapping of scalar fields in AdS. In the language of machine learning, we are representing and augmenting the flow-matching algorithm with AdS physics. Using a checkerboard toy dataset and MNIST, we find that our model achieves faster and higher quality convergence than comparable physics-free flow-matching models. Our method provides a physically interpretable version of flow matching. More broadly, it establishes the utility of AdS physics and geometry in the development of novel paradigms in generative modeling.
 
   </details>
 
 
 
-- **User Localization via Active Sensing with Electromagnetically Reconfigurable Antennas**  
-  Ruizhi Zhang, Yuchen Zhang, Ying Zhang  
-  _2026-01-28_ · https://arxiv.org/abs/2601.20501v1 · `eess.SP`  
+- **ToolWeaver: Weaving Collaborative Semantics for Scalable Tool Use in Large Language Models**  
+  Bowen Fang, Wen Ye, Yunyue Su, Jinghao Zhang, Qiang Liu, Yesheng Liu, Xin Sun, Shu Wu, Jiabing Yang, Baole Wei, et al.  
+  _2026-01-29_ · https://arxiv.org/abs/2601.21947v1 · `cs.AI`  
   <details><summary>Abstract</summary>
 
-  This paper presents an end-to-end deep learning framework for electromagnetically reconfigurable antenna (ERA)-aided user localization with active sensing, where ERAs provide additional electromagnetic reconfigurability to diversify the received measurements and enhance localization informativeness. To balance sensing flexibility and overhead, we adopt a two-timescale design: the digital combiner is updated at each stage, while the ERA patterns are reconfigured at each substage via a spherical-harmonic representation. The proposed mechanism integrates attention-based feature extraction and LSTM-based temporal learning, enabling the system to learn an optimized sensing strategy and progressively refine the UE position estimate from sequential observations. Simulation results show that the proposed approach consistently outperforms conventional digital beamforming-only and single-stage sensing baselines in terms of localization accuracy. These results highlight the effectiveness of ERA-enabled active sensing for user localization in future wireless systems.
+  Prevalent retrieval-based tool-use pipelines struggle with a dual semantic challenge: their retrievers often employ encoders that fail to capture complex semantics, while the Large Language Model (LLM) itself lacks intrinsic tool knowledge from its natural language pretraining. Generative methods offer a powerful alternative by unifying selection and execution, tasking the LLM to directly learn and generate tool identifiers. However, the common practice of mapping each tool to a unique new token introduces substantial limitations: it creates a scalability and generalization crisis, as the vocabulary size explodes and each tool is assigned a semantically isolated token. This approach also creates a semantic bottleneck that hinders the learning of collaborative tool relationships, as the model must infer them from sparse co-occurrences of monolithic tool IDs within a vast library. To address these limitations, we propose ToolWeaver, a novel generative tool learning framework that encodes tools into hierarchical sequences. This approach makes vocabulary expansion logarithmic to the number of tools. Crucially, it enables the model to learn collaborative patterns from the dense co-occurrence of shared codes, rather than the sparse co-occurrence of monolithic tool IDs. We generate these structured codes through a novel tokenization process designed to weave together a tool's intrinsic semantics with its extrinsic co-usage patterns. These structured codes are then integrated into the LLM through a generative alignment stage, where the model is fine-tuned to produce the hierarchical code sequences. Evaluation results with nearly 47,000 tools show that ToolWeaver significantly outperforms state-of-the-art methods, establishing a more scalable, generalizable, and semantically-aware foundation for advanced tool-augmented agents.
 
   </details>
 
 
 
-- **MARE: Multimodal Alignment and Reinforcement for Explainable Deepfake Detection via Vision-Language Models**  
-  Wenbo Xu, Wei Lu, Xiangyang Luo, Jiantao Zhou  
-  _2026-01-28_ · https://arxiv.org/abs/2601.20433v1 · `cs.CV`  
+- **Synthetic-to-Real Domain Bridging for Single-View 3D Reconstruction of Ships for Maritime Monitoring**  
+  Borja Carrillo-Perez, Felix Sattler, Angel Bueno Rodriguez, Maurice Stephan, Sarah Barnes  
+  _2026-01-29_ · https://arxiv.org/abs/2601.21786v1 · `cs.CV`  
   <details><summary>Abstract</summary>
 
-  Deepfake detection is a widely researched topic that is crucial for combating the spread of malicious content, with existing methods mainly modeling the problem as classification or spatial localization. The rapid advancements in generative models impose new demands on Deepfake detection. In this paper, we propose multimodal alignment and reinforcement for explainable Deepfake detection via vision-language models, termed MARE, which aims to enhance the accuracy and reliability of Vision-Language Models (VLMs) in Deepfake detection and reasoning. Specifically, MARE designs comprehensive reward functions, incorporating reinforcement learning from human feedback (RLHF), to incentivize the generation of text-spatially aligned reasoning content that adheres to human preferences. Besides, MARE introduces a forgery disentanglement module to capture intrinsic forgery traces from high-level facial semantics, thereby improving its authenticity detection capability. We conduct thorough evaluations on the reasoning content generated by MARE. Both quantitative and qualitative experimental results demonstrate that MARE achieves state-of-the-art performance in terms of accuracy and reliability.
-
-  </details>
-
-
-
-- **Graph-Structured Deep Learning Framework for Multi-task Contention Identification with High-dimensional Metrics**  
-  Xiao Yang, Yinan Ni, Yuqi Tang, Zhimin Qiu, Chen Wang, Tingzhou Yuan  
-  _2026-01-28_ · https://arxiv.org/abs/2601.20389v1 · `cs.DC`  
-  <details><summary>Abstract</summary>
-
-  This study addresses the challenge of accurately identifying multi-task contention types in high-dimensional system environments and proposes a unified contention classification framework that integrates representation transformation, structural modeling, and a task decoupling mechanism. The method first constructs system state representations from high-dimensional metric sequences, applies nonlinear transformations to extract cross-dimensional dynamic features, and integrates multiple source information such as resource utilization, scheduling behavior, and task load variations within a shared representation space. It then introduces a graph-based modeling mechanism to capture latent dependencies among metrics, allowing the model to learn competitive propagation patterns and structural interference across resource links. On this basis, task-specific mapping structures are designed to model the differences among contention types and enhance the classifier's ability to distinguish multiple contention patterns. To achieve stable performance, the method employs an adaptive multi-task loss weighting strategy that balances shared feature learning with task-specific feature extraction and generates final contention predictions through a standardized inference process. Experiments conducted on a public system trace dataset demonstrate advantages in accuracy, recall, precision, and F1, and sensitivity analyses on batch size, training sample scale, and metric dimensionality further confirm the model's stability and applicability. The study shows that structured representations and multi-task classification based on high-dimensional metrics can significantly improve contention pattern recognition and offer a reliable technical approach for performance management in complex computing environments.
+  Three-dimensional (3D) reconstruction of ships is an important part of maritime monitoring, allowing improved visualization, inspection, and decision-making in real-world monitoring environments. However, most state-ofthe-art 3D reconstruction methods require multi-view supervision, annotated 3D ground truth, or are computationally intensive, making them impractical for real-time maritime deployment. In this work, we present an efficient pipeline for single-view 3D reconstruction of real ships by training entirely on synthetic data and requiring only a single view at inference. Our approach uses the Splatter Image network, which represents objects as sparse sets of 3D Gaussians for rapid and accurate reconstruction from single images. The model is first fine-tuned on synthetic ShapeNet vessels and further refined with a diverse custom dataset of 3D ships, bridging the domain gap between synthetic and real-world imagery. We integrate a state-of-the-art segmentation module based on YOLOv8 and custom preprocessing to ensure compatibility with the reconstruction network. Postprocessing steps include real-world scaling, centering, and orientation alignment, followed by georeferenced placement on an interactive web map using AIS metadata and homography-based mapping. Quantitative evaluation on synthetic validation data demonstrates strong reconstruction fidelity, while qualitative results on real maritime images from the ShipSG dataset confirm the potential for transfer to operational maritime settings. The final system provides interactive 3D inspection of real ships without requiring real-world 3D annotations. This pipeline provides an efficient, scalable solution for maritime monitoring and highlights a path toward real-time 3D ship visualization in practical applications. Interactive demo: https://dlr-mi.github.io/ship3d-demo/.
 
   </details>
 

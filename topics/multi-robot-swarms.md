@@ -2,52 +2,52 @@
 
 _Robotics arXiv Daily_
 
-_Updated: 2026-01-29 07:02 UTC_
+_Updated: 2026-01-30 07:03 UTC_
 
 Total papers shown: **4**
 
 
 ---
 
-- **MeCo: Enhancing LLM-Empowered Multi-Robot Collaboration via Similar Task Memoization**  
-  Baiqing Wang, Helei Cui, Bo Zhang, Xiaolong Zheng, Bin Guo, Zhiwen Yu  
-  _2026-01-28_ · https://arxiv.org/abs/2601.20577v1 · `cs.RO`  
+- **Liquid Interfaces: A Dynamic Ontology for the Interoperability of Autonomous Systems**  
+  Dhiogo de Sá, Carlos Schmiedel, Carlos Pereira Lopes  
+  _2026-01-29_ · https://arxiv.org/abs/2601.21993v1 · `cs.AI`  
   <details><summary>Abstract</summary>
 
-  Multi-robot systems have been widely deployed in real-world applications, providing significant improvements in efficiency and reductions in labor costs. However, most existing multi-robot collaboration methods rely on extensive task-specific training, which limits their adaptability to new or diverse scenarios. Recent research leverages the language understanding and reasoning capabilities of large language models (LLMs) to enable more flexible collaboration without specialized training. Yet, current LLM-empowered approaches remain inefficient: when confronted with identical or similar tasks, they must replan from scratch because they omit task-level similarities. To address this limitation, we propose MeCo, a similarity-aware multi-robot collaboration framework that applies the principle of ``cache and reuse'' (a.k.a., memoization) to reduce redundant computation. Unlike simple task repetition, identifying and reusing solutions for similar but not identical tasks is far more challenging, particularly in multi-robot settings. To this end, MeCo introduces a new similarity testing method that retrieves previously solved tasks with high relevance, enabling effective plan reuse without re-invoking LLMs. Furthermore, we present MeCoBench, the first benchmark designed to evaluate performance on similar-task collaboration scenarios. Experimental results show that MeCo substantially reduces planning costs and improves success rates compared with state-of-the-art approaches.
+  Contemporary software architectures struggle to support autonomous agents whose reasoning is adaptive, probabilistic, and context-dependent, while system integration remains dominated by static interfaces and deterministic contracts. This paper introduces Liquid Interfaces, a coordination paradigm in which interfaces are not persistent technical artifacts, but ephemeral relational events that emerge through intention articulation and semantic negotiation at runtime.We formalize this model and present the Liquid Interface Protocol (LIP),which governs intention-driven interaction, negotiated execution, and enforce ephemerality under semantic uncertainty. We further discuss the governance implications of this approach and describe a reference architecture that demonstrates practical feasibility. Liquid Interfaces provide a principled foundation for adaptive coordination in agent-based systems
 
   </details>
 
 
 
-- **Investigating the Development of Task-Oriented Communication in Vision-Language Models**  
-  Boaz Carmeli, Orr Paradise, Shafi Goldwasser, Yonatan Belinkov, Ron Meir  
-  _2026-01-28_ · https://arxiv.org/abs/2601.20641v1 · `cs.AI`  
+- **Multi-Modular MANTA-RAY: A Modular Soft Surface Platform for Distributed Multi-Object Manipulation**  
+  Pratik Ingle, Jørn Lambertsen, Kasper Støy, Andres Faina  
+  _2026-01-29_ · https://arxiv.org/abs/2601.21884v1 · `cs.RO`  
   <details><summary>Abstract</summary>
 
-  We investigate whether \emph{LLM-based agents} can develop task-oriented communication protocols that differ from standard natural language in collaborative reasoning tasks. Our focus is on two core properties such task-oriented protocols may exhibit: Efficiency -- conveying task-relevant information more concisely than natural language, and Covertness -- becoming difficult for external observers to interpret, raising concerns about transparency and control. To investigate these aspects, we use a referential-game framework in which vision-language model (VLM) agents communicate, providing a controlled, measurable setting for evaluating language variants. Experiments show that VLMs can develop effective, task-adapted communication patterns. At the same time, they can develop covert protocols that are difficult for humans and external agents to interpret. We also observe spontaneous coordination between similar models without explicitly shared protocols. These findings highlight both the potential and the risks of task-oriented communication, and position referential games as a valuable testbed for future work in this area.
+  Manipulation surfaces control objects by actively deforming their shape rather than directly grasping them. While dense actuator arrays can generate complex deformations, they also introduce high degrees of freedom (DOF), increasing system complexity and limiting scalability. The MANTA-RAY (Manipulation with Adaptive Non-rigid Textile Actuation with Reduced Actuation densitY) platform addresses these challenges by leveraging a soft, fabric-based surface with reduced actuator density to manipulate fragile and heterogeneous objects. Previous studies focused on single-module implementations supported by four actuators, whereas the feasibility and benefits of a scalable, multi-module configuration remain unexplored. In this work, we present a distributed, modular, and scalable variant of the MANTA-RAY platform that maintains manipulation performance with a reduced actuator density. The proposed multi-module MANTA-RAY platform and control strategy employs object passing between modules and a geometric transformation driven PID controller that directly maps tilt-angle control outputs to actuator commands, eliminating the need for extensive data-driven or black-box training. We evaluate system performance in simulation across surface configurations of varying modules (3x3 and 4x4) and validate its feasibility through experiments on a physical 2x2 hardware prototype. The system successfully manipulates objects with diverse geometries, masses, and textures including fragile items such as eggs and apples as well as enabling parallel manipulation. The results demonstrate that the multi-module MANTA-RAY improves scalability and enables coordinated manipulation of multiple objects across larger areas, highlighting its potential for practical, real-world applications.
 
   </details>
 
 
 
-- **A Practical Framework of Key Performance Indicators for Multi-Robot Lunar and Planetary Field Tests**  
-  Julia Richter, David Oberacker, Gabriela Ligeza, Valentin T. Bickel, Philip Arm, William Talbot, Marvin Grosse Besselmann, Florian Kehl, Tristan Schnell, Hendrik Kolvenbach, et al.  
-  _2026-01-28_ · https://arxiv.org/abs/2601.20529v1 · `cs.RO`  
+- **CORE:Toward Ubiquitous 6G Intelligence Through Collaborative Orchestration of Large Language Model Agents Over Hierarchical Edge**  
+  Zitong Yu, Boquan Sun, Yang Li, Zheyan Qu, Xing Zhang  
+  _2026-01-29_ · https://arxiv.org/abs/2601.21822v1 · `cs.AI`  
   <details><summary>Abstract</summary>
 
-  Robotic prospecting for critical resources on the Moon, such as ilmenite, rare earth elements, and water ice, requires robust exploration methods given the diverse terrain and harsh environmental conditions. Although numerous analog field trials address these goals, comparing their results remains challenging because of differences in robot platforms and experimental setups. These missions typically assess performance using selected, scenario-specific engineering metrics that fail to establish a clear link between field performance and science-driven objectives. In this paper, we address this gap by deriving a structured framework of KPI from three realistic multi-robot lunar scenarios reflecting scientific objectives and operational constraints. Our framework emphasizes scenario-dependent priorities in efficiency, robustness, and precision, and is explicitly designed for practical applicability in field deployments. We validated the framework in a multi-robot field test and found it practical and easy to apply for efficiency- and robustness-related KPI, whereas precision-oriented KPI require reliable ground-truth data that is not always feasible to obtain in outdoor analog environments. Overall, we propose this framework as a common evaluation standard enabling consistent, goal-oriented comparison of multi-robot field trials and supporting systematic development of robotic systems for future planetary exploration.
+  Rapid advancements in sixth-generation (6G) networks and large language models (LLMs) have paved the way for ubiquitous intelligence, wherein seamless connectivity and distributed artificial intelligence (AI) have revolutionized various aspects of our lives.However, realizing this vision faces significant challenges owing to the fragmented and heterogeneous computing resources across hierarchical networks, which are insufficient for individual LLM agents to perform complex reasoning tasks.To address this issue, we propose Collaborative Orchestration Role at Edge (CORE), an innovative framework that employs a collaborative learning system in which multiple LLMs, each assigned a distinct functional role, are distributed across mobile devices and tiered edge servers. The system integrates three optimization modules, encompassing real-time perception,dynamic role orchestration, and pipeline-parallel execution, to facilitate efficient and rapid collaboration among distributed agents. Furthermore, we introduce a novel role affinity scheduling algorithm for dynamically orchestrating LLM role assignments across the hierarchical edge infrastructure, intelligently matching computational demands with available dispersed resources.Finally, comprehensive case studies and performance evaluations across various 6G application scenarios demonstrated the efficacy of CORE, revealing significant enhancements in the system efficiency and task completion rates. Building on these promising outcomes, we further validated the practical applicability of CORE by deploying it on a real-world edge-computing platform,that exhibits robust performance in operational environments.
 
   </details>
 
 
 
-- **Decentralized Stochastic Constrained Optimization via Prox-Linearization**  
-  Shivangi Dubey Sharma, Basil M. Idrees, Lavish Arora, Ketan Rajawat  
-  _2026-01-28_ · https://arxiv.org/abs/2601.20345v1 · `math.OC`  
+- **Flocking behavior for dynamic and complex swarm structures**  
+  Carmen D. R. Pita-Romero, Pedro Arias-Perez, Miguel Fernandez-Cortizas, Rafael Perez-Segui, Pascual Campoy  
+  _2026-01-29_ · https://arxiv.org/abs/2601.21772v1 · `cs.RO`  
   <details><summary>Abstract</summary>
 
-  This paper studies consensus-based decentralized stochastic optimization for minimizing possibly non-convex expected objectives with convex non-smooth regularizers and nonlinear functional inequality constraints. We reformulate the constrained problem using the exact-penalty model and develop two algorithms that require only local stochastic gradients and first-order constraint information. The first method, Decentralized Stochastic Momentum-based Prox-Linear Algorithm (D-SMPL), combines constraint linearization with a prox-linear step, resulting in a linearly constrained quadratic subproblem per iteration. Building on this approach, we propose a successive convex approximation (SCA) variant, Decentralized SCA Momentum-based Prox-Linear (D-SCAMPL), which handles additional objective structure through strongly convex surrogate subproblems while still allowing infeasible initialization. Both methods incorporate recursive momentum-based gradient estimators and a consensus mechanism requiring only two communication rounds per iteration. Under standard smoothness and regularity assumptions, both algorithms achieve an oracle complexity of $\mathcal{O}(ε^{-3/2})$, matching the optimal rate known for unconstrained centralized stochastic non-convex optimization. Numerical experiments on energy-optimal ocean trajectory planning corroborate the theory and demonstrate improved performance over existing decentralized baselines.
+  Maintaining the formation of complex structures with multiple UAVs and achieving complex trajectories remains a major challenge. This work presents an algorithm for implementing the flocking behavior of UAVs based on the concept of Virtual Centroid to easily develop a structure for the flock. The approach builds on the classical virtual-based behavior, providing a theoretical framework for incorporating enhancements to dynamically control both the number of agents and the formation of the structure. Simulation tests and real-world experiments were conducted, demonstrating its simplicity even with complex formations and complex trajectories.
 
   </details>
 
