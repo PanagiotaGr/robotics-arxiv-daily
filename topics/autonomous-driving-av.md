@@ -2,52 +2,52 @@
 
 _Robotics arXiv Daily_
 
-_Updated: 2026-02-03 07:06 UTC_
+_Updated: 2026-02-04 07:06 UTC_
 
 Total papers shown: **4**
 
 
 ---
 
-- **LiFlow: Flow Matching for 3D LiDAR Scene Completion**  
-  Andrea Matteazzi, Dietmar Tutsch  
-  _2026-02-02_ · https://arxiv.org/abs/2602.02232v1 · `cs.CV`  
+- **HetroD: A High-Fidelity Drone Dataset and Benchmark for Autonomous Driving in Heterogeneous Traffic**  
+  Yu-Hsiang Chen, Wei-Jer Chang, Christian Kotulla, Thomas Keutgens, Steffen Runde, Tobias Moers, Christoph Klas, Wei Zhan, Masayoshi Tomizuka, Yi-Ting Chen  
+  _2026-02-03_ · https://arxiv.org/abs/2602.03447v1 · `cs.RO`  
   <details><summary>Abstract</summary>
 
-  In autonomous driving scenarios, the collected LiDAR point clouds can be challenged by occlusion and long-range sparsity, limiting the perception of autonomous driving systems. Scene completion methods can infer the missing parts of incomplete 3D LiDAR scenes. Recent methods adopt local point-level denoising diffusion probabilistic models, which require predicting Gaussian noise, leading to a mismatch between training and inference initial distributions. This paper introduces the first flow matching framework for 3D LiDAR scene completion, improving upon diffusion-based methods by ensuring consistent initial distributions between training and inference. The model employs a nearest neighbor flow matching loss and a Chamfer distance loss to enhance both local structure and global coverage in the alignment of point clouds. LiFlow achieves state-of-the-art performance across multiple metrics. Code: https://github.com/matteandre/LiFlow.
+  We present HetroD, a dataset and benchmark for developing autonomous driving systems in heterogeneous environments. HetroD targets the critical challenge of navi- gating real-world heterogeneous traffic dominated by vulner- able road users (VRUs), including pedestrians, cyclists, and motorcyclists that interact with vehicles. These mixed agent types exhibit complex behaviors such as hook turns, lane splitting, and informal right-of-way negotiation. Such behaviors pose significant challenges for autonomous vehicles but remain underrepresented in existing datasets focused on structured, lane-disciplined traffic. To bridge the gap, we collect a large- scale drone-based dataset to provide a holistic observation of traffic scenes with centimeter-accurate annotations, HD maps, and traffic signal states. We further develop a modular toolkit for extracting per-agent scenarios to support downstream task development. In total, the dataset comprises over 65.4k high- fidelity agent trajectories, 70% of which are from VRUs. HetroD supports modeling of VRU behaviors in dense, het- erogeneous traffic and provides standardized benchmarks for forecasting, planning, and simulation tasks. Evaluation results reveal that state-of-the-art prediction and planning models struggle with the challenges presented by our dataset: they fail to predict lateral VRU movements, cannot handle unstructured maneuvers, and exhibit limited performance in dense and multi-agent scenarios, highlighting the need for more robust approaches to heterogeneous traffic. See our project page for more examples: https://hetroddata.github.io/HetroD/
 
   </details>
 
 
 
-- **Real-Time 2D LiDAR Object Detection Using Three-Frame RGB Scan Encoding**  
-  Soheil Behnam Roudsari, Alexandre S. Brandão, Felipe N. Martins  
-  _2026-02-02_ · https://arxiv.org/abs/2602.02167v1 · `eess.SP`  
+- **Efficient Sequential Neural Network with Spatial-Temporal Attention and Linear LSTM for Robust Lane Detection Using Multi-Frame Images**  
+  Sandeep Patil, Yongqi Dong, Haneen Farah, Hans Hellendoorn  
+  _2026-02-03_ · https://arxiv.org/abs/2602.03669v1 · `cs.CV`  
   <details><summary>Abstract</summary>
 
-  Indoor service robots need perception that is robust, more privacy-friendly than RGB video, and feasible on embedded hardware. We present a camera-free 2D LiDAR object detection pipeline that encodes short-term temporal context by stacking three consecutive scans as RGB channels, yielding a compact YOLOv8n input without occupancy-grid construction while preserving angular structure and motion cues. Evaluated in Webots across 160 randomized indoor scenarios with strict scenario-level holdout, the method achieves 98.4% mAP@0.5 (0.778 mAP@0.5:0.95) with 94.9% precision and 94.7% recall on four object classes. On a Raspberry Pi 5, it runs in real time with a mean post-warm-up end-to-end latency of 47.8ms per frame, including scan encoding and postprocessing. Relative to a closely related occupancy-grid LiDAR-YOLO pipeline reported on the same platform, the proposed representation is associated with substantially lower reported end-to-end latency. Although results are simulation-based, they suggest that lightweight temporal encoding can enable accurate and real-time LiDAR-only detection for embedded indoor robotics without capturing RGB appearance.
+  Lane detection is a crucial perception task for all levels of automated vehicles (AVs) and Advanced Driver Assistance Systems, particularly in mixed-traffic environments where AVs must interact with human-driven vehicles (HDVs) and challenging traffic scenarios. Current methods lack versatility in delivering accurate, robust, and real-time compatible lane detection, especially vision-based methods often neglect critical regions of the image and their spatial-temporal (ST) salience, leading to poor performance in difficult circumstances such as serious occlusion and dazzle lighting. This study introduces a novel sequential neural network model with a spatial-temporal attention mechanism to focus on key features of lane lines and exploit salient ST correlations among continuous image frames. The proposed model, built on a standard encoder-decoder structure and common neural network backbones, is trained and evaluated on three large-scale open-source datasets. Extensive experiments demonstrate the strength and robustness of the proposed model, outperforming state-of-the-art methods in various testing scenarios. Furthermore, with the ST attention mechanism, the developed sequential neural network models exhibit fewer parameters and reduced Multiply-Accumulate Operations (MACs) compared to baseline sequential models, highlighting their computational efficiency. Relevant data, code, and models are released at https://doi.org/10.4121/4619cab6-ae4a-40d5-af77-582a77f3d821.
 
   </details>
 
 
 
-- **Enhancing Indoor Occupancy Prediction via Sparse Query-Based Multi-Level Consistent Knowledge Distillation**  
-  Xiang Li, Yupeng Zheng, Pengfei Li, Yilun Chen, Ya-Qin Zhang, Wenchao Ding  
-  _2026-02-02_ · https://arxiv.org/abs/2602.02318v1 · `cs.CV`  
+- **Multi-Player, Multi-Strategy Quantum Game Model for Interaction-Aware Decision-Making in Autonomous Driving**  
+  Karim Essalmi, Fernando Garrido, Fawzi Nashashibi  
+  _2026-02-03_ · https://arxiv.org/abs/2602.03571v1 · `cs.RO`  
   <details><summary>Abstract</summary>
 
-  Occupancy prediction provides critical geometric and semantic understanding for robotics but faces efficiency-accuracy trade-offs. Current dense methods suffer computational waste on empty voxels, while sparse query-based approaches lack robustness in diverse and complex indoor scenes. In this paper, we propose DiScene, a novel sparse query-based framework that leverages multi-level distillation to achieve efficient and robust occupancy prediction. In particular, our method incorporates two key innovations: (1) a Multi-level Consistent Knowledge Distillation strategy, which transfers hierarchical representations from large teacher models to lightweight students through coordinated alignment across four levels, including encoder-level feature alignment, query-level feature matching, prior-level spatial guidance, and anchor-level high-confidence knowledge transfer and (2) a Teacher-Guided Initialization policy, employing optimized parameter warm-up to accelerate model convergence. Validated on the Occ-Scannet benchmark, DiScene achieves 23.2 FPS without depth priors while outperforming our baseline method, OPUS, by 36.1% and even better than the depth-enhanced version, OPUS†. With depth integration, DiScene† attains new SOTA performance, surpassing EmbodiedOcc by 3.7% with 1.62$\times$ faster inference speed. Furthermore, experiments on the Occ3D-nuScenes benchmark and in-the-wild scenarios demonstrate the versatility of our approach in various environments. Code and models can be accessed at https://github.com/getterupper/DiScene.
+  Although significant progress has been made in decision-making for automated driving, challenges remain for deployment in the real world. One challenge lies in addressing interaction-awareness. Most existing approaches oversimplify interactions between the ego vehicle and surrounding agents, and often neglect interactions among the agents themselves. A common solution is to model these interactions using classical game theory. However, its formulation assumes rational players, whereas human behavior is frequently uncertain or irrational. To address these challenges, we propose the Quantum Game Decision-Making (QGDM) model, a novel framework that combines classical game theory with quantum mechanics principles (such as superposition, entanglement, and interference) to tackle multi-player, multi-strategy decision-making problems. To the best of our knowledge, this is one of the first studies to apply quantum game theory to decision-making for automated driving. QGDM runs in real time on a standard computer, without requiring quantum hardware. We evaluate QGDM in simulation across various scenarios, including roundabouts, merging, and highways, and compare its performance with multiple baseline methods. Results show that QGDM significantly improves success rates and reduces collision rates compared to classical approaches, particularly in scenarios with high interaction.
 
   </details>
 
 
 
-- **Online Fine-Tuning of Pretrained Controllers for Autonomous Driving via Real-Time Recurrent RL**  
-  Julian Lemmel, Felix Resch, Mónika Farsang, Ramin Hasani, Daniela Rus, Radu Grosu  
-  _2026-02-02_ · https://arxiv.org/abs/2602.02236v1 · `cs.RO`  
+- **Inlier-Centric Post-Training Quantization for Object Detection Models**  
+  Minsu Kim, Dongyeun Lee, Jaemyung Yu, Jiwan Hur, Giseop Kim, Junmo Kim  
+  _2026-02-03_ · https://arxiv.org/abs/2602.03472v1 · `cs.CV`  
   <details><summary>Abstract</summary>
 
-  Deploying pretrained policies in real-world applications presents substantial challenges that fundamentally limit the practical applicability of learning-based control systems. When autonomous systems encounter environmental changes in system dynamics, sensor drift, or task objectives, fixed policies rapidly degrade in performance. We show that employing Real-Time Recurrent Reinforcement Learning (RTRRL), a biologically plausible algorithm for online adaptation, can effectively fine-tune a pretrained policy to improve autonomous agents' performance on driving tasks. We further show that RTRRL synergizes with a recent biologically inspired recurrent network model, the Liquid-Resistance Liquid-Capacitance RNN. We demonstrate the effectiveness of this closed-loop approach in a simulated CarRacing environment and in a real-world line-following task with a RoboRacer car equipped with an event camera.
+  Object detection is pivotal in computer vision, yet its immense computational demands make deployment slow and power-hungry, motivating quantization. However, task-irrelevant morphologies such as background clutter and sensor noise induce redundant activations (or anomalies). These anomalies expand activation ranges and skew activation distributions toward task-irrelevant responses, complicating bit allocation and weakening the preservation of informative features. Without a clear criterion to distinguish anomalies, suppressing them can inadvertently discard useful information. To address this, we present InlierQ, an inlier-centric post-training quantization approach that separates anomalies from informative inliers. InlierQ computes gradient-aware volume saliency scores, classifies each volume as an inlier or anomaly, and fits a posterior distribution over these scores using the Expectation-Maximization (EM) algorithm. This design suppresses anomalies while preserving informative features. InlierQ is label-free, drop-in, and requires only 64 calibration samples. Experiments on the COCO and nuScenes benchmarks show consistent reductions in quantization error for camera-based (2D and 3D) and LiDAR-based (3D) object detection.
 
   </details>
 

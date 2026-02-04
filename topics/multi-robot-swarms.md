@@ -2,74 +2,41 @@
 
 _Robotics arXiv Daily_
 
-_Updated: 2026-02-03 07:06 UTC_
+_Updated: 2026-02-04 07:06 UTC_
 
-Total papers shown: **6**
+Total papers shown: **3**
 
 
 ---
 
-- **3D Foundation Model-Based Loop Closing for Decentralized Collaborative SLAM**  
-  Pierre-Yves Lajoie, Benjamin Ramtoula, Daniele De Martini, Giovanni Beltrame  
-  _2026-02-02_ · https://arxiv.org/abs/2602.02430v1 · `cs.RO`  
+- **When Should Agents Coordinate in Differentiable Sequential Decision Problems?**  
+  Caleb Probine, Su Ann Low, David Fridovich-Keil, Ufuk Topcu  
+  _2026-02-03_ · https://arxiv.org/abs/2602.03674v1 · `cs.MA`  
   <details><summary>Abstract</summary>
 
-  Decentralized Collaborative Simultaneous Localization And Mapping (C-SLAM) techniques often struggle to identify map overlaps due to significant viewpoint variations among robots. Motivated by recent advancements in 3D foundation models, which can register images despite large viewpoint differences, we propose a robust loop closing approach that leverages these models to establish inter-robot measurements. In contrast to resource-intensive methods requiring full 3D reconstruction within a centralized map, our approach integrates foundation models into existing SLAM pipelines, yielding scalable and robust multi-robot mapping. Our contributions include: (1) integrating 3D foundation models to reliably estimate relative poses from monocular image pairs within decentralized C-SLAM; (2) introducing robust outlier mitigation techniques critical to the use of these relative poses; and (3) developing specialized pose graph optimization formulations that efficiently resolve scale ambiguities. We evaluate our method against state-of-the-art approaches, demonstrating improvements in localization and mapping accuracy, alongside significant gains in computational and memory efficiency. These results highlight the potential of our approach for deployment in large-scale multi-robot scenarios.
+  Multi-robot teams must coordinate to operate effectively. When a team operates in an uncoordinated manner, and agents choose actions that are only individually optimal, the team's outcome can suffer. However, in many domains, coordination requires costly communication. We explore the value of coordination in a broad class of differentiable motion-planning problems. In particular, we model coordinated behavior as a spectrum: at one extreme, agents jointly optimize a common team objective, and at the other, agents make unilaterally optimal decisions given their individual decision variables, i.e., they operate at Nash equilibria. We then demonstrate that reasoning about coordination in differentiable motion-planning problems reduces to reasoning about the second-order properties of agents' objectives, and we provide algorithms that use this second-order reasoning to determine at which times a team of agents should coordinate.
 
   </details>
 
 
 
-- **Mapping-Guided Task Discovery and Allocation for Robotic Inspection of Underwater Structures**  
-  Marina Ruediger, Ashis G. Banerjee  
-  _2026-02-02_ · https://arxiv.org/abs/2602.02389v1 · `cs.RO`  
+- **Human-in-the-Loop Failure Recovery with Adaptive Task Allocation**  
+  Lorena Maria Genua, Nikita Boguslavskii, Zhi Li  
+  _2026-02-03_ · https://arxiv.org/abs/2602.03603v1 · `cs.RO`  
   <details><summary>Abstract</summary>
 
-  Task generation for underwater multi-robot inspections without prior knowledge of existing geometry can be achieved and optimized through examination of simultaneous localization and mapping (SLAM) data. By considering hardware parameters and environmental conditions, a set of tasks is generated from SLAM meshes and optimized through expected keypoint scores and distance-based pruning. In-water tests are used to demonstrate the effectiveness of the algorithm and determine the appropriate parameters. These results are compared to simulated Voronoi partitions and boustrophedon patterns for inspection coverage on a model of the test environment. The key benefits of the presented task discovery method include adaptability to unexpected geometry and distributions that maintain coverage while focusing on areas more likely to present defects or damage.
+  Since the recent Covid-19 pandemic, mobile manipulators and humanoid assistive robots with higher levels of autonomy have increasingly been adopted for patient care and living assistance. Despite advancements in autonomy, these robots often struggle to perform reliably in dynamic and unstructured environments and require human intervention to recover from failures. Effective human-robot collaboration is essential to enable robots to receive assistance from the most competent operator, in order to reduce their workload and minimize disruptions in task execution. In this paper, we propose an adaptive method for allocating robotic failures to human operators (ARFA). Our proposed approach models the capabilities of human operators, and continuously updates these beliefs based on their actual performance for failure recovery. For every failure to be resolved, a reward function calculates expected outcomes based on operator capabilities and historical data, task urgency, and current workload distribution. The failure is then assigned to the operator with the highest expected reward. Our simulations and user studies show that ARFA outperforms random allocation, significantly reducing robot idle time, improving overall system performance, and leading to a more distributed workload among operators.
 
   </details>
 
 
 
-- **Bridging the Sim-to-Real Gap with multipanda ros2: A Real-Time ROS2 Framework for Multimanual Systems**  
-  Jon Škerlj, Seongjin Bien, Abdeldjallil Naceri, Sami Haddadin  
-  _2026-02-02_ · https://arxiv.org/abs/2602.02269v1 · `cs.RO`  
+- **SAGE-5GC: Security-Aware Guidelines for Evaluating Anomaly Detection in the 5G Core Network**  
+  Cristian Manca, Christian Scano, Giorgio Piras, Fabio Brau, Maura Pintor, Battista Biggio  
+  _2026-02-03_ · https://arxiv.org/abs/2602.03596v1 · `cs.LG`  
   <details><summary>Abstract</summary>
 
-  We present $multipanda\_ros2$, a novel open-source ROS2 architecture for multi-robot control of Franka Robotics robots. Leveraging ros2 control, this framework provides native ROS2 interfaces for controlling any number of robots from a single process. Our core contributions address key challenges in real-time torque control, including interaction control and robot-environment modeling. A central focus of this work is sustaining a 1kHz control frequency, a necessity for real-time control and a minimum frequency required by safety standards. Moreover, we introduce a controllet-feature design pattern that enables controller-switching delays of $\le 2$ ms, facilitating reproducible benchmarking and complex multi-robot interaction scenarios. To bridge the simulation-to-reality (sim2real) gap, we integrate a high-fidelity MuJoCo simulation with quantitative metrics for both kinematic accuracy and dynamic consistency (torques, forces, and control errors). Furthermore, we demonstrate that real-world inertial parameter identification can significantly improve force and torque accuracy, providing a methodology for iterative physics refinement. Our work extends approaches from soft robotics to rigid dual-arm, contact-rich tasks, showcasing a promising method to reduce the sim2real gap and providing a robust, reproducible platform for advanced robotics research.
-
-  </details>
-
-
-
-- **Extending the Law of Intersegmental Coordination: Implications for Powered Prosthetic Controls**  
-  Elad Siman Tov, Nili E. Krausz  
-  _2026-02-02_ · https://arxiv.org/abs/2602.02181v1 · `cs.RO`  
-  <details><summary>Abstract</summary>
-
-  Powered prostheses are capable of providing net positive work to amputees and have advanced in the past two decades. However, reducing amputee metabolic cost of walking remains an open problem. The Law of Intersegmental Coordination (ISC) has been observed across gaits and has been previously implicated in energy expenditure of walking, yet it has rarely been analyzed or applied within the context of lower-limb amputee gait. This law states that the elevation angles of the thigh, shank and foot over the gait cycle are not independent. In this work, we developed a method to analyze intersegmental coordination for lower-limb 3D kinematic data, to simplify ISC analysis. Moreover, inspired by motor control, biomechanics and robotics literature, we used our method to broaden ISC toward a new law of coordination of moments. We find these Elevation Space Moments (ESM), and present results showing a moment-based coordination for able bodied gait. We also analyzed ISC for amputee gait walking with powered and passive prosthesis, and found that while elevation angles remained planar, the ESM showed less coordination. We use ISC as a constraint to predict the shank angles/moments that would compensate for alterations due to a passive foot so as to mimic a healthy thigh angle/moment profile. This may have implications for improving powered prosthetic control. We developed the ISC3d toolbox that is freely available online, which may be used to compute kinematic and kinetic ISC in 3D. This provides a means to further study the role of coordination in gait and may help address fundamental questions of the neural control of human movement.
-
-  </details>
-
-
-
-- **Context Learning for Multi-Agent Discussion**  
-  Xingyuan Hua, Sheng Yue, Xinyi Li, Yizhe Zhao, Jinrui Zhang, Ju Ren  
-  _2026-02-02_ · https://arxiv.org/abs/2602.02350v1 · `cs.AI`  
-  <details><summary>Abstract</summary>
-
-  Multi-Agent Discussion (MAD) has garnered increasing attention very recently, where multiple LLM instances collaboratively solve problems via structured discussion. However, we find that current MAD methods easily suffer from discussion inconsistency, LLMs fail to reach a coherent solution, due to the misalignment between their individual contexts.In this paper, we introduce a multi-LLM context learning method (M2CL) that learns a context generator for each agent, capable of dynamically generating context instructions per discussion round via automatic information organization and refinement. Specifically, inspired by our theoretical insights on the context instruction, M2CL train the generators to control context coherence and output discrepancies via a carefully crafted self-adaptive mechanism.It enables LLMs to avoid premature convergence on majority noise and progressively reach the correct consensus. We evaluate M2CL on challenging tasks, including academic reasoning, embodied tasks, and mobile control. The results show that the performance of M2CL significantly surpasses existing methods by 20%--50%, while enjoying favorable transferability and computational efficiency.
-
-  </details>
-
-
-
-- **The Verification Crisis: Expert Perceptions of GenAI Disinformation and the Case for Reproducible Provenance**  
-  Alexander Loth, Martin Kappes, Marc-Oliver Pahl  
-  _2026-02-02_ · https://arxiv.org/abs/2602.02100v1 · `cs.CY`  
-  <details><summary>Abstract</summary>
-
-  The growth of Generative Artificial Intelligence (GenAI) has shifted disinformation production from manual fabrication to automated, large-scale manipulation. This article presents findings from the first wave of a longitudinal expert perception survey (N=21) involving AI researchers, policymakers, and disinformation specialists. It examines the perceived severity of multimodal threats -- text, image, audio, and video -- and evaluates current mitigation strategies. Results indicate that while deepfake video presents immediate "shock" value, large-scale text generation poses a systemic risk of "epistemic fragmentation" and "synthetic consensus," particularly in the political domain. The survey reveals skepticism about technical detection tools, with experts favoring provenance standards and regulatory frameworks despite implementation barriers. GenAI disinformation research requires reproducible methods. The current challenge is measurement: without standardized benchmarks and reproducibility checklists, tracking or countering synthetic media remains difficult. We propose treating information integrity as an infrastructure with rigor in data provenance and methodological reproducibility.
+  Machine learning-based anomaly detection systems are increasingly being adopted in 5G Core networks to monitor complex, high-volume traffic. However, most existing approaches are evaluated under strong assumptions that rarely hold in operational environments, notably the availability of independent and identically distributed (IID) data and the absence of adaptive attackers.In this work, we study the problem of detecting 5G attacks \textit{in the wild}, focusing on realistic deployment settings. We propose a set of Security-Aware Guidelines for Evaluating anomaly detectors in 5G Core Network (SAGE-5GC), driven by domain knowledge and consideration of potential adversarial threats. Using a realistic 5G Core dataset, we first train several anomaly detectors and assess their baseline performance against standard 5GC control-plane cyberattacks targeting PFCP-based network services.We then extend the evaluation to adversarial settings, where an attacker tries to manipulate the observable features of the network traffic to evade detection, under the constraint that the intended functionality of the malicious traffic is preserved. Starting from a selected set of controllable features, we analyze model sensitivity and adversarial robustness through randomized perturbations. Finally, we introduce a practical optimization strategy based on genetic algorithms that operates exclusively on attacker-controllable features and does not require prior knowledge of the underlying detection model. Our experimental results show that adversarially crafted attacks can substantially degrade detection performance, underscoring the need for robust, security-aware evaluation methodologies for anomaly detection in 5G networks deployed in the wild.
 
   </details>
 
