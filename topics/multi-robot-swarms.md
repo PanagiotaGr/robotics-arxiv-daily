@@ -2,74 +2,41 @@
 
 _Robotics arXiv Daily_
 
-_Updated: 2026-02-05 07:13 UTC_
+_Updated: 2026-02-06 07:08 UTC_
 
-Total papers shown: **6**
+Total papers shown: **3**
 
 
 ---
 
-- **Act, Sense, Act: Learning Non-Markovian Active Perception Strategies from Large-Scale Egocentric Human Data**  
-  Jialiang Li, Yi Qiao, Yunhan Guo, Changwen Chen, Wenzhao Lian  
-  _2026-02-04_ · https://arxiv.org/abs/2602.04600v1 · `cs.RO`  
+- **Location-Aware Dispersion on Anonymous Graphs**  
+  Himani, Supantha Pandit, Gokarna Sharma  
+  _2026-02-05_ · https://arxiv.org/abs/2602.05948v1 · `cs.DC`  
   <details><summary>Abstract</summary>
 
-  Achieving generalizable manipulation in unconstrained environments requires the robot to proactively resolve information uncertainty, i.e., the capability of active perception. However, existing methods are often confined in limited types of sensing behaviors, restricting their applicability to complex environments. In this work, we formalize active perception as a non-Markovian process driven by information gain and decision branching, providing a structured categorization of visual active perception paradigms. Building on this perspective, we introduce CoMe-VLA, a cognitive and memory-aware vision-language-action (VLA) framework that leverages large-scale human egocentric data to learn versatile exploration and manipulation priors. Our framework integrates a cognitive auxiliary head for autonomous sub-task transitions and a dual-track memory system to maintain consistent self and environmental awareness by fusing proprioceptive and visual temporal contexts. By aligning human and robot hand-eye coordination behaviors in a unified egocentric action space, we train the model progressively in three stages. Extensive experiments on a wheel-based humanoid have demonstrated strong robustness and adaptability of our proposed method across diverse long-horizon tasks spanning multiple active perception scenarios.
+  The well-studied DISPERSION problem is a fundamental coordination problem in distributed robotics, where a set of mobile robots must relocate so that each occupies a distinct node of a network. DISPERSION assumes that a robot can settle at any node as long as no other robot settles on that node. In this work, we introduce LOCATION-AWARE DISPERSION, a novel generalization of DISPERSION that incorporates location awareness: Let $G = (V, E)$ be an anonymous, connected, undirected graph with $n = |V|$ nodes, each labeled with a color $\sf{col}(v) \in C = \{c_1, \dots, c_t\}, t\leq n$. A set $R = \{r_1, \dots, r_k\}$ of $k \leq n$ mobile robots is given, where each robot $r_i$ has an associated color $\mathsf{col}(r_i) \in C$. Initially placed arbitrarily on the graph, the goal is to relocate the robots so that each occupies a distinct node of the same color. When $|C|=1$, LOCATION-AWARE DISPERSION reduces to DISPERSION. There is a solution to DISPERSION in graphs with any $k\leq n$ without knowing $k,n$. Like DISPERSION, the goal is to solve LOCATION-AWARE DISPERSION minimizing both time and memory requirement at each agent. We develop several deterministic algorithms with guaranteed bounds on both time and memory requirement. We also give an impossibility and a lower bound for any deterministic algorithm for LOCATION-AWARE DISPERSION. To the best of our knowledge, the presented results collectively establish the algorithmic feasibility of LOCATION-AWARE DISPERSION in anonymous networks and also highlight the challenges on getting an efficient solution compared to the solutions for DISPERSION.
 
   </details>
 
 
 
-- **TACO: Temporal Consensus Optimization for Continual Neural Mapping**  
-  Xunlan Zhou, Hongrui Zhao, Negar Mehr  
-  _2026-02-04_ · https://arxiv.org/abs/2602.04516v1 · `cs.RO`  
+- **InterPrior: Scaling Generative Control for Physics-Based Human-Object Interactions**  
+  Sirui Xu, Samuel Schulter, Morteza Ziyadi, Xialin He, Xiaohan Fei, Yu-Xiong Wang, Liangyan Gui  
+  _2026-02-05_ · https://arxiv.org/abs/2602.06035v1 · `cs.CV`  
   <details><summary>Abstract</summary>
 
-  Neural implicit mapping has emerged as a powerful paradigm for robotic navigation and scene understanding. However, real-world robotic deployment requires continual adaptation to changing environments under strict memory and computation constraints, which existing mapping systems fail to support. Most prior methods rely on replaying historical observations to preserve consistency and assume static scenes. As a result, they cannot adapt to continual learning in dynamic robotic settings. To address these challenges, we propose TACO (TemporAl Consensus Optimization), a replay-free framework for continual neural mapping. We reformulate mapping as a temporal consensus optimization problem, where we treat past model snapshots as temporal neighbors. Intuitively, our approach resembles a model consulting its own past knowledge. We update the current map by enforcing weighted consensus with historical representations. Our method allows reliable past geometry to constrain optimization while permitting unreliable or outdated regions to be revised in response to new observations. TACO achieves a balance between memory efficiency and adaptability without storing or replaying previous data. Through extensive simulated and real-world experiments, we show that TACO robustly adapts to scene changes, and consistently outperforms other continual learning baselines.
+  Humans rarely plan whole-body interactions with objects at the level of explicit whole-body movements. High-level intentions, such as affordance, define the goal, while coordinated balance, contact, and manipulation can emerge naturally from underlying physical and motor priors. Scaling such priors is key to enabling humanoids to compose and generalize loco-manipulation skills across diverse contexts while maintaining physically coherent whole-body coordination. To this end, we introduce InterPrior, a scalable framework that learns a unified generative controller through large-scale imitation pretraining and post-training by reinforcement learning. InterPrior first distills a full-reference imitation expert into a versatile, goal-conditioned variational policy that reconstructs motion from multimodal observations and high-level intent. While the distilled policy reconstructs training behaviors, it does not generalize reliably due to the vast configuration space of large-scale human-object interactions. To address this, we apply data augmentation with physical perturbations, and then perform reinforcement learning finetuning to improve competence on unseen goals and initializations. Together, these steps consolidate the reconstructed latent skills into a valid manifold, yielding a motion prior that generalizes beyond the training data, e.g., it can incorporate new behaviors such as interactions with unseen objects. We further demonstrate its effectiveness for user-interactive control and its potential for real robot deployment.
 
   </details>
 
 
 
-- **A Unified Complementarity-based Approach for Rigid-Body Manipulation and Motion Prediction**  
-  Bingkun Huang, Xin Ma, Nilanjan Chakraborty, Riddhiman Laha  
-  _2026-02-04_ · https://arxiv.org/abs/2602.04522v1 · `cs.RO`  
+- **Reactive Knowledge Representation and Asynchronous Reasoning**  
+  Simon Kohaut, Benedict Flade, Julian Eggert, Kristian Kersting, Devendra Singh Dhami  
+  _2026-02-05_ · https://arxiv.org/abs/2602.05625v1 · `cs.AI`  
   <details><summary>Abstract</summary>
 
-  Robotic manipulation in unstructured environments requires planners to reason jointly about free-space motion and sustained, frictional contact with the environment. Existing (local) planning and simulation frameworks typically separate these regimes or rely on simplified contact representations, particularly when modeling non-convex or distributed contact patches. Such approximations limit the fidelity of contact-mode transitions and hinder the robust execution of contact-rich behaviors in real time. This paper presents a unified discrete-time modeling framework for robotic manipulation that consistently captures both free motion and frictional contact within a single mathematical formalism (Unicomp). Building on complementarity-based rigid-body dynamics, we formulate free-space motion and contact interactions as coupled linear and nonlinear complementarity problems, enabling principled transitions between contact modes without enforcing fixed-contact assumptions. For planar patch contact, we derive a frictional contact model from the maximum power dissipation principle in which the set of admissible contact wrenches is represented by an ellipsoidal limit surface. This representation captures coupled force-moment effects, including torsional friction, while remaining agnostic to the underlying pressure distribution across the contact patch. The resulting formulation yields a discrete-time predictive model that relates generalized velocities and contact wrenches through quadratic constraints and is suitable for real-time optimization-based planning. Experimental results show that the proposed approach enables stable, physically consistent behavior at interactive speeds across tasks, from planar pushing to contact-rich whole-body maneuvers.
-
-  </details>
-
-
-
-- **ReThinker: Scientific Reasoning by Rethinking with Guided Reflection and Confidence Control**  
-  Zhentao Tang, Yuqi Cui, Shixiong Kai, Wenqian Zhao, Ke Ye, Xing Li, Anxin Tian, Zehua Pei, Hui-Ling Zhen, Shoubo Hu, et al.  
-  _2026-02-04_ · https://arxiv.org/abs/2602.04496v1 · `cs.AI`  
-  <details><summary>Abstract</summary>
-
-  Expert-level scientific reasoning remains challenging for large language models, particularly on benchmarks such as Humanity's Last Exam (HLE), where rigid tool pipelines, brittle multi-agent coordination, and inefficient test-time scaling often limit performance. We introduce ReThinker, a confidence-aware agentic framework that orchestrates retrieval, tool use, and multi-agent reasoning through a stage-wise Solver-Critic-Selector architecture. Rather than following a fixed pipeline, ReThinker dynamically allocates computation based on model confidence, enabling adaptive tool invocation, guided multi-dimensional reflection, and robust confidence-weighted selection. To support scalable training without human annotation, we further propose a reverse data synthesis pipeline and an adaptive trajectory recycling strategy that transform successful reasoning traces into high-quality supervision. Experiments on HLE, GAIA, and XBench demonstrate that ReThinker consistently outperforms state-of-the-art foundation models with tools and existing deep research systems, achieving state-of-the-art results on expert-level reasoning tasks.
-
-  </details>
-
-
-
-- **LLM-Empowered Cooperative Content Caching in Vehicular Fog Caching-Assisted Platoon Networks**  
-  Bowen Tan, Qiong Wu, Pingyi Fan, Kezhi Wang, Nan Cheng, Wen Chen  
-  _2026-02-04_ · https://arxiv.org/abs/2602.04471v1 · `cs.NI`  
-  <details><summary>Abstract</summary>
-
-  This letter proposes a novel three-tier content caching architecture for Vehicular Fog Caching (VFC)-assisted platoon, where the VFC is formed by the vehicles driving near the platoon. The system strategically coordinates storage across local platoon vehicles, dynamic VFC clusters, and cloud server (CS) to minimize content retrieval latency. To efficiently manage distributed storage, we integrate large language models (LLMs) for real-time and intelligent caching decisions. The proposed approach leverages LLMs' ability to process heterogeneous information, including user profiles, historical data, content characteristics, and dynamic system states. Through a designed prompting framework encoding task objectives and caching constraints, the LLMs formulate caching as a decision-making task, and our hierarchical deterministic caching mapping strategy enables adaptive requests prediction and precise content placement across three tiers without frequent retraining. Simulation results demonstrate the advantages of our proposed caching scheme.
-
-  </details>
-
-
-
-- **SPEAR: An Engineering Case Study of Multi-Agent Coordination for Smart Contract Auditing**  
-  Arnab Mallick, Indraveni Chebolu, Harmesh Rana  
-  _2026-02-04_ · https://arxiv.org/abs/2602.04418v1 · `cs.MA`  
-  <details><summary>Abstract</summary>
-
-  We present SPEAR, a multi-agent coordination framework for smart contract auditing that applies established MAS patterns in a realistic security analysis workflow. SPEAR models auditing as a coordinated mission carried out by specialized agents: a Planning Agent prioritizes contracts using risk-aware heuristics, an Execution Agent allocates tasks via the Contract Net protocol, and a Repair Agent autonomously recovers from brittle generated artifacts using a programmatic-first repair policy. Agents maintain local beliefs updated through AGM-compliant revision, coordinate via negotiation and auction protocols, and revise plans as new information becomes available. An empirical study compares the multi-agent design with centralized and pipeline-based alternatives under controlled failure scenarios, focusing on coordination, recovery behavior, and resource use.
+  Exact inference in complex probabilistic models often incurs prohibitive computational costs. This challenge is particularly acute for autonomous agents in dynamic environments that require frequent, real-time belief updates. Existing methods are often inefficient for ongoing reasoning, as they re-evaluate the entire model upon any change, failing to exploit that real-world information streams have heterogeneous update rates. To address this, we approach the problem from a reactive, asynchronous, probabilistic reasoning perspective. We first introduce Resin (Reactive Signal Inference), a probabilistic programming language that merges probabilistic logic with reactive programming. Furthermore, to provide efficient and exact semantics for Resin, we propose Reactive Circuits (RCs). Formulated as a meta-structure over Algebraic Circuits and asynchronous data streams, RCs are time-dynamic Directed Acyclic Graphs that autonomously adapt themselves based on the volatility of input signals. In high-fidelity drone swarm simulations, our approach achieves several orders of magnitude of speedup over frequency-agnostic inference. We demonstrate that RCs' structural adaptations successfully capture environmental dynamics, significantly reducing latency and facilitating reactive real-time reasoning. By partitioning computations based on the estimated Frequency of Change in the asynchronous inputs, large inference tasks can be decomposed into individually memoized sub-problems. This ensures that only the specific components of a model affected by new information are re-evaluated, drastically reducing redundant computation in streaming contexts.
 
   </details>
 
