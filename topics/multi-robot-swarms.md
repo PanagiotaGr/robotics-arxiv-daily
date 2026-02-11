@@ -2,52 +2,41 @@
 
 _Robotics arXiv Daily_
 
-_Updated: 2026-02-10 07:19 UTC_
+_Updated: 2026-02-11 07:16 UTC_
 
-Total papers shown: **4**
+Total papers shown: **3**
 
 
 ---
 
-- **Digital Twin and Agentic AI for Wild Fire Disaster Management: Intelligent Virtual Situation Room**  
-  Mohammad Morsali, Siavash H. Khajavi  
-  _2026-02-09_ · https://arxiv.org/abs/2602.08949v1 · `cs.AI`  
+- **TriPilot-FF: Coordinated Whole-Body Teleoperation with Force Feedback**  
+  Zihao Li, Yanan Zhou, Ranpeng Qiu, Hangyu Wu, Guoqiang Ren, Weiming Zhi  
+  _2026-02-10_ · https://arxiv.org/abs/2602.09888v1 · `cs.RO`  
   <details><summary>Abstract</summary>
 
-  According to the United Nations, wildfire frequency and intensity are projected to increase by approximately 14% by 2030 and 30% by 2050 due to global warming, posing critical threats to life, infrastructure, and ecosystems. Conventional disaster management frameworks rely on static simulations and passive data acquisition, hindering their ability to adapt to arbitrarily evolving wildfire episodes in real-time. To address these limitations, we introduce the Intelligent Virtual Situation Room (IVSR), a bidirectional Digital Twin (DT) platform augmented by autonomous AI agents. The IVSR continuously ingests multisource sensor imagery, weather data, and 3D forest models to create a live virtual replica of the fire environment. A similarity engine powered by AI aligns emerging conditions with a precomputed Disaster Simulation Library, retrieving and calibrating intervention tactics under the watchful eyes of experts. Authorized action-ranging from UAV redeployment to crew reallocation-is cycled back through standardized procedures to the physical layer, completing the loop between response and analysis. We validate IVSR through detailed case-study simulations provided by an industrial partner, demonstrating capabilities in localized incident detection, privacy-preserving playback, collider-based fire-spread projection, and site-specific ML retraining. Our results indicate marked reductions in detection-to-intervention latency and more effective resource coordination versus traditional systems. By uniting real-time bidirectional DTs with agentic AI, IVSR offers a scalable, semi-automated decision-support paradigm for proactive, adaptive wildfire disaster management.
+  Mobile manipulators broaden the operational envelope for robot manipulation. However, the whole-body teleoperation of such robots remains a problem: operators must coordinate a wheeled base and two arms while reasoning about obstacles and contact. Existing interfaces are predominantly hand-centric (e.g., VR controllers and joysticks), leaving foot-operated channels underexplored for continuous base control. We present TriPilot-FF, an open-source whole-body teleoperation system for a custom bimanual mobile manipulator that introduces a foot-operated pedal with lidar-driven pedal haptics, coupled with upper-body bimanual leader-follower teleoperation. Using only a low-cost base-mounted lidar, TriPilot-FF renders a resistive pedal cue from proximity-to-obstacle signals in the commanded direction, shaping operator commands toward collision-averse behaviour without an explicit collision-avoidance controller. The system also supports arm-side force reflection for contact awareness and provides real-time force and visual guidance of bimanual manipulability to prompt mobile base repositioning, thereby improving reach. We demonstrate the capability of TriPilot-FF to effectively ``co-pilot'' the human operator over long time-horizons and tasks requiring precise mobile base movement and coordination. Finally, we incorporate teleoperation feedback signals into an Action Chunking with Transformers (ACT) policy and demonstrate improved performance when the additional information is available. We release the pedal device design, full software stack, and conduct extensive real-world evaluations on a bimanual wheeled platform. The project page of TriPilot-FF is http://bit.ly/46H3ZJT.
 
   </details>
 
 
 
-- **A Generic Service-Oriented Function Offloading Framework for Connected Automated Vehicles**  
-  Robin Dehler, Michael Buchholz  
-  _2026-02-09_ · https://arxiv.org/abs/2602.08799v1 · `cs.RO`  
+- **RANT: Ant-Inspired Multi-Robot Rainforest Exploration Using Particle Filter Localisation and Virtual Pheromone Coordination**  
+  Ameer Alhashemi, Layan Abdulhadi, Karam Abuodeh, Tala Baghdadi, Suryanarayana Datla  
+  _2026-02-10_ · https://arxiv.org/abs/2602.09661v1 · `cs.RO`  
   <details><summary>Abstract</summary>
 
-  Function offloading is a promising solution to address limitations concerning computational capacity and available energy of Connected Automated Vehicles~(CAVs) or other autonomous robots by distributing computational tasks between local and remote computing devices in form of distributed services. This paper presents a generic function offloading framework that can be used to offload an arbitrary set of computational tasks with a focus on autonomous driving. To provide flexibility, the function offloading framework is designed to incorporate different offloading decision making algorithms and quality of service~(QoS) requirements that can be adjusted to different scenarios or the objectives of the CAVs. With a focus on the applicability, we propose an efficient location-based approach, where the decision whether tasks are processed locally or remotely depends on the location of the CAV. We apply the proposed framework on the use case of service-oriented trajectory planning, where we offload the trajectory planning task of CAVs to a Multi-Access Edge Computing~(MEC) server. The evaluation is conducted in both simulation and real-world application. It demonstrates the potential of the function offloading framework to guarantee the QoS for trajectory planning while improving the computational efficiency of the CAVs. Moreover, the simulation results also show the adaptability of the framework to diverse scenarios involving simultaneous offloading requests from multiple CAVs.
+  This paper presents RANT, an ant-inspired multi-robot exploration framework for noisy, uncertain environments. A team of differential-drive robots navigates a 10 x 10 m terrain, collects noisy probe measurements of a hidden richness field, and builds local probabilistic maps while the supervisor maintains a global evaluation. RANT combines particle-filter localisation, a behaviour-based controller with gradient-driven hotspot exploitation, and a lightweight no-revisit coordination mechanism based on virtual pheromone blocking. We experimentally analyse how team size, localisation fidelity, and coordination influence coverage, hotspot recall, and redundancy. Results show that particle filtering is essential for reliable hotspot engagement, coordination substantially reduces overlap, and increasing team size improves coverage but yields diminishing returns due to interference.
 
   </details>
 
 
 
-- **Designing Multi-Robot Ground Video Sensemaking with Public Safety Professionals**  
-  Puqi Zhou, Ali Asgarov, Aafiya Hussain, Wonjoon Park, Amit Paudyal, Sameep Shrestha, Chia-wei Tang, Michael F. Lighthiser, Michael R. Hieb, Xuesu Xiao, et al.  
-  _2026-02-09_ · https://arxiv.org/abs/2602.08882v1 · `cs.HC`  
+- **Decoupled MPPI-Based Multi-Arm Motion Planning**  
+  Dan Evron, Elias Goldsztejn, Ronen I. Brafman  
+  _2026-02-10_ · https://arxiv.org/abs/2602.10114v1 · `cs.RO`  
   <details><summary>Abstract</summary>
 
-  Videos from fleets of ground robots can advance public safety by providing scalable situational awareness and reducing professionals' burden. Yet little is known about how to design and integrate multi-robot videos into public safety workflows. Collaborating with six police agencies, we examined how such videos could be made practical. In Study 1, we presented the first testbed for multi-robot ground video sensemaking. The testbed includes 38 events-of-interest (EoI) relevant to public safety, a dataset of 20 robot patrol videos (10 day/night pairs) covering EoI types, and 6 design requirements aimed at improving current video sensemaking practices. In Study 2, we built MRVS, a tool that augments multi-robot patrol video streams with a prompt-engineered video understanding model. Participants reported reduced manual workload and greater confidence with LLM-based explanations, while noting concerns about false alarms and privacy. We conclude with implications for designing future multi-robot video sensemaking tools. The testbed is available at https://github.com/Puqi7/MRVS\_VideoSensemaking
-
-  </details>
-
-
-
-- **Multi-Staged Framework for Safety Analysis of Offloaded Services in Distributed Intelligent Transportation Systems**  
-  Robin Dehler, Oliver Schumann, Jona Ruof, Michael Buchholz  
-  _2026-02-09_ · https://arxiv.org/abs/2602.08821v1 · `cs.RO`  
-  <details><summary>Abstract</summary>
-
-  The integration of service-oriented architectures (SOA) with function offloading for distributed, intelligent transportation systems (ITS) offers the opportunity for connected autonomous vehicles (CAVs) to extend their locally available services. One major goal of offloading a subset of functions in the processing chain of a CAV to remote devices is to reduce the overall computational complexity on the CAV. The extension of using remote services, however, requires careful safety analysis, since the remotely created data are corrupted more easily, e.g., through an attacker on the remote device or by intercepting the wireless transmission. To tackle this problem, we first analyze the concept of SOA for distributed environments. From this, we derive a safety framework that validates the reliability of remote services and the data received locally. Since it is possible for the autonomous driving task to offload multiple different services, we propose a specific multi-staged framework for safety analysis dependent on the service composition of local and remote services. For efficiency reasons, we directly include the multi-staged framework for safety analysis in our service-oriented function offloading framework (SOFOF) that we have proposed in earlier work. The evaluation compares the performance of the extended framework considering computational complexity, with energy savings being a major motivation for function offloading, and its capability to detect data from corrupted remote services.
+  Recent advances in sampling-based motion planning algorithms for high DOF arms leverage GPUs to provide SOTA performance. These algorithms can be used to control multiple arms jointly, but this approach scales poorly. To address this, we extend STORM, a sampling-based model-predictive-control (MPC) motion planning algorithm, to handle multiple robots in a distributed fashion. First, we modify STORM to handle dynamic obstacles. Then, we let each arm compute its own motion plan prefix, which it shares with the other arms, which treat it as a dynamic obstacle. Finally, we add a dynamic priority scheme. The new algorithm, MR-STORM, demonstrates clear empirical advantages over SOTA algorithms when operating with both static and dynamic obstacles.
 
   </details>
 

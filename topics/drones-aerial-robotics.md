@@ -2,41 +2,52 @@
 
 _Robotics arXiv Daily_
 
-_Updated: 2026-02-10 07:19 UTC_
+_Updated: 2026-02-11 07:16 UTC_
 
-Total papers shown: **3**
+Total papers shown: **4**
 
 
 ---
 
-- **High-Speed Vision-Based Flight in Clutter with Safety-Shielded Reinforcement Learning**  
-  Jiarui Zhang, Chengyong Lei, Chengjiang Dai, Lijie Wang, Zhichao Han, Fei Gao  
-  _2026-02-09_ · https://arxiv.org/abs/2602.08653v1 · `cs.RO`  
+- **AutoFly: Vision-Language-Action Model for UAV Autonomous Navigation in the Wild**  
+  Xiaolou Sun, Wufei Si, Wenhui Ni, Yuntian Li, Dongming Wu, Fei Xie, Runwei Guan, He-Yang Xu, Henghui Ding, Yuan Wu, et al.  
+  _2026-02-10_ · https://arxiv.org/abs/2602.09657v1 · `cs.RO`  
   <details><summary>Abstract</summary>
 
-  Quadrotor unmanned aerial vehicles (UAVs) are increasingly deployed in complex missions that demand reliable autonomous navigation and robust obstacle avoidance. However, traditional modular pipelines often incur cumulative latency, whereas purely reinforcement learning (RL) approaches typically provide limited formal safety guarantees. To bridge this gap, we propose an end-to-end RL framework augmented with model-based safety mechanisms. We incorporate physical priors in both training and deployment. During training, we design a physics-informed reward structure that provides global navigational guidance. During deployment, we integrate a real-time safety filter that projects the policy outputs onto a provably safe set to enforce strict collision-avoidance constraints. This hybrid architecture reconciles high-speed flight with robust safety assurances. Benchmark evaluations demonstrate that our method outperforms both traditional planners and recent end-to-end obstacle avoidance approaches based on differentiable physics. Extensive experiments demonstrate strong generalization, enabling reliable high-speed navigation in dense clutter and challenging outdoor forest environments at velocities up to 7.5m/s.
+  Vision-language navigation (VLN) requires intelligent agents to navigate environments by interpreting linguistic instructions alongside visual observations, serving as a cornerstone task in Embodied AI. Current VLN research for unmanned aerial vehicles (UAVs) relies on detailed, pre-specified instructions to guide the UAV along predetermined routes. However, real-world outdoor exploration typically occurs in unknown environments where detailed navigation instructions are unavailable. Instead, only coarse-grained positional or directional guidance can be provided, requiring UAVs to autonomously navigate through continuous planning and obstacle avoidance. To bridge this gap, we propose AutoFly, an end-to-end Vision-Language-Action (VLA) model for autonomous UAV navigation. AutoFly incorporates a pseudo-depth encoder that derives depth-aware features from RGB inputs to enhance spatial reasoning, coupled with a progressive two-stage training strategy that effectively aligns visual, depth, and linguistic representations with action policies. Moreover, existing VLN datasets have fundamental limitations for real-world autonomous navigation, stemming from their heavy reliance on explicit instruction-following over autonomous decision-making and insufficient real-world data. To address these issues, we construct a novel autonomous navigation dataset that shifts the paradigm from instruction-following to autonomous behavior modeling through: (1) trajectory collection emphasizing continuous obstacle avoidance, autonomous planning, and recognition workflows; (2) comprehensive real-world data integration. Experimental results demonstrate that AutoFly achieves a 3.9% higher success rate compared to state-of-the-art VLA baselines, with consistent performance across simulated and real environments.
 
   </details>
 
 
 
-- **Digital Twin and Agentic AI for Wild Fire Disaster Management: Intelligent Virtual Situation Room**  
-  Mohammad Morsali, Siavash H. Khajavi  
-  _2026-02-09_ · https://arxiv.org/abs/2602.08949v1 · `cs.AI`  
+- **A Collision-Free Sway Damping Model Predictive Controller for Safe and Reactive Forestry Crane Navigation**  
+  Marc-Philip Ecker, Christoph Fröhlich, Johannes Huemer, David Gruber, Bernhard Bischof, Tobias Glück, Wolfgang Kemmetmüller  
+  _2026-02-10_ · https://arxiv.org/abs/2602.10035v1 · `cs.RO`  
   <details><summary>Abstract</summary>
 
-  According to the United Nations, wildfire frequency and intensity are projected to increase by approximately 14% by 2030 and 30% by 2050 due to global warming, posing critical threats to life, infrastructure, and ecosystems. Conventional disaster management frameworks rely on static simulations and passive data acquisition, hindering their ability to adapt to arbitrarily evolving wildfire episodes in real-time. To address these limitations, we introduce the Intelligent Virtual Situation Room (IVSR), a bidirectional Digital Twin (DT) platform augmented by autonomous AI agents. The IVSR continuously ingests multisource sensor imagery, weather data, and 3D forest models to create a live virtual replica of the fire environment. A similarity engine powered by AI aligns emerging conditions with a precomputed Disaster Simulation Library, retrieving and calibrating intervention tactics under the watchful eyes of experts. Authorized action-ranging from UAV redeployment to crew reallocation-is cycled back through standardized procedures to the physical layer, completing the loop between response and analysis. We validate IVSR through detailed case-study simulations provided by an industrial partner, demonstrating capabilities in localized incident detection, privacy-preserving playback, collider-based fire-spread projection, and site-specific ML retraining. Our results indicate marked reductions in detection-to-intervention latency and more effective resource coordination versus traditional systems. By uniting real-time bidirectional DTs with agentic AI, IVSR offers a scalable, semi-automated decision-support paradigm for proactive, adaptive wildfire disaster management.
+  Forestry cranes operate in dynamic, unstructured outdoor environments where simultaneous collision avoidance and payload sway control are critical for safe navigation. Existing approaches address these challenges separately, either focusing on sway damping with predefined collision-free paths or performing collision avoidance only at the global planning level. We present the first collision-free, sway-damping model predictive controller (MPC) for a forestry crane that unifies both objectives in a single control framework. Our approach integrates LiDAR-based environment mapping directly into the MPC using online Euclidean distance fields (EDF), enabling real-time environmental adaptation. The controller simultaneously enforces collision constraints while damping payload sway, allowing it to (i) replan upon quasi-static environmental changes, (ii) maintain collision-free operation under disturbances, and (iii) provide safe stopping when no bypass exists. Experimental validation on a real forestry crane demonstrates effective sway damping and successful obstacle avoidance. A video can be found at https://youtu.be/tEXDoeLLTxA.
 
   </details>
 
 
 
-- **A Precise Real-Time Force-Aware Grasping System for Robust Aerial Manipulation**  
-  Kenghou Hoi, Yuze Wu, Annan Ding, Junjie Wang, Anke Zhao, Chengqian Zhang, Fei Gao  
-  _2026-02-09_ · https://arxiv.org/abs/2602.08599v1 · `cs.RO`  
+- **Acoustic Drone Package Delivery Detection**  
+  François Marcoux, François Grondin  
+  _2026-02-10_ · https://arxiv.org/abs/2602.09991v1 · `cs.RO`  
   <details><summary>Abstract</summary>
 
-  Aerial manipulation requires force-aware capabilities to enable safe and effective grasping and physical interaction. Previous works often rely on heavy, expensive force sensors unsuitable for typical quadrotor platforms, or perform grasping without force feedback, risking damage to fragile objects. To address these limitations, we propose a novel force-aware grasping framework incorporating six low-cost, sensitive skin-like tactile sensors. We introduce a magnetic-based tactile sensing module that provides high-precision three-dimensional force measurements. We eliminate geomagnetic interference through a reference Hall sensor and simplify the calibration process compared to previous work. The proposed framework enables precise force-aware grasping control, allowing safe manipulation of fragile objects and real-time weight measurement of grasped items. The system is validated through comprehensive real-world experiments, including balloon grasping, dynamic load variation tests, and ablation studies, demonstrating its effectiveness in various aerial manipulation scenarios. Our approach achieves fully onboard operation without external motion capture systems, significantly enhancing the practicality of force-sensitive aerial manipulation. The supplementary video is available at: https://www.youtube.com/watch?v=mbcZkrJEf1I.
+  In recent years, the illicit use of unmanned aerial vehicles (UAVs) for deliveries in restricted area such as prisons became a significant security challenge. While numerous studies have focused on UAV detection or localization, little attention has been given to delivery events identification. This study presents the first acoustic package delivery detection algorithm using a ground-based microphone array. The proposed method estimates both the drone's propeller speed and the delivery event using solely acoustic features. A deep neural network detects the presence of a drone and estimates the propeller's rotation speed or blade passing frequency (BPF) from a mel spectrogram. The algorithm analyzes the BPFs to identify probable delivery moments based on sudden changes before and after a specific time. Results demonstrate a mean absolute error of the blade passing frequency estimator of 16 Hz when the drone is less than 150 meters away from the microphone array. The drone presence detection estimator has a accuracy of 97%. The delivery detection algorithm correctly identifies 96% of events with a false positive rate of 8%. This study shows that deliveries can be identified using acoustic signals up to a range of 100 meters.
+
+  </details>
+
+
+
+- **HAPS-RIS and UAV Integrated Networks: A Unified Joint Multi-objective Framework**  
+  Arman Azizi, Mostafa Rahmani Ghourtani, Mustafa A. Kishk, Hamed Ahmadi, Arman Farhang  
+  _2026-02-10_ · https://arxiv.org/abs/2602.09960v1 · `eess.SP`  
+  <details><summary>Abstract</summary>
+
+  Future 6G non-terrestrial networks aim to deliver ubiquitous connectivity to remote and undeserved regions, but unmanned aerial vehicle (UAV) base stations face fundamental challenges such as limited numbers and power budgets. To overcome these obstacles, high-altitude platform station (HAPS) equipped with a reconfigurable intelligent surface (RIS), so-called HAPS-RIS, is a promising candidate. We propose a novel unified joint multi-objective framework where UAVs and HAPS-RIS are fully integrated to extend coverage and enhance network performance. This joint multi-objective design maximizes the number of users served by the HAPS-RIS, minimizes the number of UAVs deployed and minimizes the total average UAV path loss subject to quality-of-service (QoS) and resource constraints. We propose a novel low-complexity solution strategy by proving the equivalence between minimizing the total average UAV path loss upper bound and k-means clustering, deriving a practical closed-form RIS phase-shift design, and introducing a mapping technique that collapses the combinatorial assignments into a zone radius and a bandwidth-portioning factor. Then, we propose a dynamic Pareto optimization technique to solve the transformed optimization problem. Extensive simulation results demonstrate that the proposed framework adapts seamlessly across operating regimes. A HAPS-RIS-only setup achieves full coverage at low data rates, but UAV assistance becomes indispensable as rate demands increase. By tuning a single bandwidth portioning factor, the model recovers UAV-only, HAPS-RIS-only and equal bandwidth portioning baselines within one formulation and consistently surpasses them across diverse rate requirements. The simulations also quantify a tangible trade-off between RIS scale and UAV deployment, enabling designers to trade increased RIS elements for fewer UAVs as service demands evolve.
 
   </details>
 
