@@ -2,140 +2,118 @@
 
 _Robotics arXiv Daily_
 
-_Updated: 2026-02-11 07:16 UTC_
+_Updated: 2026-02-12 07:15 UTC_
 
-Total papers shown: **12**
+Total papers shown: **10**
 
 
 ---
 
-- **A Collision-Free Sway Damping Model Predictive Controller for Safe and Reactive Forestry Crane Navigation**  
-  Marc-Philip Ecker, Christoph Fröhlich, Johannes Huemer, David Gruber, Bernhard Bischof, Tobias Glück, Wolfgang Kemmetmüller  
-  _2026-02-10_ · https://arxiv.org/abs/2602.10035v1 · `cs.RO`  
+- **YOR: Your Own Mobile Manipulator for Generalizable Robotics**  
+  Manan H Anjaria, Mehmet Enes Erciyes, Vedant Ghatnekar, Neha Navarkar, Haritheja Etukuru, Xiaole Jiang, Kanad Patel, Dhawal Kabra, Nicholas Wojno, Radhika Ajay Prayage, et al.  
+  _2026-02-11_ · https://arxiv.org/abs/2602.11150v1 · `cs.RO`  
   <details><summary>Abstract</summary>
 
-  Forestry cranes operate in dynamic, unstructured outdoor environments where simultaneous collision avoidance and payload sway control are critical for safe navigation. Existing approaches address these challenges separately, either focusing on sway damping with predefined collision-free paths or performing collision avoidance only at the global planning level. We present the first collision-free, sway-damping model predictive controller (MPC) for a forestry crane that unifies both objectives in a single control framework. Our approach integrates LiDAR-based environment mapping directly into the MPC using online Euclidean distance fields (EDF), enabling real-time environmental adaptation. The controller simultaneously enforces collision constraints while damping payload sway, allowing it to (i) replan upon quasi-static environmental changes, (ii) maintain collision-free operation under disturbances, and (iii) provide safe stopping when no bypass exists. Experimental validation on a real forestry crane demonstrates effective sway damping and successful obstacle avoidance. A video can be found at https://youtu.be/tEXDoeLLTxA.
+  Recent advances in robot learning have generated significant interest in capable platforms that may eventually approach human-level competence. This interest, combined with the commoditization of actuators, has propelled growth in low-cost robotic platforms. However, the optimal form factor for mobile manipulation, especially on a budget, remains an open question. We introduce YOR, an open-source, low-cost mobile manipulator that integrates an omnidirectional base, a telescopic vertical lift, and two arms with grippers to achieve whole-body mobility and manipulation. Our design emphasizes modularity, ease of assembly using off-the-shelf components, and affordability, with a bill-of-materials cost under 10,000 USD. We demonstrate YOR's capability by completing tasks that require coordinated whole-body control, bimanual manipulation, and autonomous navigation. Overall, YOR offers competitive functionality for mobile manipulation research at a fraction of the cost of existing platforms. Project website: https://www.yourownrobot.ai/
 
   </details>
 
 
 
-- **Fast Motion Planning for Non-Holonomic Mobile Robots via a Rectangular Corridor Representation of Structured Environments**  
-  Alejandro Gonzalez-Garcia, Sebastiaan Wyns, Sonia De Santis, Jan Swevers, Wilm Decré  
-  _2026-02-10_ · https://arxiv.org/abs/2602.09714v1 · `cs.RO`  
+- **Safe mobility support system using crowd mapping and avoidance route planning using VLM**  
+  Sena Saito, Kenta Tabata, Renato Miyagusuku, Koichi Ozaki  
+  _2026-02-11_ · https://arxiv.org/abs/2602.10910v1 · `cs.RO`  
   <details><summary>Abstract</summary>
 
-  We present a complete framework for fast motion planning of non-holonomic autonomous mobile robots in highly complex but structured environments. Conventional grid-based planners struggle with scalability, while many kinematically-feasible planners impose a significant computational burden due to their search space complexity. To overcome these limitations, our approach introduces a deterministic free-space decomposition that creates a compact graph of overlapping rectangular corridors. This method enables a significant reduction in the search space, without sacrificing path resolution. The framework then performs online motion planning by finding a sequence of rectangles and generating a near-time-optimal, kinematically-feasible trajectory using an analytical planner. The result is a highly efficient solution for large-scale navigation. We validate our framework through extensive simulations and on a physical robot. The implementation is publicly available as open-source software.
+  Autonomous mobile robots offer promising solutions for labor shortages and increased operational efficiency. However, navigating safely and effectively in dynamic environments, particularly crowded areas, remains challenging. This paper proposes a novel framework that integrates Vision-Language Models (VLM) and Gaussian Process Regression (GPR) to generate dynamic crowd-density maps (``Abstraction Maps'') for autonomous robot navigation. Our approach utilizes VLM's capability to recognize abstract environmental concepts, such as crowd densities, and represents them probabilistically via GPR. Experimental results from real-world trials on a university campus demonstrated that robots successfully generated routes avoiding both static obstacles and dynamic crowds, enhancing navigation safety and adaptability.
 
   </details>
 
 
 
-- **AutoFly: Vision-Language-Action Model for UAV Autonomous Navigation in the Wild**  
-  Xiaolou Sun, Wufei Si, Wenhui Ni, Yuntian Li, Dongming Wu, Fei Xie, Runwei Guan, He-Yang Xu, Henghui Ding, Yuan Wu, et al.  
-  _2026-02-10_ · https://arxiv.org/abs/2602.09657v1 · `cs.RO`  
+- **From Steering to Pedalling: Do Autonomous Driving VLMs Generalize to Cyclist-Assistive Spatial Perception and Planning?**  
+  Krishna Kanth Nakka, Vedasri Nakka  
+  _2026-02-11_ · https://arxiv.org/abs/2602.10771v1 · `cs.CV`  
   <details><summary>Abstract</summary>
 
-  Vision-language navigation (VLN) requires intelligent agents to navigate environments by interpreting linguistic instructions alongside visual observations, serving as a cornerstone task in Embodied AI. Current VLN research for unmanned aerial vehicles (UAVs) relies on detailed, pre-specified instructions to guide the UAV along predetermined routes. However, real-world outdoor exploration typically occurs in unknown environments where detailed navigation instructions are unavailable. Instead, only coarse-grained positional or directional guidance can be provided, requiring UAVs to autonomously navigate through continuous planning and obstacle avoidance. To bridge this gap, we propose AutoFly, an end-to-end Vision-Language-Action (VLA) model for autonomous UAV navigation. AutoFly incorporates a pseudo-depth encoder that derives depth-aware features from RGB inputs to enhance spatial reasoning, coupled with a progressive two-stage training strategy that effectively aligns visual, depth, and linguistic representations with action policies. Moreover, existing VLN datasets have fundamental limitations for real-world autonomous navigation, stemming from their heavy reliance on explicit instruction-following over autonomous decision-making and insufficient real-world data. To address these issues, we construct a novel autonomous navigation dataset that shifts the paradigm from instruction-following to autonomous behavior modeling through: (1) trajectory collection emphasizing continuous obstacle avoidance, autonomous planning, and recognition workflows; (2) comprehensive real-world data integration. Experimental results demonstrate that AutoFly achieves a 3.9% higher success rate compared to state-of-the-art VLA baselines, with consistent performance across simulated and real environments.
+  Cyclists often encounter safety-critical situations in urban traffic, highlighting the need for assistive systems that support safe and informed decision-making. Recently, vision-language models (VLMs) have demonstrated strong performance on autonomous driving benchmarks, suggesting their potential for general traffic understanding and navigation-related reasoning. However, existing evaluations are predominantly vehicle-centric and fail to assess perception and reasoning from a cyclist-centric viewpoint. To address this gap, we introduce CyclingVQA, a diagnostic benchmark designed to probe perception, spatio-temporal understanding, and traffic-rule-to-lane reasoning from a cyclist's perspective. Evaluating 31+ recent VLMs spanning general-purpose, spatially enhanced, and autonomous-driving-specialized models, we find that current models demonstrate encouraging capabilities, while also revealing clear areas for improvement in cyclist-centric perception and reasoning, particularly in interpreting cyclist-specific traffic cues and associating signs with the correct navigational lanes. Notably, several driving-specialized models underperform strong generalist VLMs, indicating limited transfer from vehicle-centric training to cyclist-assistive scenarios. Finally, through systematic error analysis, we identify recurring failure modes to guide the development of more effective cyclist-assistive intelligent systems.
 
   </details>
 
 
 
-- **Decoupled MPPI-Based Multi-Arm Motion Planning**  
-  Dan Evron, Elias Goldsztejn, Ronen I. Brafman  
-  _2026-02-10_ · https://arxiv.org/abs/2602.10114v1 · `cs.RO`  
+- **A Unified Experimental Architecture for Informative Path Planning: from Simulation to Deployment with GuadalPlanner**  
+  Alejandro Mendoza Barrionuevo, Dame Seck Diop, Alejandro Casado Pérez, Daniel Gutiérrez Reina, Sergio L. Toral Marín, Samuel Yanes Luis  
+  _2026-02-11_ · https://arxiv.org/abs/2602.10702v1 · `cs.RO`  
   <details><summary>Abstract</summary>
 
-  Recent advances in sampling-based motion planning algorithms for high DOF arms leverage GPUs to provide SOTA performance. These algorithms can be used to control multiple arms jointly, but this approach scales poorly. To address this, we extend STORM, a sampling-based model-predictive-control (MPC) motion planning algorithm, to handle multiple robots in a distributed fashion. First, we modify STORM to handle dynamic obstacles. Then, we let each arm compute its own motion plan prefix, which it shares with the other arms, which treat it as a dynamic obstacle. Finally, we add a dynamic priority scheme. The new algorithm, MR-STORM, demonstrates clear empirical advantages over SOTA algorithms when operating with both static and dynamic obstacles.
+  The evaluation of informative path planning algorithms for autonomous vehicles is often hindered by fragmented execution pipelines and limited transferability between simulation and real-world deployment. This paper introduces a unified architecture that decouples high-level decision-making from vehicle-specific control, enabling algorithms to be evaluated consistently across different abstraction levels without modification. The proposed architecture is realized through GuadalPlanner, which defines standardized interfaces between planning, sensing, and vehicle execution. It is an open and extensible research tool that supports discrete graph-based environments and interchangeable planning strategies, and is built upon widely adopted robotics technologies, including ROS2, MAVLink, and MQTT. Its design allows the same algorithmic logic to be deployed in fully simulated environments, software-in-the-loop configurations, and physical autonomous vehicles using an identical execution pipeline. The approach is validated through a set of experiments, including real-world deployment on an autonomous surface vehicle performing water quality monitoring with real-time sensor feedback.
 
   </details>
 
 
 
-- **Robo3R: Enhancing Robotic Manipulation with Accurate Feed-Forward 3D Reconstruction**  
-  Sizhe Yang, Linning Xu, Hao Li, Juncheng Mu, Jia Zeng, Dahua Lin, Jiangmiao Pang  
-  _2026-02-10_ · https://arxiv.org/abs/2602.10101v1 · `cs.RO`  
+- **Interactive LLM-assisted Curriculum Learning for Multi-Task Evolutionary Policy Search**  
+  Berfin Sakallioglu, Giorgia Nadizar, Eric Medvet  
+  _2026-02-11_ · https://arxiv.org/abs/2602.10891v1 · `cs.NE`  
   <details><summary>Abstract</summary>
 
-  3D spatial perception is fundamental to generalizable robotic manipulation, yet obtaining reliable, high-quality 3D geometry remains challenging. Depth sensors suffer from noise and material sensitivity, while existing reconstruction models lack the precision and metric consistency required for physical interaction. We introduce Robo3R, a feed-forward, manipulation-ready 3D reconstruction model that predicts accurate, metric-scale scene geometry directly from RGB images and robot states in real time. Robo3R jointly infers scale-invariant local geometry and relative camera poses, which are unified into the scene representation in the canonical robot frame via a learned global similarity transformation. To meet the precision demands of manipulation, Robo3R employs a masked point head for sharp, fine-grained point clouds, and a keypoint-based Perspective-n-Point (PnP) formulation to refine camera extrinsics and global alignment. Trained on Robo3R-4M, a curated large-scale synthetic dataset with four million high-fidelity annotated frames, Robo3R consistently outperforms state-of-the-art reconstruction methods and depth sensors. Across downstream tasks including imitation learning, sim-to-real transfer, grasp synthesis, and collision-free motion planning, we observe consistent gains in performance, suggesting the promise of this alternative 3D sensing module for robotic manipulation.
+  Multi-task policy search is a challenging problem because policies are required to generalize beyond training cases. Curriculum learning has proven to be effective in this setting, as it introduces complexity progressively. However, designing effective curricula is labor-intensive and requires extensive domain expertise. LLM-based curriculum generation has only recently emerged as a potential solution, but was limited to operate in static, offline modes without leveraging real-time feedback from the optimizer. Here we propose an interactive LLM-assisted framework for online curriculum generation, where the LLM adaptively designs training cases based on real-time feedback from the evolutionary optimization process. We investigate how different feedback modalities, ranging from numeric metrics alone to combinations with plots and behavior visualizations, influence the LLM ability to generate meaningful curricula. Through a 2D robot navigation case study, tackled with genetic programming as optimizer, we evaluate our approach against static LLM-generated curricula and expert-designed baselines. We show that interactive curriculum generation outperforms static approaches, with multimodal feedback incorporating both progression plots and behavior visualizations yielding performance competitive with expert-designed curricula. This work contributes to understanding how LLMs can serve as interactive curriculum designers for embodied AI systems, with potential extensions to broader evolutionary robotics applications.
 
   </details>
 
 
 
-- **Hydra-Nav: Object Navigation via Adaptive Dual-Process Reasoning**  
-  Zixuan Wang, Huang Fang, Shaoan Wang, Yuanfei Luo, Heng Dong, Wei Li, Yiming Gan  
-  _2026-02-10_ · https://arxiv.org/abs/2602.09972v1 · `cs.RO`  
+- **(MGS)$^2$-Net: Unifying Micro-Geometric Scale and Macro-Geometric Structure for Cross-View Geo-Localization**  
+  Minglei Li, Mengfan He, Chao Chen, Ziyang Meng  
+  _2026-02-11_ · https://arxiv.org/abs/2602.10704v1 · `cs.CV`  
   <details><summary>Abstract</summary>
 
-  While large vision-language models (VLMs) show promise for object goal navigation, current methods still struggle with low success rates and inefficient localization of unseen objects--failures primarily attributed to weak temporal-spatial reasoning. Meanwhile, recent attempts to inject reasoning into VLM-based agents improve success rates but incur substantial computational overhead. To address both the ineffectiveness and inefficiency of existing approaches, we introduce Hydra-Nav, a unified VLM architecture that adaptively switches between a deliberative slow system for analyzing exploration history and formulating high-level plans, and a reactive fast system for efficient execution. We train Hydra-Nav through a three-stage curriculum: (i) spatial-action alignment to strengthen trajectory planning, (ii) memory-reasoning integration to enhance temporal-spatial reasoning over long-horizon exploration, and (iii) iterative rejection fine-tuning to enable selective reasoning at critical decision points. Extensive experiments demonstrate that Hydra-Nav achieves state-of-the-art performance on the HM3D, MP3D, and OVON benchmarks, outperforming the second-best methods by 11.1%, 17.4%, and 21.2%, respectively. Furthermore, we introduce SOT (Success weighted by Operation Time), a new metric to measure search efficiency across VLMs with varying reasoning intensity. Results show that adaptive reasoning significantly enhances search efficiency over fixed-frequency baselines.
+  Cross-view geo-localization (CVGL) is pivotal for GNSS-denied UAV navigation but remains brittle under the drastic geometric misalignment between oblique aerial views and orthographic satellite references. Existing methods predominantly operate within a 2D manifold, neglecting the underlying 3D geometry where view-dependent vertical facades (macro-structure) and scale variations (micro-scale) severely corrupt feature alignment. To bridge this gap, we propose (MGS)$^2$, a geometry-grounded framework. The core of our innovation is the Macro-Geometric Structure Filtering (MGSF) module. Unlike pixel-wise matching sensitive to noise, MGSF leverages dilated geometric gradients to physically filter out high-frequency facade artifacts while enhancing the view-invariant horizontal plane, directly addressing the domain shift. To guarantee robust input for this structural filtering, we explicitly incorporate a Micro-Geometric Scale Adaptation (MGSA) module. MGSA utilizes depth priors to dynamically rectify scale discrepancies via multi-branch feature fusion. Furthermore, a Geometric-Appearance Contrastive Distillation (GACD) loss is designed to strictly discriminate against oblique occlusions. Extensive experiments demonstrate that (MGS)$^2$ achieves state-of-the-art performance, recording a Recall@1 of 97.5\% on University-1652 and 97.02\% on SUES-200. Furthermore, the framework exhibits superior cross-dataset generalization against geometric ambiguity. The code is available at: \href{https://github.com/GabrielLi1473/MGS-Net}{https://github.com/GabrielLi1473/MGS-Net}.
 
   </details>
 
 
 
-- **NavDreamer: Video Models as Zero-Shot 3D Navigators**  
-  Xijie Huang, Weiqi Gai, Tianyue Wu, Congyu Wang, Zhiyang Liu, Xin Zhou, Yuze Wu, Fei Gao  
-  _2026-02-10_ · https://arxiv.org/abs/2602.09765v1 · `cs.RO`  
+- **From Natural Language to Materials Discovery:The Materials Knowledge Navigation Agent**  
+  Genmao Zhuang, Amir Barati Farimani  
+  _2026-02-11_ · https://arxiv.org/abs/2602.11123v1 · `cs.LG`  
   <details><summary>Abstract</summary>
 
-  Previous Vision-Language-Action models face critical limitations in navigation: scarce, diverse data from labor-intensive collection and static representations that fail to capture temporal dynamics and physical laws. We propose NavDreamer, a video-based framework for 3D navigation that leverages generative video models as a universal interface between language instructions and navigation trajectories. Our main hypothesis is that video's ability to encode spatiotemporal information and physical dynamics, combined with internet-scale availability, enables strong zero-shot generalization in navigation. To mitigate the stochasticity of generative predictions, we introduce a sampling-based optimization method that utilizes a VLM for trajectory scoring and selection. An inverse dynamics model is employed to decode executable waypoints from generated video plans for navigation. To systematically evaluate this paradigm in several video model backbones, we introduce a comprehensive benchmark covering object navigation, precise navigation, spatial grounding, language control, and scene reasoning. Extensive experiments demonstrate robust generalization across novel objects and unseen environments, with ablation studies revealing that navigation's high-level decision-making nature makes it particularly suited for video-based planning.
+  Accelerating the discovery of high-performance materials remains a central challenge across energy, electronics, and aerospace technologies, where traditional workflows depend heavily on expert intuition and computationally expensive simulations. Here we introduce the Materials Knowledge Navigation Agent (MKNA), a language-driven system that translates natural-language scientific intent into executable actions for database retrieval, property prediction, structure generation, and stability evaluation. Beyond automating tool invocation, MKNA autonomously extracts quantitative thresholds and chemically meaningful design motifs from literature and database evidence, enabling data-grounded hypothesis formation. Applied to the search for high-Debye-temperature ceramics, the agent identifies a literature-supported screening criterion (Theta_D > 800 K), rediscovers canonical ultra-stiff materials such as diamond, SiC, SiN, and BeO, and proposes thermodynamically stable, previously unreported Be-C-rich compounds that populate the sparsely explored 1500-1700 K regime. These results demonstrate that MKNA not only finds stable candidates but also reconstructs interpretable design heuristics, establishing a generalizable platform for autonomous, language-guided materials exploration.
 
   </details>
 
 
 
-- **Code2World: A GUI World Model via Renderable Code Generation**  
-  Yuhao Zheng, Li'an Zhong, Yi Wang, Rui Dai, Kaikui Liu, Xiangxiang Chu, Linyuan Lv, Philip Torr, Kevin Qinghong Lin  
-  _2026-02-10_ · https://arxiv.org/abs/2602.09856v1 · `cs.CV`  
+- **DeepImageSearch: Benchmarking Multimodal Agents for Context-Aware Image Retrieval in Visual Histories**  
+  Chenlong Deng, Mengjie Deng, Junjie Wu, Dun Zeng, Teng Wang, Qingsong Xie, Jiadeng Huang, Shengjie Ma, Changwang Zhang, Zhaoxiang Wang, et al.  
+  _2026-02-11_ · https://arxiv.org/abs/2602.10809v1 · `cs.CV`  
   <details><summary>Abstract</summary>
 
-  Autonomous GUI agents interact with environments by perceiving interfaces and executing actions. As a virtual sandbox, the GUI World model empowers agents with human-like foresight by enabling action-conditioned prediction. However, existing text- and pixel-based approaches struggle to simultaneously achieve high visual fidelity and fine-grained structural controllability. To this end, we propose Code2World, a vision-language coder that simulates the next visual state via renderable code generation. Specifically, to address the data scarcity problem, we construct AndroidCode by translating GUI trajectories into high-fidelity HTML and refining synthesized code through a visual-feedback revision mechanism, yielding a corpus of over 80K high-quality screen-action pairs. To adapt existing VLMs into code prediction, we first perform SFT as a cold start for format layout following, then further apply Render-Aware Reinforcement Learning which uses rendered outcome as the reward signal by enforcing visual semantic fidelity and action consistency. Extensive experiments demonstrate that Code2World-8B achieves the top-performing next UI prediction, rivaling the competitive GPT-5 and Gemini-3-Pro-Image. Notably, Code2World significantly enhances downstream navigation success rates in a flexible manner, boosting Gemini-2.5-Flash by +9.5% on AndroidWorld navigation. The code is available at https://github.com/AMAP-ML/Code2World.
+  Existing multimodal retrieval systems excel at semantic matching but implicitly assume that query-image relevance can be measured in isolation. This paradigm overlooks the rich dependencies inherent in realistic visual streams, where information is distributed across temporal sequences rather than confined to single snapshots. To bridge this gap, we introduce DeepImageSearch, a novel agentic paradigm that reformulates image retrieval as an autonomous exploration task. Models must plan and perform multi-step reasoning over raw visual histories to locate targets based on implicit contextual cues. We construct DISBench, a challenging benchmark built on interconnected visual data. To address the scalability challenge of creating context-dependent queries, we propose a human-model collaborative pipeline that employs vision-language models to mine latent spatiotemporal associations, effectively offloading intensive context discovery before human verification. Furthermore, we build a robust baseline using a modular agent framework equipped with fine-grained tools and a dual-memory system for long-horizon navigation. Extensive experiments demonstrate that DISBench poses significant challenges to state-of-the-art models, highlighting the necessity of incorporating agentic reasoning into next-generation retrieval systems.
 
   </details>
 
 
 
-- **Robust Vision Systems for Connected and Autonomous Vehicles: Security Challenges and Attack Vectors**  
-  Sandeep Gupta, Roberto Passerone  
-  _2026-02-10_ · https://arxiv.org/abs/2602.09740v1 · `cs.CV`  
+- **ContactGaussian-WM: Learning Physics-Grounded World Model from Videos**  
+  Meizhong Wang, Wanxin Jin, Kun Cao, Lihua Xie, Yiguang Hong  
+  _2026-02-11_ · https://arxiv.org/abs/2602.11021v1 · `cs.RO`  
   <details><summary>Abstract</summary>
 
-  This article investigates the robustness of vision systems in Connected and Autonomous Vehicles (CAVs), which is critical for developing Level-5 autonomous driving capabilities. Safe and reliable CAV navigation undeniably depends on robust vision systems that enable accurate detection of objects, lane markings, and traffic signage. We analyze the key sensors and vision components essential for CAV navigation to derive a reference architecture for CAV vision system (CAVVS). This reference architecture provides a basis for identifying potential attack surfaces of CAVVS. Subsequently, we elaborate on identified attack vectors targeting each attack surface, rigorously evaluating their implications for confidentiality, integrity, and availability (CIA). Our study provides a comprehensive understanding of attack vector dynamics in vision systems, which is crucial for formulating robust security measures that can uphold the principles of the CIA triad.
+  Developing world models that understand complex physical interactions is essential for advancing robotic planning and simulation.However, existing methods often struggle to accurately model the environment under conditions of data scarcity and complex contact-rich dynamic motion.To address these challenges, we propose ContactGaussian-WM, a differentiable physics-grounded rigid-body world model capable of learning intricate physical laws directly from sparse and contact-rich video sequences.Our framework consists of two core components: (1) a unified Gaussian representation for both visual appearance and collision geometry, and (2) an end-to-end differentiable learning framework that differentiates through a closed-form physics engine to infer physical properties from sparse visual observations.Extensive simulations and real-world evaluations demonstrate that ContactGaussian-WM outperforms state-of-the-art methods in learning complex scenarios, exhibiting robust generalization capabilities.Furthermore, we showcase the practical utility of our framework in downstream applications, including data synthesis and real-time MPC.
 
   </details>
 
 
 
-- **Doppler Effect: Analyses and Applications in Wireless Sensing and Communications**  
-  Lie-Liang Yang  
-  _2026-02-10_ · https://arxiv.org/abs/2602.09955v1 · `eess.SP`  
+- **CMAD: Cooperative Multi-Agent Diffusion via Stochastic Optimal Control**  
+  Riccardo Barbano, Alexander Denker, Zeljko Kereta, Runchang Li, Francisco Vargas  
+  _2026-02-11_ · https://arxiv.org/abs/2602.10933v1 · `cs.LG`  
   <details><summary>Abstract</summary>
 
-  This chapter is motivated by the need for a rigorous and comprehensive analysis of the Doppler effects encountered by electromagnetic and acoustic signals across a diverse spectrum of modern applications. These include land mobile communications, various Internet of Things (IoT) networks, machine-type communications (MTC), and various radar and satellite-based systems for navigation and sensing, as well as the emerging regime of integrated sensing and communications (ISAC). A wide array of kinematic profiles is investigated, ranging from uniform motion and constant acceleration to more complex general motion. Consequently, the multi-faceted factors influencing the Doppler shift are addressed in detail, encompassing classical kinematics, special and general relativity, atmospheric dynamics, and the properties of the propagation medium. This work is intended to establish a definitive theoretical foundation for both the general enthusiast and the specialized researcher seeking to master the complexities of signal frequency shifts in modern wireless sensing and communications systems.
-
-  </details>
-
-
-
-- **Bladder Vessel Segmentation using a Hybrid Attention-Convolution Framework**  
-  Franziska Krauß, Matthias Ege, Zoltan Lovasz, Albrecht Bartz-Schmidt, Igor Tsaur, Oliver Sawodny, Carina Veil  
-  _2026-02-10_ · https://arxiv.org/abs/2602.09949v1 · `cs.CV`  
-  <details><summary>Abstract</summary>
-
-  Urinary bladder cancer surveillance requires tracking tumor sites across repeated interventions, yet the deformable and hollow bladder lacks stable landmarks for orientation. While blood vessels visible during endoscopy offer a patient-specific "vascular fingerprint" for navigation, automated segmentation is challenged by imperfect endoscopic data, including sparse labels, artifacts like bubbles or variable lighting, continuous deformation, and mucosal folds that mimic vessels. State-of-the-art vessel segmentation methods often fail to address these domain-specific complexities. We introduce a Hybrid Attention-Convolution (HAC) architecture that combines Transformers to capture global vessel topology prior with a CNN that learns a residual refinement map to precisely recover thin-vessel details. To prioritize structural connectivity, the Transformer is trained on optimized ground truth data that exclude short and terminal branches. Furthermore, to address data scarcity, we employ a physics-aware pretraining, that is a self-supervised strategy using clinically grounded augmentations on unlabeled data. Evaluated on the BlaVeS dataset, consisting of endoscopic video frames, our approach achieves high accuracy (0.94) and superior precision (0.61) and clDice (0.66) compared to state-of-the-art medical segmentation models. Crucially, our method successfully suppresses false positives from mucosal folds that dynamically appear and vanish as the bladder fills and empties during surgery. Hence, HAC provides the reliable structural stability required for clinical navigation.
-
-  </details>
-
-
-
-- **Optimal Control of Microswimmers for Trajectory Tracking Using Bayesian Optimization**  
-  Lucas Palazzolo, Mickaël Binois, Laëtitia Giraldi  
-  _2026-02-10_ · https://arxiv.org/abs/2602.09563v1 · `cs.RO`  
-  <details><summary>Abstract</summary>
-
-  Trajectory tracking for microswimmers remains a key challenge in microrobotics, where low-Reynolds-number dynamics make control design particularly complex. In this work, we formulate the trajectory tracking problem as an optimal control problem and solve it using a combination of B-spline parametrization with Bayesian optimization, allowing the treatment of high computational costs without requiring complex gradient computations. Applied to a flagellated magnetic swimmer, the proposed method reproduces a variety of target trajectories, including biologically inspired paths observed in experimental studies. We further evaluate the approach on a three-sphere swimmer model, demonstrating that it can adapt to and partially compensate for wall-induced hydrodynamic effects. The proposed optimization strategy can be applied consistently across models of different fidelity, from low-dimensional ODE-based models to high-fidelity PDE-based simulations, showing its robustness and generality. These results highlight the potential of Bayesian optimization as a versatile tool for optimal control strategies in microscale locomotion under complex fluid-structure interactions.
+  Continuous-time generative models have achieved remarkable success in image restoration and synthesis. However, controlling the composition of multiple pre-trained models remains an open challenge. Current approaches largely treat composition as an algebraic composition of probability densities, such as via products or mixtures of experts. This perspective assumes the target distribution is known explicitly, which is almost never the case. In this work, we propose a different paradigm that formulates compositional generation as a cooperative Stochastic Optimal Control problem. Rather than combining probability densities, we treat pre-trained diffusion models as interacting agents whose diffusion trajectories are jointly steered, via optimal control, toward a shared objective defined on their aggregated output. We validate our framework on conditional MNIST generation and compare it against a naive inference-time DPS-style baseline replacing learned cooperative control with per-step gradient guidance.
 
   </details>
 

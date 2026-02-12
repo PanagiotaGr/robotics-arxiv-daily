@@ -2,52 +2,74 @@
 
 _Robotics arXiv Daily_
 
-_Updated: 2026-02-11 07:16 UTC_
+_Updated: 2026-02-12 07:15 UTC_
 
-Total papers shown: **4**
+Total papers shown: **6**
 
 
 ---
 
-- **AutoFly: Vision-Language-Action Model for UAV Autonomous Navigation in the Wild**  
-  Xiaolou Sun, Wufei Si, Wenhui Ni, Yuntian Li, Dongming Wu, Fei Xie, Runwei Guan, He-Yang Xu, Henghui Ding, Yuan Wu, et al.  
-  _2026-02-10_ · https://arxiv.org/abs/2602.09657v1 · `cs.RO`  
+- **Biomimetic Mantaray robot toward the underwater autonomous -- Experimental verification of swimming and diving by flapping motion -**  
+  Kenta Tabata, Ryosuke Oku, Jun Ito, Renato Miyagusuku, Koichi Ozaki  
+  _2026-02-11_ · https://arxiv.org/abs/2602.10904v1 · `cs.RO`  
   <details><summary>Abstract</summary>
 
-  Vision-language navigation (VLN) requires intelligent agents to navigate environments by interpreting linguistic instructions alongside visual observations, serving as a cornerstone task in Embodied AI. Current VLN research for unmanned aerial vehicles (UAVs) relies on detailed, pre-specified instructions to guide the UAV along predetermined routes. However, real-world outdoor exploration typically occurs in unknown environments where detailed navigation instructions are unavailable. Instead, only coarse-grained positional or directional guidance can be provided, requiring UAVs to autonomously navigate through continuous planning and obstacle avoidance. To bridge this gap, we propose AutoFly, an end-to-end Vision-Language-Action (VLA) model for autonomous UAV navigation. AutoFly incorporates a pseudo-depth encoder that derives depth-aware features from RGB inputs to enhance spatial reasoning, coupled with a progressive two-stage training strategy that effectively aligns visual, depth, and linguistic representations with action policies. Moreover, existing VLN datasets have fundamental limitations for real-world autonomous navigation, stemming from their heavy reliance on explicit instruction-following over autonomous decision-making and insufficient real-world data. To address these issues, we construct a novel autonomous navigation dataset that shifts the paradigm from instruction-following to autonomous behavior modeling through: (1) trajectory collection emphasizing continuous obstacle avoidance, autonomous planning, and recognition workflows; (2) comprehensive real-world data integration. Experimental results demonstrate that AutoFly achieves a 3.9% higher success rate compared to state-of-the-art VLA baselines, with consistent performance across simulated and real environments.
+  This study presents the development and experimental verification of a biomimetic manta ray robot for underwater autonomous exploration. Inspired by manta rays, the robot uses flapping motion for propulsion to minimize seabed disturbance and enhance efficiency compared to traditional screw propulsion. The robot features pectoral fins driven by servo motors and a streamlined control box to reduce fluid resistance. The control system, powered by a Raspberry Pi 3B, includes an IMU and pressure sensor for real-time monitoring and control. Experiments in a pool assessed the robot's swimming and diving capabilities. Results show stable swimming and diving motions with PD control. The robot is suitable for applications in environments like aquariums and fish nurseries, requiring minimal disturbance and efficient maneuverability. Our findings demonstrate the potential of bio-inspired robotic designs to improve ecological monitoring and underwater exploration.
 
   </details>
 
 
 
-- **A Collision-Free Sway Damping Model Predictive Controller for Safe and Reactive Forestry Crane Navigation**  
-  Marc-Philip Ecker, Christoph Fröhlich, Johannes Huemer, David Gruber, Bernhard Bischof, Tobias Glück, Wolfgang Kemmetmüller  
-  _2026-02-10_ · https://arxiv.org/abs/2602.10035v1 · `cs.RO`  
+- **Multi-Task Reinforcement Learning of Drone Aerobatics by Exploiting Geometric Symmetries**  
+  Zhanyu Guo, Zikang Yin, Guobin Zhu, Shiliang Guo, Shiyu Zhao  
+  _2026-02-11_ · https://arxiv.org/abs/2602.10997v1 · `cs.RO`  
   <details><summary>Abstract</summary>
 
-  Forestry cranes operate in dynamic, unstructured outdoor environments where simultaneous collision avoidance and payload sway control are critical for safe navigation. Existing approaches address these challenges separately, either focusing on sway damping with predefined collision-free paths or performing collision avoidance only at the global planning level. We present the first collision-free, sway-damping model predictive controller (MPC) for a forestry crane that unifies both objectives in a single control framework. Our approach integrates LiDAR-based environment mapping directly into the MPC using online Euclidean distance fields (EDF), enabling real-time environmental adaptation. The controller simultaneously enforces collision constraints while damping payload sway, allowing it to (i) replan upon quasi-static environmental changes, (ii) maintain collision-free operation under disturbances, and (iii) provide safe stopping when no bypass exists. Experimental validation on a real forestry crane demonstrates effective sway damping and successful obstacle avoidance. A video can be found at https://youtu.be/tEXDoeLLTxA.
+  Flight control for autonomous micro aerial vehicles (MAVs) is evolving from steady flight near equilibrium points toward more aggressive aerobatic maneuvers, such as flips, rolls, and Power Loop. Although reinforcement learning (RL) has shown great potential in these tasks, conventional RL methods often suffer from low data efficiency and limited generalization. This challenge becomes more pronounced in multi-task scenarios where a single policy is required to master multiple maneuvers. In this paper, we propose a novel end-to-end multi-task reinforcement learning framework, called GEAR (Geometric Equivariant Aerobatics Reinforcement), which fully exploits the inherent SO(2) rotational symmetry in MAV dynamics and explicitly incorporates this property into the policy network architecture. By integrating an equivariant actor network, FiLM-based task modulation, and a multi-head critic, GEAR achieves both efficiency and flexibility in learning diverse aerobatic maneuvers, enabling a data-efficient, robust, and unified framework for aerobatic control. GEAR attains a 98.85\% success rate across various aerobatic tasks, significantly outperforming baseline methods. In real-world experiments, GEAR demonstrates stable execution of multiple maneuvers and the capability to combine basic motion primitives to complete complex aerobatics.
 
   </details>
 
 
 
-- **Acoustic Drone Package Delivery Detection**  
-  François Marcoux, François Grondin  
-  _2026-02-10_ · https://arxiv.org/abs/2602.09991v1 · `cs.RO`  
+- **(MGS)$^2$-Net: Unifying Micro-Geometric Scale and Macro-Geometric Structure for Cross-View Geo-Localization**  
+  Minglei Li, Mengfan He, Chao Chen, Ziyang Meng  
+  _2026-02-11_ · https://arxiv.org/abs/2602.10704v1 · `cs.CV`  
   <details><summary>Abstract</summary>
 
-  In recent years, the illicit use of unmanned aerial vehicles (UAVs) for deliveries in restricted area such as prisons became a significant security challenge. While numerous studies have focused on UAV detection or localization, little attention has been given to delivery events identification. This study presents the first acoustic package delivery detection algorithm using a ground-based microphone array. The proposed method estimates both the drone's propeller speed and the delivery event using solely acoustic features. A deep neural network detects the presence of a drone and estimates the propeller's rotation speed or blade passing frequency (BPF) from a mel spectrogram. The algorithm analyzes the BPFs to identify probable delivery moments based on sudden changes before and after a specific time. Results demonstrate a mean absolute error of the blade passing frequency estimator of 16 Hz when the drone is less than 150 meters away from the microphone array. The drone presence detection estimator has a accuracy of 97%. The delivery detection algorithm correctly identifies 96% of events with a false positive rate of 8%. This study shows that deliveries can be identified using acoustic signals up to a range of 100 meters.
+  Cross-view geo-localization (CVGL) is pivotal for GNSS-denied UAV navigation but remains brittle under the drastic geometric misalignment between oblique aerial views and orthographic satellite references. Existing methods predominantly operate within a 2D manifold, neglecting the underlying 3D geometry where view-dependent vertical facades (macro-structure) and scale variations (micro-scale) severely corrupt feature alignment. To bridge this gap, we propose (MGS)$^2$, a geometry-grounded framework. The core of our innovation is the Macro-Geometric Structure Filtering (MGSF) module. Unlike pixel-wise matching sensitive to noise, MGSF leverages dilated geometric gradients to physically filter out high-frequency facade artifacts while enhancing the view-invariant horizontal plane, directly addressing the domain shift. To guarantee robust input for this structural filtering, we explicitly incorporate a Micro-Geometric Scale Adaptation (MGSA) module. MGSA utilizes depth priors to dynamically rectify scale discrepancies via multi-branch feature fusion. Furthermore, a Geometric-Appearance Contrastive Distillation (GACD) loss is designed to strictly discriminate against oblique occlusions. Extensive experiments demonstrate that (MGS)$^2$ achieves state-of-the-art performance, recording a Recall@1 of 97.5\% on University-1652 and 97.02\% on SUES-200. Furthermore, the framework exhibits superior cross-dataset generalization against geometric ambiguity. The code is available at: \href{https://github.com/GabrielLi1473/MGS-Net}{https://github.com/GabrielLi1473/MGS-Net}.
 
   </details>
 
 
 
-- **HAPS-RIS and UAV Integrated Networks: A Unified Joint Multi-objective Framework**  
-  Arman Azizi, Mostafa Rahmani Ghourtani, Mustafa A. Kishk, Hamed Ahmadi, Arman Farhang  
-  _2026-02-10_ · https://arxiv.org/abs/2602.09960v1 · `eess.SP`  
+- **Multi-UAV Trajectory Optimization for Bearing-Only Localization in GPS Denied Environments**  
+  Alfonso Sciacchitano, Liraz Mudrik, Sean Kragelund, Isaac Kaminer  
+  _2026-02-11_ · https://arxiv.org/abs/2602.11116v1 · `eess.SY`  
   <details><summary>Abstract</summary>
 
-  Future 6G non-terrestrial networks aim to deliver ubiquitous connectivity to remote and undeserved regions, but unmanned aerial vehicle (UAV) base stations face fundamental challenges such as limited numbers and power budgets. To overcome these obstacles, high-altitude platform station (HAPS) equipped with a reconfigurable intelligent surface (RIS), so-called HAPS-RIS, is a promising candidate. We propose a novel unified joint multi-objective framework where UAVs and HAPS-RIS are fully integrated to extend coverage and enhance network performance. This joint multi-objective design maximizes the number of users served by the HAPS-RIS, minimizes the number of UAVs deployed and minimizes the total average UAV path loss subject to quality-of-service (QoS) and resource constraints. We propose a novel low-complexity solution strategy by proving the equivalence between minimizing the total average UAV path loss upper bound and k-means clustering, deriving a practical closed-form RIS phase-shift design, and introducing a mapping technique that collapses the combinatorial assignments into a zone radius and a bandwidth-portioning factor. Then, we propose a dynamic Pareto optimization technique to solve the transformed optimization problem. Extensive simulation results demonstrate that the proposed framework adapts seamlessly across operating regimes. A HAPS-RIS-only setup achieves full coverage at low data rates, but UAV assistance becomes indispensable as rate demands increase. By tuning a single bandwidth portioning factor, the model recovers UAV-only, HAPS-RIS-only and equal bandwidth portioning baselines within one formulation and consistently surpasses them across diverse rate requirements. The simulations also quantify a tangible trade-off between RIS scale and UAV deployment, enabling designers to trade increased RIS elements for fewer UAVs as service demands evolve.
+  Accurate localization of maritime targets by unmanned aerial vehicles (UAVs) remains challenging in GPS-denied environments. UAVs equipped with gimballed electro-optical sensors are typically used to localize targets, however, reliance on these sensors increases mechanical complexity, cost, and susceptibility to single-point failures, limiting scalability and robustness in multi-UAV operations. This work presents a new trajectory optimization framework that enables cooperative target localization using UAVs with fixed, non-gimballed cameras operating in coordination with a surface vessel. This estimation-aware optimization generates dynamically feasible trajectories that explicitly account for mission constraints, platform dynamics, and out-of-frame events. Estimation-aware trajectories outperform heuristic paths by reducing localization error by more than a factor of two, motivating their use in cooperative operations. Results further demonstrate that coordinated UAVs with fixed, non-gimballed cameras achieve localization accuracy that meets or exceeds that of single gimballed systems, while substantially lowering system complexity and cost, enabling scalability, and enhancing mission resilience.
+
+  </details>
+
+
+
+- **Transfer to Sky: Unveil Low-Altitude Route-Level Radio Maps via Ground Crowdsourced Data**  
+  Wenlihan Lu, Huacong Chen, Ruiyang Duan, Weijie Yuan, Shijian Gao  
+  _2026-02-11_ · https://arxiv.org/abs/2602.10736v1 · `eess.SP`  
+  <details><summary>Abstract</summary>
+
+  The expansion of the low-altitude economy is contingent on reliable cellular connectivity for unmanned aerial vehicles (UAVs). A key challenge in pre-flight planning is predicting communication link quality along proposed and pre-defined routes, a task hampered by sparse measurements that render existing radio map methods ineffective. This paper introduces a transfer learning framework for high-fidelity route-level radio map prediction. Our key insight is to leverage abundant crowdsourced ground signals as auxiliary supervision. To bridge the significant domain gap between ground and aerial data and address spatial sparsity, our framework learns general propagation priors from simulation, performs adversarial alignment of the feature spaces, and is fine-tuned on limited real UAV measurements. Extensive experiments on a real-world dataset from Meituan show that our method achieves over 50% higher accuracy in predicting Route RSRP compared to state-of-the-art baselines.
+
+  </details>
+
+
+
+- **Omnidirectional Dual-Arm Aerial Manipulator with Proprioceptive Contact Localization for Landing on Slanted Roofs**  
+  Martijn B. J. Brummelhuis, Nathan F. Lepora, Salua Hamaza  
+  _2026-02-11_ · https://arxiv.org/abs/2602.10703v1 · `cs.RO`  
+  <details><summary>Abstract</summary>
+
+  Operating drones in urban environments often means they need to land on rooftops, which can have different geometries and surface irregularities. Accurately detecting roof inclination using conventional sensing methods, such as vision-based or acoustic techniques, can be unreliable, as measurement quality is strongly influenced by external factors including weather conditions and surface materials. To overcome these challenges, we propose a novel unmanned aerial manipulator morphology featuring a dual-arm aerial manipulator with an omnidirectional 3D workspace and extended reach. Building on this design, we develop a proprioceptive contact detection and contact localization strategy based on a momentum-based torque observer. This enables the UAM to infer the inclination of slanted surfaces blindly - through physical interaction - prior to touchdown. We validate the approach in flight experiments, demonstrating robust landings on surfaces with inclinations of up to 30.5 degrees and achieving an average surface inclination estimation error of 2.87 degrees over 9 experiments at different incline angles.
 
   </details>
 
