@@ -2,74 +2,41 @@
 
 _Robotics arXiv Daily_
 
-_Updated: 2026-02-12 07:15 UTC_
+_Updated: 2026-02-13 07:12 UTC_
 
-Total papers shown: **6**
+Total papers shown: **3**
 
 
 ---
 
-- **Biomimetic Mantaray robot toward the underwater autonomous -- Experimental verification of swimming and diving by flapping motion -**  
-  Kenta Tabata, Ryosuke Oku, Jun Ito, Renato Miyagusuku, Koichi Ozaki  
-  _2026-02-11_ · https://arxiv.org/abs/2602.10904v1 · `cs.RO`  
+- **Decentralized Multi-Robot Obstacle Detection and Tracking in a Maritime Scenario**  
+  Muhammad Farhan Ahmed, Vincent Frémont  
+  _2026-02-12_ · https://arxiv.org/abs/2602.12012v1 · `cs.RO`  
   <details><summary>Abstract</summary>
 
-  This study presents the development and experimental verification of a biomimetic manta ray robot for underwater autonomous exploration. Inspired by manta rays, the robot uses flapping motion for propulsion to minimize seabed disturbance and enhance efficiency compared to traditional screw propulsion. The robot features pectoral fins driven by servo motors and a streamlined control box to reduce fluid resistance. The control system, powered by a Raspberry Pi 3B, includes an IMU and pressure sensor for real-time monitoring and control. Experiments in a pool assessed the robot's swimming and diving capabilities. Results show stable swimming and diving motions with PD control. The robot is suitable for applications in environments like aquariums and fish nurseries, requiring minimal disturbance and efficient maneuverability. Our findings demonstrate the potential of bio-inspired robotic designs to improve ecological monitoring and underwater exploration.
+  Autonomous aerial-surface robot teams are promising for maritime monitoring. Robust deployment requires reliable perception over reflective water and scalable coordination under limited communication. We present a decentralized multi-robot framework for detecting and tracking floating containers using multiple UAVs cooperating with an autonomous surface vessel. Each UAV performs YOLOv8 and stereo-disparity-based visual detection, then tracks targets with per-object EKFs using uncertainty-aware data association. Compact track summaries are exchanged and fused conservatively via covariance intersection, ensuring consistency under unknown correlations. An information-driven assignment module allocates targets and selects UAV hover viewpoints by trading expected uncertainty reduction against travel effort and safety separation. Simulation results in a maritime scenario demonstrate improved coverage, localization accuracy, and tracking consistency while maintaining modest communication requirements.
 
   </details>
 
 
 
-- **Multi-Task Reinforcement Learning of Drone Aerobatics by Exploiting Geometric Symmetries**  
-  Zhanyu Guo, Zikang Yin, Guobin Zhu, Shiliang Guo, Shiyu Zhao  
-  _2026-02-11_ · https://arxiv.org/abs/2602.10997v1 · `cs.RO`  
+- **Multi UAVs Preflight Planning in a Shared and Dynamic Airspace**  
+  Amath Sow, Mauricio Rodriguez Cesen, Fabiola Martins Campos de Oliveira, Mariusz Wzorek, Daniel de Leng, Mattias Tiger, Fredrik Heintz, Christian Esteve Rothenberg  
+  _2026-02-12_ · https://arxiv.org/abs/2602.12055v1 · `cs.AI`  
   <details><summary>Abstract</summary>
 
-  Flight control for autonomous micro aerial vehicles (MAVs) is evolving from steady flight near equilibrium points toward more aggressive aerobatic maneuvers, such as flips, rolls, and Power Loop. Although reinforcement learning (RL) has shown great potential in these tasks, conventional RL methods often suffer from low data efficiency and limited generalization. This challenge becomes more pronounced in multi-task scenarios where a single policy is required to master multiple maneuvers. In this paper, we propose a novel end-to-end multi-task reinforcement learning framework, called GEAR (Geometric Equivariant Aerobatics Reinforcement), which fully exploits the inherent SO(2) rotational symmetry in MAV dynamics and explicitly incorporates this property into the policy network architecture. By integrating an equivariant actor network, FiLM-based task modulation, and a multi-head critic, GEAR achieves both efficiency and flexibility in learning diverse aerobatic maneuvers, enabling a data-efficient, robust, and unified framework for aerobatic control. GEAR attains a 98.85\% success rate across various aerobatic tasks, significantly outperforming baseline methods. In real-world experiments, GEAR demonstrates stable execution of multiple maneuvers and the capability to combine basic motion primitives to complete complex aerobatics.
+  Preflight planning for large-scale Unmanned Aerial Vehicle (UAV) fleets in dynamic, shared airspace presents significant challenges, including temporal No-Fly Zones (NFZs), heterogeneous vehicle profiles, and strict delivery deadlines. While Multi-Agent Path Finding (MAPF) provides a formal framework, existing methods often lack the scalability and flexibility required for real-world Unmanned Traffic Management (UTM). We propose DTAPP-IICR: a Delivery-Time Aware Prioritized Planning method with Incremental and Iterative Conflict Resolution. Our framework first generates an initial solution by prioritizing missions based on urgency. Secondly, it computes roundtrip trajectories using SFIPP-ST, a novel 4D single-agent planner (Safe Flight Interval Path Planning with Soft and Temporal Constraints). SFIPP-ST handles heterogeneous UAVs, strictly enforces temporal NFZs, and models inter-agent conflicts as soft constraints. Subsequently, an iterative Large Neighborhood Search, guided by a geometric conflict graph, efficiently resolves any residual conflicts. A completeness-preserving directional pruning technique further accelerates the 3D search. On benchmarks with temporal NFZs, DTAPP-IICR achieves near-100% success with fleets of up to 1,000 UAVs and gains up to 50% runtime reduction from pruning, outperforming batch Enhanced Conflict-Based Search in the UTM context. Scaling successfully in realistic city-scale operations where other priority-based methods fail even at moderate deployments, DTAPP-IICR is positioned as a practical and scalable solution for preflight planning in dense, dynamic urban airspace.
 
   </details>
 
 
 
-- **(MGS)$^2$-Net: Unifying Micro-Geometric Scale and Macro-Geometric Structure for Cross-View Geo-Localization**  
-  Minglei Li, Mengfan He, Chao Chen, Ziyang Meng  
-  _2026-02-11_ · https://arxiv.org/abs/2602.10704v1 · `cs.CV`  
+- **Resource-Aware Deployment Optimization for Collaborative Intrusion Detection in Layered Networks**  
+  André García Gómez, Ines Rieger, Wolfgang Hotwagner, Max Landauer, Markus Wurzenberger, Florian Skopik, Edgar Weippl  
+  _2026-02-12_ · https://arxiv.org/abs/2602.11851v1 · `cs.CR`  
   <details><summary>Abstract</summary>
 
-  Cross-view geo-localization (CVGL) is pivotal for GNSS-denied UAV navigation but remains brittle under the drastic geometric misalignment between oblique aerial views and orthographic satellite references. Existing methods predominantly operate within a 2D manifold, neglecting the underlying 3D geometry where view-dependent vertical facades (macro-structure) and scale variations (micro-scale) severely corrupt feature alignment. To bridge this gap, we propose (MGS)$^2$, a geometry-grounded framework. The core of our innovation is the Macro-Geometric Structure Filtering (MGSF) module. Unlike pixel-wise matching sensitive to noise, MGSF leverages dilated geometric gradients to physically filter out high-frequency facade artifacts while enhancing the view-invariant horizontal plane, directly addressing the domain shift. To guarantee robust input for this structural filtering, we explicitly incorporate a Micro-Geometric Scale Adaptation (MGSA) module. MGSA utilizes depth priors to dynamically rectify scale discrepancies via multi-branch feature fusion. Furthermore, a Geometric-Appearance Contrastive Distillation (GACD) loss is designed to strictly discriminate against oblique occlusions. Extensive experiments demonstrate that (MGS)$^2$ achieves state-of-the-art performance, recording a Recall@1 of 97.5\% on University-1652 and 97.02\% on SUES-200. Furthermore, the framework exhibits superior cross-dataset generalization against geometric ambiguity. The code is available at: \href{https://github.com/GabrielLi1473/MGS-Net}{https://github.com/GabrielLi1473/MGS-Net}.
-
-  </details>
-
-
-
-- **Multi-UAV Trajectory Optimization for Bearing-Only Localization in GPS Denied Environments**  
-  Alfonso Sciacchitano, Liraz Mudrik, Sean Kragelund, Isaac Kaminer  
-  _2026-02-11_ · https://arxiv.org/abs/2602.11116v1 · `eess.SY`  
-  <details><summary>Abstract</summary>
-
-  Accurate localization of maritime targets by unmanned aerial vehicles (UAVs) remains challenging in GPS-denied environments. UAVs equipped with gimballed electro-optical sensors are typically used to localize targets, however, reliance on these sensors increases mechanical complexity, cost, and susceptibility to single-point failures, limiting scalability and robustness in multi-UAV operations. This work presents a new trajectory optimization framework that enables cooperative target localization using UAVs with fixed, non-gimballed cameras operating in coordination with a surface vessel. This estimation-aware optimization generates dynamically feasible trajectories that explicitly account for mission constraints, platform dynamics, and out-of-frame events. Estimation-aware trajectories outperform heuristic paths by reducing localization error by more than a factor of two, motivating their use in cooperative operations. Results further demonstrate that coordinated UAVs with fixed, non-gimballed cameras achieve localization accuracy that meets or exceeds that of single gimballed systems, while substantially lowering system complexity and cost, enabling scalability, and enhancing mission resilience.
-
-  </details>
-
-
-
-- **Transfer to Sky: Unveil Low-Altitude Route-Level Radio Maps via Ground Crowdsourced Data**  
-  Wenlihan Lu, Huacong Chen, Ruiyang Duan, Weijie Yuan, Shijian Gao  
-  _2026-02-11_ · https://arxiv.org/abs/2602.10736v1 · `eess.SP`  
-  <details><summary>Abstract</summary>
-
-  The expansion of the low-altitude economy is contingent on reliable cellular connectivity for unmanned aerial vehicles (UAVs). A key challenge in pre-flight planning is predicting communication link quality along proposed and pre-defined routes, a task hampered by sparse measurements that render existing radio map methods ineffective. This paper introduces a transfer learning framework for high-fidelity route-level radio map prediction. Our key insight is to leverage abundant crowdsourced ground signals as auxiliary supervision. To bridge the significant domain gap between ground and aerial data and address spatial sparsity, our framework learns general propagation priors from simulation, performs adversarial alignment of the feature spaces, and is fine-tuned on limited real UAV measurements. Extensive experiments on a real-world dataset from Meituan show that our method achieves over 50% higher accuracy in predicting Route RSRP compared to state-of-the-art baselines.
-
-  </details>
-
-
-
-- **Omnidirectional Dual-Arm Aerial Manipulator with Proprioceptive Contact Localization for Landing on Slanted Roofs**  
-  Martijn B. J. Brummelhuis, Nathan F. Lepora, Salua Hamaza  
-  _2026-02-11_ · https://arxiv.org/abs/2602.10703v1 · `cs.RO`  
-  <details><summary>Abstract</summary>
-
-  Operating drones in urban environments often means they need to land on rooftops, which can have different geometries and surface irregularities. Accurately detecting roof inclination using conventional sensing methods, such as vision-based or acoustic techniques, can be unreliable, as measurement quality is strongly influenced by external factors including weather conditions and surface materials. To overcome these challenges, we propose a novel unmanned aerial manipulator morphology featuring a dual-arm aerial manipulator with an omnidirectional 3D workspace and extended reach. Building on this design, we develop a proprioceptive contact detection and contact localization strategy based on a momentum-based torque observer. This enables the UAM to infer the inclination of slanted surfaces blindly - through physical interaction - prior to touchdown. We validate the approach in flight experiments, demonstrating robust landings on surfaces with inclinations of up to 30.5 degrees and achieving an average surface inclination estimation error of 2.87 degrees over 9 experiments at different incline angles.
+  Collaborative Intrusion Detection Systems (CIDS) are increasingly adopted to counter cyberattacks, as their collaborative nature enables them to adapt to diverse scenarios across heterogeneous environments. As distributed critical infrastructure operates in rapidly evolving environments, such as drones in both civil and military domains, there is a growing need for CIDS architectures that can flexibly accommodate these dynamic changes. In this study, we propose a novel CIDS framework designed for easy deployment across diverse distributed environments. The framework dynamically optimizes detector allocation per node based on available resources and data types, enabling rapid adaptation to new operational scenarios with minimal computational overhead. We first conducted a comprehensive literature review to identify key characteristics of existing CIDS architectures. Based on these insights and real-world use cases, we developed our CIDS framework, which we evaluated using several distributed datasets that feature different attack chains and network topologies. Notably, we introduce a public dataset based on a realistic cyberattack targeting a ground drone aimed at sabotaging critical infrastructure. Experimental results demonstrate that the proposed CIDS framework can achieve adaptive, efficient intrusion detection in distributed settings, automatically reconfiguring detectors to maintain an optimal configuration, without requiring heavy computation, since all experiments were conducted on edge devices.
 
   </details>
 
