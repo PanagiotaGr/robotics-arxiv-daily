@@ -2,63 +2,52 @@
 
 _Robotics arXiv Daily_
 
-_Updated: 2026-03-03 07:06 UTC_
+_Updated: 2026-03-04 07:02 UTC_
 
-Total papers shown: **5**
+Total papers shown: **4**
 
 
 ---
 
-- **From Leaderboard to Deployment: Code Quality Challenges in AV Perception Repositories**  
-  Mateus Karvat, Bram Adams, Sidney Givigi  
-  _2026-03-02_ · https://arxiv.org/abs/2603.02194v1 · `cs.CV`  
+- **Utonia: Toward One Encoder for All Point Clouds**  
+  Yujia Zhang, Xiaoyang Wu, Yunhan Yang, Xianzhe Fan, Han Li, Yuechen Zhang, Zehao Huang, Naiyan Wang, Hengshuang Zhao  
+  _2026-03-03_ · https://arxiv.org/abs/2603.03283v1 · `cs.CV`  
   <details><summary>Abstract</summary>
 
-  Autonomous vehicle (AV) perception models are typically evaluated solely on benchmark performance metrics, with limited attention to code quality, production readiness and long-term maintainability. This creates a significant gap between research excellence and real-world deployment in safety-critical systems subject to international safety standards. To address this gap, we present the first large-scale empirical study of software quality in AV perception repositories, systematically analyzing 178 unique models from the KITTI and NuScenes 3D Object Detection leaderboards. Using static analysis tools (Pylint, Bandit, and Radon), we evaluated code errors, security vulnerabilities, maintainability, and development practices. Our findings revealed that only 7.3% of the studied repositories meet basic production-readiness criteria, defined as having zero critical errors and no high-severity security vulnerabilities. Security issues are highly concentrated, with the top five issues responsible for almost 80% of occurrences, which prompted us to develop a set of actionable guidelines to prevent them. Additionally, the adoption of Continuous Integration/Continuous Deployment pipelines was correlated with better code maintainability. Our findings highlight that leaderboard performance does not reflect production readiness and that targeted interventions could substantially improve the quality and safety of AV perception code.
+  We dream of a future where point clouds from all domains can come together to shape a single model that benefits them all. Toward this goal, we present Utonia, a first step toward training a single self-supervised point transformer encoder across diverse domains, spanning remote sensing, outdoor LiDAR, indoor RGB-D sequences, object-centric CAD models, and point clouds lifted from RGB-only videos. Despite their distinct sensing geometries, densities, and priors, Utonia learns a consistent representation space that transfers across domains. This unification improves perception capability while revealing intriguing emergent behaviors that arise only when domains are trained jointly. Beyond perception, we observe that Utonia representations can also benefit embodied and multimodal reasoning: conditioning vision-language-action policies on Utonia features improves robotic manipulation, and integrating them into vision-language models yields gains on spatial reasoning. We hope Utonia can serve as a step toward foundation models for sparse 3D data, and support downstream applications in AR/VR, robotics, and autonomous driving.
 
   </details>
 
 
 
-- **Streaming Real-Time Trajectory Prediction Using Endpoint-Aware Modeling**  
-  Alexander Prutsch, David Schinagl, Horst Possegger  
-  _2026-03-02_ · https://arxiv.org/abs/2603.01864v1 · `cs.CV`  
+- **CoFL: Continuous Flow Fields for Language-Conditioned Navigation**  
+  Haokun Liu, Zhaoqi Ma, Yicheng Chen, Masaki Kitagawa, Wentao Zhang, Jinjie Li, Moju Zhao  
+  _2026-03-03_ · https://arxiv.org/abs/2603.02854v1 · `cs.RO`  
   <details><summary>Abstract</summary>
 
-  Future trajectories of neighboring traffic agents have a significant influence on the path planning and decision-making of autonomous vehicles. While trajectory forecasting is a well-studied field, research mainly focuses on snapshot-based prediction, where each scenario is treated independently of its global temporal context. However, real-world autonomous driving systems need to operate in a continuous setting, requiring real-time processing of data streams with low latency and consistent predictions over successive timesteps. We leverage this continuous setting to propose a lightweight yet highly accurate streaming-based trajectory forecasting approach. We integrate valuable information from previous predictions with a novel endpoint-aware modeling scheme. Our temporal context propagation uses the trajectory endpoints of the previous forecasts as anchors to extract targeted scenario context encodings. Our approach efficiently guides its scene encoder to extract highly relevant context information without needing refinement iterations or segment-wise decoding. Our experiments highlight that our approach effectively relays information across consecutive timesteps. Unlike methods using multi-stage refinement processing, our approach significantly reduces inference latency, making it well-suited for real-world deployment. We achieve state-of-the-art streaming trajectory prediction results on the Argoverse~2 multi-agent and single-agent benchmarks, while requiring substantially fewer resources.
+  Language-conditioned navigation pipelines often rely on brittle modular components or costly action-sequence generation. To address these limitations, we present CoFL, an end-to-end policy that directly maps a bird's-eye view (BEV) observation and a language instruction to a continuous flow field for navigation. Instead of predicting discrete action tokens or sampling action chunks via iterative denoising, CoFL outputs instantaneous velocities that can be queried at arbitrary 2D projected locations. Trajectories are obtained by numerical integration of the predicted field, producing smooth motion that remains reactive under closed-loop execution. To enable large-scale training, we build a dataset of over 500k BEV image-instruction pairs, each procedurally annotated with a flow field and a trajectory derived from BEV semantic maps built on Matterport3D and ScanNet. By training on a mixed distribution, CoFL significantly outperforms modular Vision-Language Model (VLM)-based planners and generative policy baselines on strictly unseen scenes. Finally, we deploy CoFL zero-shot in real-world experiments with overhead BEV observations across multiple layouts, maintaining reliable closed-loop control and a high success rate.
 
   </details>
 
 
 
-- **LaST-VLA: Thinking in Latent Spatio-Temporal Space for Vision-Language-Action in Autonomous Driving**  
-  Yuechen Luo, Fang Li, Shaoqing Xu, Yang Ji, Zehan Zhang, Bing Wang, Yuannan Shen, Jianwei Cui, Long Chen, Guang Chen, et al.  
-  _2026-03-02_ · https://arxiv.org/abs/2603.01928v1 · `cs.CV`  
+- **ACE-Brain-0: Spatial Intelligence as a Shared Scaffold for Universal Embodiments**  
+  Ziyang Gong, Zehang Luo, Anke Tang, Zhe Liu, Shi Fu, Zhi Hou, Ganlin Yang, Weiyun Wang, Xiaofeng Wang, Jianbo Liu, et al.  
+  _2026-03-03_ · https://arxiv.org/abs/2603.03198v1 · `cs.RO`  
   <details><summary>Abstract</summary>
 
-  While Vision-Language-Action (VLA) models have revolutionized autonomous driving by unifying perception and planning, their reliance on explicit textual Chain-of-Thought (CoT) leads to semantic-perceptual decoupling and perceptual-symbolic conflicts. Recent shifts toward latent reasoning attempt to bypass these bottlenecks by thinking in continuous hidden space. However, without explicit intermediate constraints, standard latent CoT often operates as a physics-agnostic representation. To address this, we propose the Latent Spatio-Temporal VLA (LaST-VLA), a framework shifting the reasoning paradigm from discrete symbolic processing into a physically grounded Latent Spatio-Temporal CoT. By implementing a dual-feature alignment mechanism, we distill geometric constraints from 3D foundation models and dynamic foresight from world models directly into the latent space. Coupled with a progressive SFT training strategy that transitions from feature alignment to trajectory generation, and refined via Reinforcement Learning with Group Relative Policy Optimization (GRPO) to ensure safety and rule compliance. \method~setting a new record on NAVSIM v1 (91.3 PDMS) and NAVSIM v2 (87.1 EPDMS), while excelling in spatial-temporal reasoning on SURDS and NuDynamics benchmarks.
+  Universal embodied intelligence demands robust generalization across heterogeneous embodiments, such as autonomous driving, robotics, and unmanned aerial vehicles (UAVs). However, existing embodied brain in training a unified model over diverse embodiments frequently triggers long-tail data, gradient interference, and catastrophic forgetting, making it notoriously difficult to balance universal generalization with domain-specific proficiency. In this report, we introduce ACE-Brain-0, a generalist foundation brain that unifies spatial reasoning, autonomous driving, and embodied manipulation within a single multimodal large language model~(MLLM). Our key insight is that spatial intelligence serves as a universal scaffold across diverse physical embodiments: although vehicles, robots, and UAVs differ drastically in morphology, they share a common need for modeling 3D mental space, making spatial cognition a natural, domain-agnostic foundation for cross-embodiment transfer. Building on this insight, we propose the Scaffold-Specialize-Reconcile~(SSR) paradigm, which first establishes a shared spatial foundation, then cultivates domain-specialized experts, and finally harmonizes them through data-free model merging. Furthermore, we adopt Group Relative Policy Optimization~(GRPO) to strengthen the model's comprehensive capability. Extensive experiments demonstrate that ACE-Brain-0 achieves competitive and even state-of-the-art performance across 24 spatial and embodiment-related benchmarks.
 
   </details>
 
 
 
-- **LAD-Drive: Bridging Language and Trajectory with Action-Aware Diffusion Transformers**  
-  Fabian Schmidt, Karol Fedurko, Markus Enzweiler, Abhinav Valada  
-  _2026-03-02_ · https://arxiv.org/abs/2603.02035v1 · `cs.RO`  
+- **Context Adaptive Extended Chain Coding for Semantic Map Compression**  
+  Runyu Yang, Junqi Liao, Hyomin Choi, Fabien Racapé, Ivan V. Bajić  
+  _2026-03-03_ · https://arxiv.org/abs/2603.03073v1 · `eess.IV`  
   <details><summary>Abstract</summary>
 
-  While multimodal large language models (MLLMs) provide advanced reasoning for autonomous driving, translating their discrete semantic knowledge into continuous trajectories remains a fundamental challenge. Existing methods often rely on unimodal planning heads that inherently limit their ability to represent multimodal driving behavior. Furthermore, most generative approaches frequently condition on one-hot encoded actions, discarding the nuanced navigational uncertainty critical for complex scenarios. To resolve these limitations, we introduce LAD-Drive, a generative framework that structurally disentangles high-level intention from low-level spatial planning. LAD-Drive employs an action decoder to infer a probabilistic meta-action distribution, establishing an explicit belief state that preserves the nuanced intent typically lost by one-hot encodings. This distribution, fused with the vehicle's kinematic state, conditions an action-aware diffusion decoder that utilizes a truncated denoising process to refine learned motion anchors into safe, kinematically feasible trajectories. Extensive evaluations on the LangAuto benchmark demonstrate that LAD-Drive achieves state-of-the-art results, outperforming competitive baselines by up to 59% in Driving Score while significantly reducing route deviations and collisions. We will publicly release the code and models on https://github.com/iis-esslingen/lad-drive.
-
-  </details>
-
-
-
-- **GroupEnsemble: Efficient Uncertainty Estimation for DETR-based Object Detection**  
-  Yutong Yang, Katarina Popović, Julian Wiederer, Markus Braun, Vasileios Belagiannis, Bin Yang  
-  _2026-03-02_ · https://arxiv.org/abs/2603.01847v1 · `cs.CV`  
-  <details><summary>Abstract</summary>
-
-  Detection Transformer (DETR) and its variants show strong performance on object detection, a key task for autonomous systems. However, a critical limitation of these models is that their confidence scores only reflect semantic uncertainty, failing to capture the equally important spatial uncertainty. This results in an incomplete assessment of the detection reliability. On the other hand, Deep Ensembles can tackle this by providing high-quality spatial uncertainty estimates. However, their immense memory consumption makes them impractical for real-world applications. A cheaper alternative, Monte Carlo (MC) Dropout, suffers from high latency due to the need of multiple forward passes during inference to estimate uncertainty. To address these limitations, we introduce GroupEnsemble, an efficient and effective uncertainty estimation method for DETR-like models. GroupEnsemble simultaneously predicts multiple individual detection sets by feeding additional diverse groups of object queries to the transformer decoder during inference. Each query group is transformed by the shared decoder in isolation and predicts a complete detection set for the same input. An attention mask is applied to the decoder to prevent inter-group query interactions, ensuring each group detects independently to achieve reliable ensemble-based uncertainty estimation. By leveraging the decoder's inherent parallelism, GroupEnsemble efficiently estimates uncertainty in a single forward pass without sequential repetition. We validated our method under autonomous driving scenes and common daily scenes using the Cityscapes and COCO datasets, respectively. The results show that a hybrid approach combining MC-Dropout and GroupEnsemble outperforms Deep Ensembles on several metrics at a fraction of the cost. The code is available at https://github.com/yutongy98/GroupEnsemble.
+  Semantic maps are increasingly utilized in areas such as robotics, autonomous systems, and extended reality, motivating the investigation of efficient compression methods that preserve structured semantic information. This paper studies lossless compression of semantic maps through a novel chain-coding-based framework that explicitly exploits contour topology and shared boundaries between adjacent semantic regions. We propose an extended chain code (ECC) to represent long-range contour transitions more compactly, while retaining a legacy three-orthogonal chain code (3OT) as a fallback mode for further efficiency. To efficiently encode sequences of ECC symbols, a context-adaptive entropy coding scheme based on Markov modeling is employed. Furthermore, a skip-coding mechanism is introduced to eliminate redundant representations of shared contours between adjacent semantic regions, supporting both complete and partial skips via run-length signaling. Experimental results demonstrate that the proposed method achieves an average bitrate reduction of 18\% compared with a state-of-the-art benchmark on semantic map datasets. In addition, the proposed encoder and decoder achieve up to 98\% and 50\% runtime reduction, respectively, relative to a modern generic lossless codec. Extended evaluations on occupancy maps further confirm consistent compression gains across the majority of tested scenarios.
 
   </details>
 
